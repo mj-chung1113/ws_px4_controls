@@ -1,0 +1,147 @@
+[0.006s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.179s] -- Check for working C compiler: /usr/lib/ccache/gcc - skipped
+[0.180s] -- Detecting C compile features
+[0.180s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.241s] -- Detecting CXX compiler ABI info - done
+[0.247s] -- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped
+[0.248s] -- Detecting CXX compile features
+[0.248s] -- Detecting CXX compile features - done
+[0.250s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.398s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.472s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.517s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.519s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.524s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.531s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.541s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.551s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.556s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.557s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.573s] -- Found px4_msgs: 2.0.1 (/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/share/px4_msgs/cmake)
+[0.580s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.603s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.604s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.671s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.697s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.726s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.731s] -- Looking for pthread.h
+[0.828s] -- Looking for pthread.h - found
+[0.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.919s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.920s] -- Found Threads: TRUE  
+[0.951s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.962s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.967s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.036s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.038s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.038s] -- Configured cppcheck include dirs: /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/include/px4_ros_com>
+[1.038s] -- Configured cppcheck exclude dirs and/or files: 
+[1.040s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.040s] -- Configured cpplint exclude dirs and/or files: 
+[1.041s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.041s] -- Added test 'lint_cmake' to check CMake code style
+[1.042s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.045s] -- Added test 'uncrustify' to check C / C++ code style
+[1.046s] -- Configured uncrustify additional arguments: 
+[1.046s] -- Added test 'xmllint' to check XML markup files
+[1.047s] -- Configuring done
+[1.061s] -- Generating done
+[1.066s] -- Build files have been written to: /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com
+[1.072s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com
+[1.073s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com -- -j20 -l20
+[1.131s] [ 25%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[1.132s] [ 25%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[1.132s] [ 25%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[1.132s] [ 33%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[1.132s] [ 41%] [32mBuilding CXX object CMakeFiles/offboard_control_srv.dir/src/examples/offboard/offboard_control_srv.cpp.o[0m
+[1.135s] [ 50%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[1.149s] [ 50%] Built target ament_cmake_python_copy_px4_ros_com
+[1.316s] running egg_info
+[1.316s] creating px4_ros_com.egg-info
+[1.316s] writing px4_ros_com.egg-info/PKG-INFO
+[1.316s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.316s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.317s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.319s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.319s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.336s] [ 50%] Built target ament_cmake_python_build_px4_ros_com_egg
+[4.056s] [ 58%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[4.193s] [ 58%] Built target debug_vect_advertiser
+[4.471s] [ 66%] [32m[1mLinking CXX executable offboard_control[0m
+[4.613s] [ 66%] Built target offboard_control
+[4.955s] [ 75%] [32m[1mLinking CXX executable offboard_control_srv[0m
+[5.107s] [ 75%] Built target offboard_control_srv
+[5.627s] [ 83%] [32m[1mLinking CXX shared library libframe_transforms.so[0m
+[5.785s] [ 83%] Built target frame_transforms
+[6.296s] [ 91%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[6.360s] [100%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[6.527s] [100%] Built target vehicle_gps_position_listener
+[6.586s] [100%] Built target sensor_combined_listener
+[6.593s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com -- -j20 -l20
+[6.593s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com
+[6.599s] -- Install configuration: ""
+[6.599s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[6.601s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""
+[6.601s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[6.602s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""
+[6.602s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[6.603s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""
+[6.603s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[6.603s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[6.603s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[6.604s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv" to ""
+[6.604s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[6.604s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[6.604s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/include/px4_ros_com
+[6.604s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[6.604s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/libframe_transforms.so
+[6.606s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/libframe_transforms.so" to ""
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//launch
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//test
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[6.606s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[6.607s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[6.632s] Listing '/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[6.632s] Compiling '/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py'...
+[6.632s] Compiling '/home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py'...
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/package.dsv
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.635s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[6.636s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.636s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[6.636s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[6.636s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[6.636s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_ros_com/share/px4_ros_com/package.xml
+[6.637s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com
