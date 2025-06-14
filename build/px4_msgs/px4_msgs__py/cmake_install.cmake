@@ -1,8 +1,8 @@
-# Install script for directory: /home/jmj/pro_asp_ws/ws_px4_control/build/px4_msgs/px4_msgs__py
+# Install script for directory: /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs/px4_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

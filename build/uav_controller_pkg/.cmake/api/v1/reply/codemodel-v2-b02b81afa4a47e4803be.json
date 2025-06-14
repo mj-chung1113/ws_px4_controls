@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f9d14afc4d544467e844.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "uav_controller_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "offboard_control_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-offboard_control_node-9b40e42c69007b521d8d.json",
+					"name" : "offboard_control_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_controller-059c258a91d9dc7add0f.json",
+					"name" : "uav_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_controller_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_controller_pkg_uninstall-d89ac58f45e227f4bef0.json",
+					"name" : "uav_controller_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c44836c3d16f0adcf23e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg",
+		"source" : "/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

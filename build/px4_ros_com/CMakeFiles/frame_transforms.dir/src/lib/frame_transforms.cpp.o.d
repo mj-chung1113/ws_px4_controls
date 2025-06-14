@@ -1,7 +1,7 @@
 CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o: \
- /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/lib/frame_transforms.cpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/lib/frame_transforms.cpp \
  /usr/include/stdc-predef.h \
- /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/include/px4_ros_com/frame_transforms.h \
+ /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/include/px4_ros_com/frame_transforms.h \
  /usr/include/eigen3/Eigen/Eigen /usr/include/eigen3/Eigen/Dense \
  /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \

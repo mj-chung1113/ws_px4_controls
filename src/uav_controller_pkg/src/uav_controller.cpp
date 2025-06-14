@@ -33,7 +33,7 @@ public:
     UavController() : Node("uav_controller"), state_(MissionState::IDLE), current_wp_idx_(0)
     {
         // 1. CSV 파일 로드 및 좌표 자동 변환
-        load_waypoints("/home/kyj/uav_wp.csv");
+        load_waypoints("uav_wp.csv");
 
         // 랑데부 포인트 설정 (월드 좌표)
         // 참고: 필요하다면 이 랑데부 포인트도 로컬 좌표로 변환해야 합니다.
@@ -118,7 +118,7 @@ private:
             if (current_wp_idx_ >= waypoints_.size()) break;
             publish_waypoint(current_wp_idx_);
             if (is_close(current_pose_, waypoints_[current_wp_idx_], 5.0)) {
-                 RCLCPP_INFO(get_logger(), "Arrived at waypoint %zu. Searching for marker.", current_wp_idx_);
+                RCLCPP_INFO(get_logger(), "Arrived at waypoint %zu. Searching for marker.", current_wp_idx_);
                 state_ = MissionState::SEARCHING_FOR_MARKER;
             }
             break;
@@ -174,7 +174,7 @@ private:
 
         // 3. 계산된 '로컬 좌표'를 리스트에 추가하고 파일에 저장합니다.
         precise_markers_.push_back(final_local_pose);
-        save_precise_locations("/home/kyj/precise_marker_locations.csv");
+        save_precise_locations("/home/jmj/precise_marker_locations.csv");
         
         // 4. 다음 웨이포인트로 넘어가기 위해 인덱스를 증가시킵니다.
         ++current_wp_idx_;

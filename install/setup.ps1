@@ -23,6 +23,10 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/humble\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/jmj/pro_asp_ws/multi_tracker/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/jmj/pro_asp_ws/vision_opencv/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/jmj/pro_asp_ws/microxrcedds/Micro-XRCE-DDS-Agent/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/jmj/pro_asp_ws/ws_gazebo/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

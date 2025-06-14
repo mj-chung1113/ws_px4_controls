@@ -1,5 +1,5 @@
 CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_manual_control_switches_s.c.o: \
- /home/jmj/pro_asp_ws/ws_px4_control/build/px4_msgs/rosidl_generator_py/px4_msgs/msg/_manual_control_switches_s.c \
+ /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs/rosidl_generator_py/px4_msgs/msg/_manual_control_switches_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,6 +207,6 @@ CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_m
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/jmj/pro_asp_ws/ws_px4_control/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__struct.h \
- /home/jmj/pro_asp_ws/ws_px4_control/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__functions.h \
- /home/jmj/pro_asp_ws/ws_px4_control/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__struct.h \
+ /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/manual_control_switches__functions.h \
+ /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/rosidl_generator_c__visibility_control.h

@@ -10,14 +10,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(px4_msgs REQUIRED)
-find_package(gazebo_msgs REQUIRED) 
+# find_package(gazebo_msgs REQUIRED) 
 # --- Build Executables ---
 add_executable(offboard_control_node src/offboard_control_node.cpp)
 ament_target_dependencies(offboard_control_node
     rclcpp
     geometry_msgs
     px4_msgs
-    gazebo_msgs 
+    # gazebo_msgs 
 )
 
 add_executable(uav_controller src/uav_controller.cpp)
@@ -25,7 +25,7 @@ ament_target_dependencies(uav_controller
     rclcpp
     geometry_msgs
     px4_msgs
-    gazebo_msgs 
+    # gazebo_msgs 
 )
 
 # --- Install Targets ---

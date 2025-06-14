@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cli_pose_command.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/cli_pose_command.dir/progress.make
 include CMakeFiles/cli_pose_command.dir/flags.make
 
 CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o: CMakeFiles/cli_pose_command.dir/flags.make
-CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o: /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp
+CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o: /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp
 CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o: CMakeFiles/cli_pose_command.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o -MF CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o.d -o CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o -c /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o"
+	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o -MF CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o.d -o CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o -c /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp
 
 CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.i"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp > CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.i
+	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp > CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.i
 
 CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.s"
-	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp -o CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.s
+	/usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp -o CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.s
 
 # Object files for target cli_pose_command
 cli_pose_command_OBJECTS = \
@@ -92,14 +92,14 @@ cli_pose_command_EXTERNAL_OBJECTS =
 
 cli_pose_command: CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o
 cli_pose_command: CMakeFiles/cli_pose_command.dir/build.make
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
-cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_control/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
+cli_pose_command: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 cli_pose_command: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
 cli_pose_command: /opt/ros/humble/lib/libtf2_ros.so
 cli_pose_command: /opt/ros/humble/lib/libtf2.so
@@ -201,7 +201,7 @@ cli_pose_command: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generato
 cli_pose_command: /opt/ros/humble/lib/librosidl_runtime_c.so
 cli_pose_command: /opt/ros/humble/lib/librcutils.so
 cli_pose_command: CMakeFiles/cli_pose_command.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cli_pose_command"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cli_pose_command"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cli_pose_command.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -213,6 +213,6 @@ CMakeFiles/cli_pose_command.dir/clean:
 .PHONY : CMakeFiles/cli_pose_command.dir/clean
 
 CMakeFiles/cli_pose_command.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_control/build/px4_ros_com/CMakeFiles/cli_pose_command.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/cli_pose_command.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cli_pose_command.dir/depend
 

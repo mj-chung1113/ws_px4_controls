@@ -1,5 +1,5 @@
 CMakeFiles/cli_pose_command.dir/src/examples/offboard/cli_pose_command.cpp.o: \
- /home/jmj/pro_asp_ws/ws_px4_control/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_ros_com/src/examples/offboard/cli_pose_command.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

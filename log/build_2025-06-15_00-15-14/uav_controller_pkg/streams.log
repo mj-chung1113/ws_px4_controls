@@ -1,0 +1,52 @@
+[0.008s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/vision_opencv/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.122s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.196s] -- Check for working C compiler: /usr/lib/ccache/gcc - skipped
+[0.196s] -- Detecting C compile features
+[0.196s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.246s] -- Detecting CXX compiler ABI info - done
+[0.253s] -- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.253s] -- Detecting CXX compile features - done
+[0.256s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.370s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.437s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.473s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.476s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.482s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.501s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.535s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.537s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.599s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.622s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.653s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.663s] -- Looking for pthread.h
+[0.706s] -- Looking for pthread.h - found
+[0.706s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.753s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.754s] -- Found Threads: TRUE  
+[0.796s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.811s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.811s]   By not providing "Findpx4_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[0.811s]   asked CMake to find a package configuration file provided by "px4_msgs",
+[0.811s]   but CMake did not find one.
+[0.811s] 
+[0.811s]   Could not find a package configuration file provided by "px4_msgs" with any
+[0.811s]   of the following names:
+[0.811s] 
+[0.811s]     px4_msgsConfig.cmake
+[0.811s]     px4_msgs-config.cmake
+[0.812s] 
+[0.812s]   Add the installation prefix of "px4_msgs" to CMAKE_PREFIX_PATH or set
+[0.812s]   "px4_msgs_DIR" to a directory containing one of the above files.  If
+[0.812s]   "px4_msgs" provides a separate development package or SDK, be sure it has
+[0.812s]   been installed.
+[0.812s] 
+[0.812s] [0m
+[0.812s] -- Configuring incomplete, errors occurred!
+[0.812s] See also "/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg/CMakeFiles/CMakeOutput.log".
+[0.823s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/vision_opencv/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg
