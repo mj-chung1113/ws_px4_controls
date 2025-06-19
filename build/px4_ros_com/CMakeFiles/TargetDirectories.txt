@@ -6,6 +6,7 @@
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/debug_vect_advertiser.dir
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/offboard_control.dir
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/offboard_control_srv.dir
+/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/offboard_control_key.dir
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/cli_pose_command.dir
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/ament_cmake_python_copy_px4_ros_com.dir
 /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com/CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir

@@ -74,10 +74,30 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/uav_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/uav_controller"
-         OLD_RPATH "/opt/ros/humble/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:"
+         OLD_RPATH "/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/opt/ros/humble/lib:/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/uav_controller")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg" TYPE EXECUTABLE FILES "/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg/pose_to_tf_broadcaster")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster"
+         OLD_RPATH "/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uav_controller_pkg/pose_to_tf_broadcaster")
     endif()
   endif()
 endif()

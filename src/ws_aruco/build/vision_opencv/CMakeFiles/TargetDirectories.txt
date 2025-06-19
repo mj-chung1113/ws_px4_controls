@@ -1,0 +1,9 @@
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/uninstall.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/vision_opencv_uninstall.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/test.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/edit_cache.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/rebuild_cache.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/list_install_components.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/install.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/install/local.dir
+/home/jmj/pro_asp_ws/ws_aruco/build/vision_opencv/CMakeFiles/install/strip.dir

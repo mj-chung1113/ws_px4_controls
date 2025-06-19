@@ -1,0 +1,231 @@
+[0.012s] Invoking command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_aruco/src/aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces
+[0.062s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.151s] -- Detecting C compiler ABI info - done
+[0.156s] -- Check for working C compiler: /usr/lib/ccache/gcc - skipped
+[0.156s] -- Detecting C compile features
+[0.156s] -- Detecting C compile features - done
+[0.158s] -- Detecting CXX compiler ABI info
+[0.208s] -- Detecting CXX compiler ABI info - done
+[0.213s] -- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped
+[0.213s] -- Detecting CXX compile features
+[0.213s] -- Detecting CXX compile features - done
+[0.215s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.336s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.408s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.433s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.437s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.442s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.450s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.460s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.477s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.486s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.736s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.125s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.241s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.262s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.262s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.281s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.281s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.281s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.300s] -- Found PythonExtra: .so  
+[1.348s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.376s] -- Added test 'lint_cmake' to check CMake code style
+[1.377s] -- Added test 'xmllint' to check XML markup files
+[1.378s] -- Configuring done
+[1.400s] -- Generating done
+[1.409s] -- Build files have been written to: /home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces
+[1.414s] Invoked command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_aruco/src/aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces
+[1.415s] Invoking command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces -- -j20 -l20
+[1.445s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.453s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.459s] [  6%] Built target ament_cmake_python_copy_aruco_interfaces
+[1.639s] [  6%] Built target aruco_interfaces__cpp
+[1.648s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.649s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.649s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.651s] [ 19%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aruco_interfaces/msg/detail/marker_pose_id__functions.c.o[0m
+[1.675s] [ 22%] [32m[1mLinking C shared library libaruco_interfaces__rosidl_generator_c.so[0m
+[1.675s] running egg_info
+[1.676s] creating aruco_interfaces.egg-info
+[1.676s] writing aruco_interfaces.egg-info/PKG-INFO
+[1.676s] writing dependency_links to aruco_interfaces.egg-info/dependency_links.txt
+[1.676s] writing top-level names to aruco_interfaces.egg-info/top_level.txt
+[1.677s] writing manifest file 'aruco_interfaces.egg-info/SOURCES.txt'
+[1.678s] reading manifest file 'aruco_interfaces.egg-info/SOURCES.txt'
+[1.679s] writing manifest file 'aruco_interfaces.egg-info/SOURCES.txt'
+[1.703s] [ 22%] Built target ament_cmake_python_build_aruco_interfaces_egg
+[1.709s] [ 22%] Built target aruco_interfaces__rosidl_generator_c
+[1.719s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.719s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.719s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.808s] [ 35%] [32mBuilding CXX object CMakeFiles/aruco_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aruco_interfaces/msg/marker_pose_id__type_support.cpp.o[0m
+[1.826s] [ 38%] [32mBuilding CXX object CMakeFiles/aruco_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aruco_interfaces/msg/detail/marker_pose_id__type_support.cpp.o[0m
+[1.827s] [ 41%] [32mBuilding CXX object CMakeFiles/aruco_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aruco_interfaces/msg/detail/dds_fastrtps/marker_pose_id__type_support.cpp.o[0m
+[1.868s] [ 45%] [32m[1mLinking CXX shared library libaruco_interfaces__rosidl_typesupport_cpp.so[0m
+[1.884s] [ 48%] [32mBuilding CXX object CMakeFiles/aruco_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aruco_interfaces/msg/marker_pose_id__type_support.cpp.o[0m
+[1.890s] [ 51%] [32m[1mLinking CXX shared library libaruco_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.900s] [ 54%] [32m[1mLinking CXX shared library libaruco_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.905s] [ 58%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aruco_interfaces/msg/detail/marker_pose_id__type_support.c.o[0m
+[1.909s] [ 61%] [32m[1mLinking CXX shared library libaruco_interfaces__rosidl_typesupport_c.so[0m
+[1.909s] [ 61%] Built target aruco_interfaces__rosidl_typesupport_cpp
+[1.926s] [ 64%] [32mBuilding CXX object CMakeFiles/aruco_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aruco_interfaces/msg/detail/marker_pose_id__type_support_c.cpp.o[0m
+[1.934s] [ 67%] [32m[1mLinking C shared library libaruco_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.960s] [ 67%] Built target aruco_interfaces__rosidl_typesupport_c
+[1.973s] [ 67%] Built target aruco_interfaces__rosidl_typesupport_introspection_cpp
+[1.973s] [ 67%] Built target aruco_interfaces__rosidl_typesupport_introspection_c
+[1.998s] [ 70%] [32m[1mLinking CXX shared library libaruco_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.004s] [ 70%] Built target aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.066s] [ 70%] Built target aruco_interfaces__rosidl_typesupport_fastrtps_c
+[2.087s] [ 70%] Built target aruco_interfaces
+[2.105s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.306s] [ 74%] Built target aruco_interfaces__py
+[2.323s] [ 77%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aruco_interfaces/msg/_marker_pose_id_s.c.o[0m
+[2.334s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/aruco_interfaces/libaruco_interfaces__rosidl_generator_py.so[0m
+[2.366s] [ 80%] Built target aruco_interfaces__rosidl_generator_py
+[2.383s] [ 87%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.383s] [ 87%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.384s] [ 90%] [32mBuilding C object CMakeFiles/aruco_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.393s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.394s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.394s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.426s] [100%] Built target aruco_interfaces__rosidl_typesupport_c__pyext
+[2.426s] [100%] Built target aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.426s] [100%] Built target aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.437s] Invoked command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces -- -j20 -l20
+[2.438s] Invoking command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces
+[2.444s] -- Install configuration: ""
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/aruco_interfaces
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__type_support.h
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__functions.c
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__struct.h
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__functions.h
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/marker_pose_id.h
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/library_path.sh
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/library_path.dsv
+[2.444s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_generator_c.so
+[2.445s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_generator_c.so" to ""
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__rosidl_typesupport_fastrtps_c.h
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.445s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__struct.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__traits.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__type_support.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__builder.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/marker_pose_id.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.445s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/dds_fastrtps
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__rosidl_typesupport_fastrtps_cpp.hpp
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.445s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.446s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__type_support.c
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__rosidl_typesupport_introspection_c.h
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_introspection_c.so
+[2.446s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_c.so
+[2.446s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_c.so" to ""
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg
+[2.446s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__type_support.cpp
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__rosidl_typesupport_introspection_cpp.hpp
+[2.446s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.446s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_cpp.so
+[2.447s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/pythonpath.sh
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/pythonpath.dsv
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces-0.0.0-py3.10.egg-info
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/__init__.py
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/libaruco_interfaces__rosidl_generator_py.so
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_c.c
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg/__init__.py
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg/_marker_pose_id.py
+[2.447s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg/_marker_pose_id_s.c
+[2.475s] Listing '/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces'...
+[2.475s] Compiling '/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/__init__.py'...
+[2.476s] Listing '/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg'...
+[2.476s] Compiling '/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg/__init__.py'...
+[2.476s] Compiling '/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/msg/_marker_pose_id.py'...
+[2.480s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.480s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.480s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.481s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.481s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.481s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/local/lib/python3.10/dist-packages/aruco_interfaces/aruco_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.481s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_generator_py.so
+[2.481s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/lib/libaruco_interfaces__rosidl_generator_py.so" to ""
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/msg/MarkerPoseId.idl
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/msg/MarkerPoseId.msg
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/aruco_interfaces
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/aruco_interfaces
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/ament_prefix_path.sh
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/ament_prefix_path.dsv
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/path.sh
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/environment/path.dsv
+[2.482s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/local_setup.bash
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/local_setup.sh
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/local_setup.zsh
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/local_setup.dsv
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/package.dsv
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/ament_index/resource_index/packages/aruco_interfaces
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_generator_cExport.cmake
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.483s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_generator_cppExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_cExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_cppExport.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.484s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_generator_pyExport.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/export_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfacesConfig.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/cmake/aruco_interfacesConfig-version.cmake
+[2.485s] -- Installing: /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/share/aruco_interfaces/package.xml
+[2.486s] Invoked command in '/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_aruco/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces

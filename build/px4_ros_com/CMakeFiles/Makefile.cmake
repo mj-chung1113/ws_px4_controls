@@ -1026,6 +1026,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/debug_vect_advertiser.dir/DependInfo.cmake"
   "CMakeFiles/offboard_control.dir/DependInfo.cmake"
   "CMakeFiles/offboard_control_srv.dir/DependInfo.cmake"
+  "CMakeFiles/offboard_control_key.dir/DependInfo.cmake"
   "CMakeFiles/cli_pose_command.dir/DependInfo.cmake"
   "CMakeFiles/ament_cmake_python_copy_px4_ros_com.dir/DependInfo.cmake"
   "CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/DependInfo.cmake"

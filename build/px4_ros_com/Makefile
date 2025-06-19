@@ -276,6 +276,19 @@ offboard_control_srv/fast:
 .PHONY : offboard_control_srv/fast
 
 #=============================================================================
+# Target rules for targets named offboard_control_key
+
+# Build rule for target.
+offboard_control_key: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offboard_control_key
+.PHONY : offboard_control_key
+
+# fast build rule for target.
+offboard_control_key/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_key.dir/build.make CMakeFiles/offboard_control_key.dir/build
+.PHONY : offboard_control_key/fast
+
+#=============================================================================
 # Target rules for targets named cli_pose_command
 
 # Build rule for target.
@@ -434,6 +447,30 @@ src/examples/offboard/offboard_control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control.dir/build.make CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.s
 .PHONY : src/examples/offboard/offboard_control.cpp.s
 
+src/examples/offboard/offboard_control_key.o: src/examples/offboard/offboard_control_key.cpp.o
+.PHONY : src/examples/offboard/offboard_control_key.o
+
+# target to build an object file
+src/examples/offboard/offboard_control_key.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_key.dir/build.make CMakeFiles/offboard_control_key.dir/src/examples/offboard/offboard_control_key.cpp.o
+.PHONY : src/examples/offboard/offboard_control_key.cpp.o
+
+src/examples/offboard/offboard_control_key.i: src/examples/offboard/offboard_control_key.cpp.i
+.PHONY : src/examples/offboard/offboard_control_key.i
+
+# target to preprocess a source file
+src/examples/offboard/offboard_control_key.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_key.dir/build.make CMakeFiles/offboard_control_key.dir/src/examples/offboard/offboard_control_key.cpp.i
+.PHONY : src/examples/offboard/offboard_control_key.cpp.i
+
+src/examples/offboard/offboard_control_key.s: src/examples/offboard/offboard_control_key.cpp.s
+.PHONY : src/examples/offboard/offboard_control_key.s
+
+# target to generate assembly for a file
+src/examples/offboard/offboard_control_key.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_key.dir/build.make CMakeFiles/offboard_control_key.dir/src/examples/offboard/offboard_control_key.cpp.s
+.PHONY : src/examples/offboard/offboard_control_key.cpp.s
+
 src/examples/offboard/offboard_control_srv.o: src/examples/offboard/offboard_control_srv.cpp.o
 .PHONY : src/examples/offboard/offboard_control_srv.o
 
@@ -503,6 +540,7 @@ help:
 	@echo "... debug_vect_advertiser"
 	@echo "... frame_transforms"
 	@echo "... offboard_control"
+	@echo "... offboard_control_key"
 	@echo "... offboard_control_srv"
 	@echo "... sensor_combined_listener"
 	@echo "... vehicle_gps_position_listener"
@@ -521,6 +559,9 @@ help:
 	@echo "... src/examples/offboard/offboard_control.o"
 	@echo "... src/examples/offboard/offboard_control.i"
 	@echo "... src/examples/offboard/offboard_control.s"
+	@echo "... src/examples/offboard/offboard_control_key.o"
+	@echo "... src/examples/offboard/offboard_control_key.i"
+	@echo "... src/examples/offboard/offboard_control_key.s"
 	@echo "... src/examples/offboard/offboard_control_srv.o"
 	@echo "... src/examples/offboard/offboard_control_srv.i"
 	@echo "... src/examples/offboard/offboard_control_srv.s"

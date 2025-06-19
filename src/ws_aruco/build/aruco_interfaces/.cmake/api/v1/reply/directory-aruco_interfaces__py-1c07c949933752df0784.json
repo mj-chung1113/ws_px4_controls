@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "aruco_interfaces__py",
+		"source" : "/home/jmj/pro_asp_ws/ws_aruco/build/aruco_interfaces/aruco_interfaces__py"
+	}
+}
