@@ -1,0 +1,14 @@
+[0.000000] (-) TimerEvent: {}
+[0.000212] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.000280] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000292] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000324] (-) JobUnselected: {'identifier': 'multi_tracker'}
+[0.000352] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000401] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000446] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000487] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.000506] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000517] (uav_controller_pkg) JobQueued: {'identifier': 'uav_controller_pkg', 'dependencies': OrderedDict([('aruco_interfaces', '/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces'), ('px4_msgs', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs')])}
+[0.000741] (uav_controller_pkg) JobStarted: {'identifier': 'uav_controller_pkg'}
+[0.015720] (uav_controller_pkg) JobEnded: {'identifier': 'uav_controller_pkg', 'rc': 1}
+[0.026088] (-) EventReactorShutdown: {}

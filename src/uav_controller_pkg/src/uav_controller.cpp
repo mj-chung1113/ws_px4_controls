@@ -25,10 +25,14 @@
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지 
 
 #define TAKEOFFALTITUDE -5.0  // NED 기준, 드론이 이 높이로 상승하면 착륙 지점으로 이동
+#define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
+#define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
+
 enum class MissionState {
     IDLE,
     TAKEOFF,
     MOVING_TO_WAYPOINT,
+    WAIT_BEFORE_SEARCHING,  // 🔹 새 상태
     SEARCHING_FOR_MARKER,
     MISSION_COMPLETE,
     PRECISION_LANDING
@@ -39,22 +43,16 @@ class UavController : public rclcpp::Node
 public:
     UavController() : Node("uav_controller"), state_(MissionState::IDLE), current_wp_idx_(0)
     {
-        load_and_convert_waypoints_to_ned("/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv");
+        load_and_convert_waypoints_to_ned(WP_LOAD_PATH);
 
         pose_cmd_pub_ = create_publisher<geometry_msgs::msg::PoseStamped>("/command/pose", 10);
-        
-        // auto pose_qos = rclcpp::QoS(rclcpp::KeepLast(10)).reliable();
-        // marker_sub_ = create_subscription<geometry_msgs::msg::PoseStamped>(
-        //     "/x500/target_pose", pose_qos,
-        //     std::bind(&UavController::marker_cb, this, std::placeholders::_1));
-
         
         // pose 및 id 바인딩 
         auto pose_qos = rclcpp::QoS(rclcpp::KeepLast(3));
         marker_sub_ = create_subscription<aruco_interfaces::msg::MarkerPoseId>(
         "/x500/target", pose_qos, // pose_qos는 적절히 정의되어 있다고 가정
         std::bind(&UavController::aruco_marker_cb, this, std::placeholders::_1)); // 추가
-
+        
         tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
         tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
@@ -68,7 +66,7 @@ public:
         RCLCPP_INFO(get_logger(), "UavController initialised. Mission starts in 2 s …");
         std::this_thread::sleep_for(std::chrono::seconds(2));
         state_ = MissionState::TAKEOFF;
-
+        
 
     }
 
@@ -83,6 +81,9 @@ private:
     rclcpp::Subscription<aruco_interfaces::msg::MarkerPoseId>::SharedPtr marker_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr odometry_sub_;
     rclcpp::TimerBase::SharedPtr main_timer_;
+    
+    // 호버링을 위한 시간 기록 변수 
+    rclcpp::Time wait_start_time_;
 
     std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
@@ -94,6 +95,9 @@ private:
     std::vector<geometry_msgs::msg::Point> precise_markers_world_;
     geometry_msgs::msg::Pose current_pose_ned_{};
     geometry_msgs::msg::Point landing_spot_ned_{};
+    
+    //마커 중복 인식 방지 
+    std::unordered_set<int> seen_marker_ids_;
 
     bool isArucoWaypoint(size_t index)
     {
@@ -148,22 +152,31 @@ private:
                 send_setpoint_as_enu(wp.x, wp.y, wp.z);
             }
 
-            if (is_close(current_pose_ned_.position, waypoints_ned_[current_wp_idx_], 1.0)) {
+            if (is_close(current_pose_ned_.position, waypoints_ned_[current_wp_idx_], 0.5)) {
                 RCLCPP_INFO(get_logger(), "Arrived at waypoint %zu.", current_wp_idx_);
                 if (isArucoWaypoint(current_wp_idx_)) {
-                    state_ = MissionState::SEARCHING_FOR_MARKER;
+                wait_start_time_ = this->now();
+                state_ = MissionState::WAIT_BEFORE_SEARCHING;
                 } else {
                     ++current_wp_idx_;
                 }
             }
             break;
+        case MissionState::WAIT_BEFORE_SEARCHING:
+            {
+                const auto& wp = waypoints_ned_[current_wp_idx_];
+                send_setpoint_as_enu(wp.x, wp.y, wp.z);  // 호버링 위치 고정
 
+                if ((this->now() - wait_start_time_).seconds() > 3.0) {
+                    RCLCPP_INFO(get_logger(), "2s wait done. Now start marker searching.");
+                    state_ = MissionState::SEARCHING_FOR_MARKER;
+                }
+            }
+            break;
         case MissionState::SEARCHING_FOR_MARKER:
             if(current_wp_idx_ < waypoints_ned_.size()) {
                 const auto& wp = waypoints_ned_[current_wp_idx_];
-                // 마커 탐색을 위해 웨이포인트보다 2m 위에서 호버링
-                // send_setpoint_as_enu(wp.x, wp.y, wp.z - 2.0);
-                send_setpoint_as_enu(wp.x, wp.y, wp.z+1);
+                send_setpoint_as_enu(wp.x, wp.y, wp.z);
             }
             break;
 
@@ -192,6 +205,14 @@ private:
     {
         if (state_ != MissionState::SEARCHING_FOR_MARKER) return;
 
+         // ✅ 이미 본 마커라면 무시
+        if (seen_marker_ids_.count(msg->id) > 0) {
+            return;
+        }
+
+        // ✅ 처음 보는 마커라면 기록
+        seen_marker_ids_.insert(msg->id);
+
         // multi_tracker_node에서 이미 "x500_gimbal_0/base_link" 프레임으로 변환하여 발행했으므로
         // uav_controller에서는 TF 변환이 더 이상 필요 없습니다!
         // msg->pose는 이미 드론의 base_link 기준입니다.
@@ -200,7 +221,7 @@ private:
         // base_link 기준 마커 위치를 현재 드론의 NED 위치에 더하여 월드 NED 좌표를 얻습니다.
         marker_pos_ned.x = current_pose_ned_.position.x + msg->pose.position.x;
         marker_pos_ned.y = current_pose_ned_.position.y + msg->pose.position.y;
-        marker_pos_ned.z = current_pose_ned_.position.z + msg->pose.position.z;
+        marker_pos_ned.z = current_pose_ned_.position.z - msg->pose.position.z;
 
         geometry_msgs::msg::Point marker_pos_world;
         marker_pos_world.x = marker_pos_ned.y + DRONE_START_X;
@@ -210,7 +231,7 @@ private:
         precise_markers_world_.push_back(marker_pos_world);
 
         // ✅ 마커 ID와 함께 저장
-        std::ofstream ofs("/home/jmj/pro_asp_ws/ws_px4_controls/precise_marker_locations.csv", std::ios_base::app);
+        std::ofstream ofs(MARKER_SAVE_PATH, std::ios_base::app);
         if (ofs) {
             ofs.precision(15);
             ofs << marker_pos_world.x << "," << marker_pos_world.y << "," << marker_pos_world.z << "," << msg->id << "\n"; // msg->id 사용
@@ -227,48 +248,7 @@ private:
             state_ = MissionState::MOVING_TO_WAYPOINT;
         }
     }
-    // void marker_cb(const geometry_msgs::msg::PoseStamped::SharedPtr msg)
-    // {
-    //     if (state_ != MissionState::SEARCHING_FOR_MARKER) return;
-
-    //     geometry_msgs::msg::PoseStamped marker_in_base;
-    //     try {
-    //         tf_buffer_->transform(*msg, marker_in_base, "x500_gimbal_0/base_link", tf2::durationFromSec(0.1));
-    //     }
-    //     catch (tf2::TransformException &ex) {
-    //         RCLCPP_WARN(get_logger(), "TF transform failed: %s", ex.what());
-    //         return;
-    //     }
-
-    //     geometry_msgs::msg::Point marker_pos_ned;
-    //     marker_pos_ned.x = current_pose_ned_.position.x + marker_in_base.pose.position.x;
-    //     marker_pos_ned.y = current_pose_ned_.position.y + marker_in_base.pose.position.y;
-    //     marker_pos_ned.z = current_pose_ned_.position.z + marker_in_base.pose.position.z;
-
-    //     geometry_msgs::msg::Point marker_pos_world;
-    //     marker_pos_world.x = marker_pos_ned.y + DRONE_START_X;
-    //     marker_pos_world.y = marker_pos_ned.x + DRONE_START_Y;
-    //     marker_pos_world.z = -marker_pos_ned.z + DRONE_START_Z;
-
-
-    //     precise_markers_world_.push_back(marker_pos_world);
-    //     save_precise_locations("/home/jmj/pro_asp_ws/ws_px4_controls/precise_marker_locations.csv");
-        
-    //     RCLCPP_INFO(get_logger(), "Marker found! CSV saved. Proceeding to next waypoint.");
-
-    //     if (current_wp_idx_ == waypoints_ned_.size() - 1) {
-    //         // 마지막 웨이포인트인 경우
-    //         RCLCPP_INFO(get_logger(), "Final marker found! Initiating precision landing on marker.");
-    //         landing_spot_ned_ = marker_pos_ned; // 착륙 지점을 '마커 위치'로 설정
-    //         state_ = MissionState::PRECISION_LANDING;   // 정밀 착륙 상태로 전환
-    //     } else {
-    //         // 마지막이 아닌 다른 ArUco 웨이포인트인 경우
-    //         RCLCPP_INFO(get_logger(), "Marker found! Proceeding to next waypoint.");
-    //         ++current_wp_idx_; // 다음 웨이포인트로 인덱스 증가
-    //         state_ = MissionState::MOVING_TO_WAYPOINT; // 다시 웨이포인트 이동 상태로 전환
-    //     }
-    // }
-
+    
     void send_setpoint_as_enu(double north, double east, double down)
     {
         geometry_msgs::msg::PoseStamped sp;

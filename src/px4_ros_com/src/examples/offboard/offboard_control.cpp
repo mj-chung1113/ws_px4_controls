@@ -41,9 +41,9 @@ public:
                     static_cast<float>(-msg->pose.position.z)            // D  ← ‑z_ENU
                 };
 
-                /* yaw conversion: ψ_NED = 90° − ψ_ENU */
-                // double yaw_enu = tf2::getYaw( msg->pose.orientation );
-                // setpoint_.yaw  = static_cast<float>( M_PI_2 - yaw_enu );
+                //yaw conversion: ψ_NED = 90° − ψ_ENU */
+                double yaw_enu = tf2::getYaw( msg->pose.orientation );
+                setpoint_.yaw  = static_cast<float>( M_PI_2 - yaw_enu );
 
                 // mark_position_mode();
             });
