@@ -185,6 +185,14 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /usr/include/c++/11/bits/erase_if.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -221,7 +229,6 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
@@ -238,13 +245,9 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /usr/include/c++/11/bits/std_function.h \
  /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/bits/unordered_map.h \
  /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
@@ -335,8 +338,7 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/rcl/rcl/publisher.h \
  /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/context.hpp \
- /usr/include/c++/11/typeindex /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h \
+ /usr/include/c++/11/typeindex \
  /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
@@ -640,12 +642,51 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
- /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_odometry.hpp \
- /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__struct.hpp \
- /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__builder.hpp \
- /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__traits.hpp \
- /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_local_position.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__struct.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__builder.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__traits.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.hpp \
  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_command.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/trajectory_setpoint.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp \
+ /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
@@ -657,6 +698,9 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
@@ -669,17 +713,8 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
@@ -737,9 +772,7 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/time.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
  /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
@@ -752,21 +785,13 @@ CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o: \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
- /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/marker_pose_id.hpp \
  /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__struct.hpp \
  /home/jmj/pro_asp_ws/ws_aruco/install/aruco_interfaces/include/aruco_interfaces/aruco_interfaces/msg/detail/marker_pose_id__builder.hpp \

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/static_broadcaster.dir/src/static_broadcaster.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/offboard_control_node.cpp: No such file or directory
+[ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+compilation terminated.
+gmake[2]: *** [CMakeFiles/offboard_control_node.dir/build.make:76: CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/offboard_control_node.dir/all] Error 2
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/static_broadcaster.cpp: No such file or directory
+gmake[1]: *** Waiting for unfinished jobs....
+compilation terminated.
+gmake[2]: *** [CMakeFiles/static_broadcaster.dir/build.make:76: CMakeFiles/static_broadcaster.dir/src/static_broadcaster.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/static_broadcaster.dir/all] Error 2
+[ 66%] [32m[1mLinking CXX executable uav_controller[0m
+[ 66%] Built target uav_controller
+gmake: *** [Makefile:146: all] Error 2

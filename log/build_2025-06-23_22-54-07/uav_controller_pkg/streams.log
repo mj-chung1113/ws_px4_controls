@@ -1,0 +1,56 @@
+[0.015s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg': CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[5.969s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:104:30:[m[K [01;31m[Kerror: [m[K‘[01m[KStaticTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’; did you mean ‘[01m[KTransformBroadcaster[m[K’?
+[5.969s]   104 |     std::shared_ptr<tf2_ros::[01;31m[KStaticTransformBroadcaster[m[K> static_broadcaster_; // Declared as a member
+[5.969s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.970s]       |                              [32m[KTransformBroadcaster[m[K
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:104:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.970s]   104 |     std::shared_ptr<tf2_ros::StaticTransformBroadcaster[01;31m[K>[m[K static_broadcaster_; // Declared as a member
+[5.970s]       |                                                        [01;31m[K^[m[K
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In constructor ‘[01m[KUavController::UavController()[m[K’:
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:73:57:[m[K [01;31m[Kerror: [m[K‘[01m[KStaticTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’; did you mean ‘[01m[KTransformBroadcaster[m[K’?
+[5.970s]    73 |         static_broadcaster_ = std::make_shared<tf2_ros::[01;31m[KStaticTransformBroadcaster[m[K>(this); // This should be StaticTransformBroadcaster if it's a fixed frame
+[5.970s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.970s]       |                                                         [32m[KTransformBroadcaster[m[K
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:73:84:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(UavController*)[m[K’
+[5.970s]    73 |         static_broadcaster_ = [01;31m[Kstd::make_shared<tf2_ros::StaticTransformBroadcaster>(this)[m[K; // This should be StaticTransformBroadcaster if it's a fixed frame
+[5.970s]       |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[5.970s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.970s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.970s]                  from [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:10[m[K:
+[5.970s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[5.970s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[5.970s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[5.970s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:73:84:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.970s]    73 |         static_broadcaster_ = [01;31m[Kstd::make_shared<tf2_ros::StaticTransformBroadcaster>(this)[m[K; // This should be StaticTransformBroadcaster if it's a fixed frame
+[5.970s]       |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::odometry_cb(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.970s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:137:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.970s]   137 |     void odometry_cb([01;35m[Kconst px4_msgs::msg::VehicleLocalPosition::SharedPtr msg[m[K)
+[5.971s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.971s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::set_local_static()[m[K’:
+[5.971s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:226:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[5.971s]   226 |         static_broadcaster_[01;31m[K->[m[KsendTransform(t); // Use the member broadcaster
+[5.971s]       |                            [01;31m[K^~[m[K
+[5.971s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.971s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.971s]                  from [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:10[m[K:
+[5.971s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::send_setpoint_enu_to_ned(const Pose&)[m[K’:
+[5.972s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:572:30:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+[5.972s]   572 |                         tf2::[01;31m[KgetYaw[m[K(transformed_pose_stamped.pose.orientation)); // Corrected getYaw usage
+[5.972s]       |                              [01;31m[K^~~~~~[m[K
+[5.972s] gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+[5.972s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+[5.972s] gmake: *** [Makefile:146: all] Error 2
+[5.974s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg' returned '2': CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20

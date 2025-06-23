@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::odometry_cb(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:137:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  137 |     void odometry_cb([01;35m[Kconst px4_msgs::msg::VehicleLocalPosition::SharedPtr msg[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:10[m[K:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::send_setpoint_enu_to_ned(const Pose&)[m[K’:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:572:30:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+  572 |                         tf2::[01;31m[KgetYaw[m[K(transformed_pose_stamped.pose.orientation)); // Corrected getYaw usage
+      |                              [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

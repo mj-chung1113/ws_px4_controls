@@ -26,7 +26,9 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(tf2)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(tf2_ros)
 
 #################
 # Setup targets #
@@ -60,7 +62,7 @@ install(TARGETS debug_vect_advertiser DESTINATION lib/${PROJECT_NAME})
 
 # examples/offboard/offboard_control
 add_executable(offboard_control src/examples/offboard/offboard_control.cpp)
-ament_target_dependencies(offboard_control rclcpp px4_msgs geometry_msgs tf2 tf2_geometry_msgs)
+ament_target_dependencies(offboard_control rclcpp px4_msgs geometry_msgs tf2 tf2_geometry_msgs tf2_ros)
 install(TARGETS offboard_control DESTINATION lib/${PROJECT_NAME})
 
 # examples/offboard/offboard_control_srv

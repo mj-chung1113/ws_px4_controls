@@ -43,7 +43,7 @@ void MultiTrackerNode::loadParameters()
     declare_parameter<std::string>("vehicle_type", "x500");
     declare_parameter<int>("aruco_id", 0);
 	declare_parameter<int>("dictionary", 0); // DICT_4X4_50
-	declare_parameter<double>("marker_size", 2.0);
+	declare_parameter<double>("marker_size", 1.0);
 
     get_parameter("vehicle_type", _vehicle_type);
     get_parameter("aruco_id", _param_aruco_id);

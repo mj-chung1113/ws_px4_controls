@@ -1,0 +1,7 @@
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/static_broadcaster.cpp:[m[K In constructor ‘[01m[KPoseToTfBroadcaster::PoseToTfBroadcaster()[m[K’:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/static_broadcaster.cpp:20:45:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_position_callback[m[K’ is not a member of ‘[01m[KPoseToTfBroadcaster[m[K’
+   20 |             std::bind(&PoseToTfBroadcaster::[01;31m[Klocal_position_callback[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/static_broadcaster.dir/build.make:76: CMakeFiles/static_broadcaster.dir/src/static_broadcaster.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/static_broadcaster.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000132] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.000242] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000255] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000265] (-) JobUnselected: {'identifier': 'multi_tracker'}
+[0.000274] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000283] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000291] (-) JobUnselected: {'identifier': 'uav_controller_pkg'}
+[0.000300] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.000309] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000319] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs')])}
+[0.000478] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.008506] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.009074] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.009601] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com', '--', '-j20', '-l20'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '904'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1960'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d611be7c23046b53110c315d6857d77c'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '74618'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:15760'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin:/home/jmj/.local/bin:/home/jmj/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1960,unix/jmj:/tmp/.ICE-unix/1960'), ('INVOCATION_ID', '2789d27a5caf432ba29b43f956f92490'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad40b38978.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d611be7c23046b53110c315d6857d77c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.046602] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control\x1b[0m\n'}
+[0.054618] (px4_ros_com) StdoutLine: {'line': b'[ 25%] Built target sensor_combined_listener\n'}
+[0.054951] (px4_ros_com) StdoutLine: {'line': b'[ 31%] Built target vehicle_gps_position_listener\n'}
+[0.055053] (px4_ros_com) StdoutLine: {'line': b'[ 37%] Built target cli_pose_command\n'}
+[0.055209] (px4_ros_com) StdoutLine: {'line': b'[ 50%] Built target offboard_control_key\n'}
+[0.055943] (px4_ros_com) StdoutLine: {'line': b'[ 62%] Built target debug_vect_advertiser\n'}
+[0.056179] (px4_ros_com) StdoutLine: {'line': b'[ 81%] Built target offboard_control_srv\n'}
+[0.056246] (px4_ros_com) StdoutLine: {'line': b'[ 87%] Built target frame_transforms\n'}
+[0.059540] (px4_ros_com) StdoutLine: {'line': b'[ 87%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[0.060711] (px4_ros_com) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o\x1b[0m\n'}
+[0.099847] (-) TimerEvent: {}
+[0.200078] (-) TimerEvent: {}
+[0.229822] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[0.230281] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[0.230381] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[0.230461] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[0.232400] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[0.232818] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[0.253337] (px4_ros_com) StdoutLine: {'line': b'[ 93%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[0.300186] (-) TimerEvent: {}
+[0.400496] (-) TimerEvent: {}
+[0.500845] (-) TimerEvent: {}
+[0.601159] (-) TimerEvent: {}
+[0.701502] (-) TimerEvent: {}
+[0.801771] (-) TimerEvent: {}
+[0.902104] (-) TimerEvent: {}
+[1.002459] (-) TimerEvent: {}
+[1.102771] (-) TimerEvent: {}
+[1.203068] (-) TimerEvent: {}
+[1.303394] (-) TimerEvent: {}
+[1.403731] (-) TimerEvent: {}
+[1.504058] (-) TimerEvent: {}
+[1.604399] (-) TimerEvent: {}
+[1.704778] (-) TimerEvent: {}
+[1.805240] (-) TimerEvent: {}
+[1.905642] (-) TimerEvent: {}
+[2.006018] (-) TimerEvent: {}
+[2.106371] (-) TimerEvent: {}
+[2.206781] (-) TimerEvent: {}
+[2.307147] (-) TimerEvent: {}
+[2.407406] (-) TimerEvent: {}
+[2.507663] (-) TimerEvent: {}
+[2.607964] (-) TimerEvent: {}
+[2.708224] (-) TimerEvent: {}
+[2.808525] (-) TimerEvent: {}
+[2.908987] (-) TimerEvent: {}
+[3.009488] (-) TimerEvent: {}
+[3.109908] (-) TimerEvent: {}
+[3.210295] (-) TimerEvent: {}
+[3.310752] (-) TimerEvent: {}
+[3.411089] (-) TimerEvent: {}
+[3.511403] (-) TimerEvent: {}
+[3.611745] (-) TimerEvent: {}
+[3.712121] (-) TimerEvent: {}
+[3.812695] (-) TimerEvent: {}
+[3.913069] (-) TimerEvent: {}
+[4.013324] (-) TimerEvent: {}
+[4.113567] (-) TimerEvent: {}
+[4.213836] (-) TimerEvent: {}
+[4.314092] (-) TimerEvent: {}
+[4.414359] (-) TimerEvent: {}
+[4.514675] (-) TimerEvent: {}
+[4.614956] (-) TimerEvent: {}
+[4.715246] (-) TimerEvent: {}
+[4.815484] (-) TimerEvent: {}
+[4.915822] (-) TimerEvent: {}
+[5.016136] (-) TimerEvent: {}
+[5.116404] (-) TimerEvent: {}
+[5.216686] (-) TimerEvent: {}
+[5.316946] (-) TimerEvent: {}
+[5.417211] (-) TimerEvent: {}
+[5.517482] (-) TimerEvent: {}
+[5.617746] (-) TimerEvent: {}
+[5.717968] (-) TimerEvent: {}
+[5.818220] (-) TimerEvent: {}
+[5.918481] (-) TimerEvent: {}
+[6.018741] (-) TimerEvent: {}
+[6.118991] (-) TimerEvent: {}
+[6.219248] (-) TimerEvent: {}
+[6.319519] (-) TimerEvent: {}
+[6.419756] (-) TimerEvent: {}
+[6.519987] (-) TimerEvent: {}
+[6.620204] (-) TimerEvent: {}
+[6.720425] (-) TimerEvent: {}
+[6.820648] (-) TimerEvent: {}
+[6.920897] (-) TimerEvent: {}
+[7.021179] (-) TimerEvent: {}
+[7.121493] (-) TimerEvent: {}
+[7.221753] (-) TimerEvent: {}
+[7.322055] (-) TimerEvent: {}
+[7.422452] (-) TimerEvent: {}
+[7.522794] (-) TimerEvent: {}
+[7.623089] (-) TimerEvent: {}
+[7.723333] (-) TimerEvent: {}
+[7.823609] (-) TimerEvent: {}
+[7.923882] (-) TimerEvent: {}
+[8.024152] (-) TimerEvent: {}
+[8.124376] (-) TimerEvent: {}
+[8.224598] (-) TimerEvent: {}
+[8.324827] (-) TimerEvent: {}
+[8.425079] (-) TimerEvent: {}
+[8.525301] (-) TimerEvent: {}
+[8.625553] (-) TimerEvent: {}
+[8.725760] (-) TimerEvent: {}
+[8.826028] (-) TimerEvent: {}
+[8.926283] (-) TimerEvent: {}
+[9.026524] (-) TimerEvent: {}
+[9.126764] (-) TimerEvent: {}
+[9.226981] (-) TimerEvent: {}
+[9.327206] (-) TimerEvent: {}
+[9.427480] (-) TimerEvent: {}
+[9.527717] (-) TimerEvent: {}
+[9.628066] (-) TimerEvent: {}
+[9.728370] (-) TimerEvent: {}
+[9.828729] (-) TimerEvent: {}
+[9.929042] (-) TimerEvent: {}
+[10.029328] (-) TimerEvent: {}
+[10.129666] (-) TimerEvent: {}
+[10.229974] (-) TimerEvent: {}
+[10.330270] (-) TimerEvent: {}
+[10.430604] (-) TimerEvent: {}
+[10.530920] (-) TimerEvent: {}
+[10.631275] (-) TimerEvent: {}
+[10.731598] (-) TimerEvent: {}
+[10.831908] (-) TimerEvent: {}
+[10.932208] (-) TimerEvent: {}
+[11.032501] (-) TimerEvent: {}
+[11.132777] (-) TimerEvent: {}
+[11.233121] (-) TimerEvent: {}
+[11.333514] (-) TimerEvent: {}
+[11.433864] (-) TimerEvent: {}
+[11.534114] (-) TimerEvent: {}
+[11.625383] (px4_ros_com) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable offboard_control\x1b[0m\n'}
+[11.634192] (-) TimerEvent: {}
+[11.734432] (-) TimerEvent: {}
+[11.834691] (-) TimerEvent: {}
+[11.935003] (-) TimerEvent: {}
+[12.035289] (-) TimerEvent: {}
+[12.135522] (-) TimerEvent: {}
+[12.235787] (-) TimerEvent: {}
+[12.289112] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target offboard_control\n'}
+[12.297566] (px4_ros_com) CommandEnded: {'returncode': 0}
+[12.298056] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'install'}
+[12.303926] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '904'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1960'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d611be7c23046b53110c315d6857d77c'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '74618'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:15760'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin:/home/jmj/.local/bin:/home/jmj/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1960,unix/jmj:/tmp/.ICE-unix/1960'), ('INVOCATION_ID', '2789d27a5caf432ba29b43f956f92490'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad40b38978.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d611be7c23046b53110c315d6857d77c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble')]), 'shell': False}
+[12.310958] (px4_ros_com) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.311098] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener\n'}
+[12.311336] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener\n'}
+[12.311542] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser\n'}
+[12.311762] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control\n'}
+[12.320300] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""\n'}
+[12.320548] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv\n'}
+[12.320605] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control_key\n'}
+[12.320662] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/cli_pose_command\n'}
+[12.320814] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh\n'}
+[12.320883] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv\n'}
+[12.320969] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/include/px4_ros_com\n'}
+[12.321115] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/include/px4_ros_com/frame_transforms.h\n'}
+[12.321182] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/libframe_transforms.so\n'}
+[12.321297] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch\n'}
+[12.321538] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py\n'}
+[12.321594] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml\n'}
+[12.321623] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test\n'}
+[12.321652] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/test_input.py\n'}
+[12.321681] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/__init__.py\n'}
+[12.321724] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/test_output.py\n'}
+[12.321751] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py\n'}
+[12.321794] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh\n'}
+[12.321826] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv\n'}
+[12.321859] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info\n'}
+[12.321889] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.321920] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[12.321952] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[12.321988] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.322016] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com\n'}
+[12.322041] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py\n'}
+[12.322063] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py\n'}
+[12.335859] (-) TimerEvent: {}
+[12.343264] (px4_ros_com) StdoutLine: {'line': b"Listing '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...\n"}
+[12.345985] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control.py\n'}
+[12.346126] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com\n'}
+[12.346164] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com\n'}
+[12.346194] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh\n'}
+[12.346221] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv\n'}
+[12.346246] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/path.sh\n'}
+[12.346272] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/path.dsv\n'}
+[12.346313] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.bash\n'}
+[12.346376] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.sh\n'}
+[12.346403] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.zsh\n'}
+[12.346428] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.dsv\n'}
+[12.346453] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.dsv\n'}
+[12.346477] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com\n'}
+[12.346514] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake\n'}
+[12.346540] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake\n'}
+[12.346565] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.346614] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.346640] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.346663] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.346686] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake\n'}
+[12.346712] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake\n'}
+[12.346736] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.xml\n'}
+[12.347934] (px4_ros_com) CommandEnded: {'returncode': 0}
+[12.361104] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 0}
+[12.361510] (-) EventReactorShutdown: {}

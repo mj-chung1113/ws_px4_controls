@@ -1,0 +1,69 @@
+[0.012s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller:/home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ugv_ws/install/drone_takeoff_pub:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target static_broadcaster[0m
+[0.098s] [ 16%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[0.100s] [ 33%] [32mBuilding CXX object CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.o[0m
+[0.106s] [ 50%] [32mBuilding CXX object CMakeFiles/static_broadcaster.dir/src/static_broadcaster.cpp.o[0m
+[0.110s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/offboard_control_node.cpp: No such file or directory
+[0.110s] compilation terminated.
+[0.111s] gmake[2]: *** [CMakeFiles/offboard_control_node.dir/build.make:76: CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.o] Error 1
+[0.111s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/offboard_control_node.dir/all] Error 2
+[0.111s] gmake[1]: *** Waiting for unfinished jobs....
+[0.118s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/static_broadcaster.cpp: No such file or directory
+[0.118s] compilation terminated.
+[0.118s] gmake[2]: *** [CMakeFiles/static_broadcaster.dir/build.make:76: CMakeFiles/static_broadcaster.dir/src/static_broadcaster.cpp.o] Error 1
+[0.118s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/static_broadcaster.dir/all] Error 2
+[3.684s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::main_loop()[m[K’:
+[3.684s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:178:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(int, int, double)[m[K’
+[3.684s]   178 |             [01;31m[Ksend_setpoint_as_enu(0, 0, TAKEOFFALTITUDE)[m[K;
+[3.684s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.684s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.684s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:206:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(const _x_type&, const _y_type&, const _z_type&)[m[K’
+[3.685s]   206 |                     [01;31m[Ksend_setpoint_as_enu(wp.x, wp.y, wp.z)[m[K;
+[3.685s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.685s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:226:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(const _x_type&, const _y_type&, const _z_type&)[m[K’
+[3.685s]   226 |                     [01;31m[Ksend_setpoint_as_enu(wp.x, wp.y, wp.z)[m[K;
+[3.685s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.685s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:242:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(const _x_type&, const _y_type&, const _z_type&)[m[K’
+[3.685s]   242 |                     [01;31m[Ksend_setpoint_as_enu(wp.x, wp.y, wp.z)[m[K;
+[3.685s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.685s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:254:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(geometry_msgs::msg::Point_<std::allocator<void> >::_x_type&, geometry_msgs::msg::Point_<std::allocator<void> >::_y_type&, double)[m[K’
+[3.685s]   254 |             [01;31m[Ksend_setpoint_as_enu(landing_spot_enu_.x, landing_spot_enu_.y, 1.0)[m[K; // Land mode
+[3.685s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.685s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:267:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(const _x_type&, const _y_type&, geometry_msgs::msg::Point_<std::allocator<void> >::_z_type)[m[K’
+[3.685s]   267 |                 [01;31m[Ksend_setpoint_as_enu(last_wp.x, last_wp.y, last_wp.z - 5.0)[m[K;
+[3.685s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+[3.685s]   336 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double t, double z, const geometry_msgs::msg::Quaternion& q)
+[3.685s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’:
+[3.685s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:343:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[3.686s]   343 |         sp.pose.position.y = [01;31m[Ky[m[K;
+[3.686s]       |                              [01;31m[K^[m[K
+[3.686s]       |                              [32m[Kyn[m[K
+[3.686s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:336:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.686s]   336 |     void send_setpoint_as_enu(double x, [01;35m[Kdouble t[m[K, double z, const geometry_msgs::msg::Quaternion& q)
+[3.686s]       |                                         [01;35m[K~~~~~~~^[m[K
+[3.686s] gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+[3.686s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/uav_controller.dir/all] Error 2
+[3.686s] gmake: *** [Makefile:146: all] Error 2
+[3.687s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg' returned '2': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller:/home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ugv_ws/install/drone_takeoff_pub:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20

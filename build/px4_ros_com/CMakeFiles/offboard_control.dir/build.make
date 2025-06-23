@@ -98,6 +98,7 @@ offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libp
 offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
 offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
 offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so
+offboard_control: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
 offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
 offboard_control: /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 offboard_control: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so

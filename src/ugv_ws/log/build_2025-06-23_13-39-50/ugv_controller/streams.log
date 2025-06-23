@@ -1,0 +1,95 @@
+[0.011s] Invoking command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller -- -j20 -l20
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
+[0.064s] [ 33%] Built target manual_path_logger_node
+[0.067s] [ 66%] Built target path_follower_node
+[0.071s] [ 83%] [32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o[0m
+[4.697s] [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::control_loop()[m[K’:
+[4.697s] [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:161:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[4.697s]   161 |       [01;31m[Kmsg[m[K.data = true;
+[4.698s]       |       [01;31m[K^~~[m[K
+[4.698s] [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:161:7:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.698s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.699s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:1[m[K:
+[4.699s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[4.699s]    27 | namespace [01;36m[Kmsg[m[K
+[4.699s]       |           [01;36m[K^~~[m[K
+[4.699s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.700s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:1[m[K:
+[4.700s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[4.700s]    27 | namespace [01;36m[Kmsg[m[K
+[4.700s]       |           [01;36m[K^~~[m[K
+[4.700s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.701s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:1[m[K:
+[4.701s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[4.701s]    27 | namespace [01;36m[Kmsg[m[K
+[4.701s]       |           [01;36m[K^~~[m[K
+[4.701s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:21[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[4.701s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:2[m[K:
+[4.701s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[4.701s]    27 | namespace [01;36m[Kmsg[m[K
+[4.701s]       |           [01;36m[K^~~[m[K
+[4.701s] In file included from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:20[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp:7[m[K,
+[4.701s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:4[m[K:
+[4.701s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[4.701s]    31 | namespace [01;36m[Kmsg[m[K
+[4.701s]       |           [01;36m[K^~~[m[K
+[4.701s] In file included from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:33[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp:7[m[K,
+[4.701s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:4[m[K:
+[4.701s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[4.701s]    31 | namespace [01;36m[Kmsg[m[K
+[4.701s]       |           [01;36m[K^~~[m[K
+[4.701s] In file included from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:35[m[K,
+[4.701s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp:7[m[K,
+[4.701s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:4[m[K:
+[4.702s] [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kvisualization_msgs::msg[m[K’
+[4.702s]    27 | namespace [01;36m[Kmsg[m[K
+[4.702s]       |           [01;36m[K^~~[m[K
+[4.702s] In file included from [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7[m[K,
+[4.702s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:44[m[K,
+[4.702s]                  from [01m[K/home/jmj/pro_asp_ws/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:6[m[K:
+[4.702s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+[4.702s]    31 | namespace [01;36m[Kmsg[m[K
+[4.702s]       |           [01;36m[K^~~[m[K
+[4.702s] gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+[4.702s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+[4.702s] gmake: *** [Makefile:146: all] Error 2
+[4.702s] Invoked command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller -- -j20 -l20

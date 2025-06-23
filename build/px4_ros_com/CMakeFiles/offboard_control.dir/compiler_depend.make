@@ -262,6 +262,11 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
   /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__builder.hpp \
   /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__traits.hpp \
   /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp \
+  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp \
+  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
+  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
+  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
+  /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -278,82 +283,34 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/tf2/tf2/utils.h \
-  /opt/ros/humble/include/tf2/tf2/utils.hpp \
-  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
-  /usr/include/c++/11/math.h \
-  /usr/include/c++/11/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/11/bits/specfun.h \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/tr1/gamma.tcc \
-  /usr/include/c++/11/tr1/special_function_util.h \
-  /usr/include/c++/11/tr1/bessel_function.tcc \
-  /usr/include/c++/11/tr1/beta_function.tcc \
-  /usr/include/c++/11/tr1/ell_integral.tcc \
-  /usr/include/c++/11/tr1/exp_integral.tcc \
-  /usr/include/c++/11/tr1/hypergeometric.tcc \
-  /usr/include/c++/11/tr1/legendre_function.tcc \
-  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/11/tr1/poly_hermite.tcc \
-  /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/cfloat \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/assert.h \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
-  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
-  /opt/ros/humble/include/tf2/tf2/impl/utils.hpp \
-  /opt/ros/humble/include/tf2/tf2/convert.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
-  /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
-  /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
-  /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /opt/ros/humble/include/tf2/tf2/time.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
@@ -392,10 +349,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
@@ -412,7 +367,54 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
   /usr/include/kdl/utilities/utility.h \
   /usr/include/kdl/utilities/kdl-config.h \
   /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/kdl/frames.inl \
+  /opt/ros/humble/include/tf2/tf2/convert.hpp \
+  /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
+  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+  /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
+  /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /opt/ros/humble/include/tf2/tf2/time.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
   /usr/include/c++/11/future \
@@ -820,8 +822,48 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
-  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/tf2/tf2/utils.h \
+  /opt/ros/humble/include/tf2/tf2/utils.hpp \
+  /opt/ros/humble/include/tf2/tf2/impl/utils.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.hpp
 
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp:
+
+/opt/ros/humble/include/tf2/tf2/impl/utils.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
@@ -880,6 +922,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
@@ -976,8 +1020,6 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
@@ -1095,6 +1137,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
@@ -1157,6 +1201,10 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
+/opt/ros/humble/include/tf2/tf2/utils.h:
+
+/usr/include/c++/11/unordered_set:
+
 /usr/include/c++/11/typeindex:
 
 /opt/ros/humble/include/rclcpp/rclcpp/context.hpp:
@@ -1178,6 +1226,10 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
 /opt/ros/humble/include/rmw/rmw/event.h:
+
+/opt/ros/humble/include/rcl/rcl/timer.h:
+
+/opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
 /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.hpp:
 
@@ -1209,8 +1261,6 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
-/opt/ros/humble/include/rcl/rcl/timer.h:
-
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/bits/enable_special_members.h:
@@ -1220,6 +1270,10 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
@@ -1248,8 +1302,6 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
-
-/opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
 /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp:
 
@@ -1449,8 +1501,6 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /usr/include/c++/11/debug/assertions.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp:
-
 /opt/ros/humble/include/rmw/rmw/init.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp:
@@ -1510,6 +1560,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/array:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -1897,11 +1949,19 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp:
+
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
@@ -1931,11 +1991,13 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
@@ -1963,87 +2025,37 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/usr/include/c++/11/unordered_set:
+/usr/include/c++/11/initializer_list:
 
-/opt/ros/humble/include/tf2/tf2/utils.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
+/opt/ros/humble/include/tf2/tf2/utils.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+/usr/include/unistd.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/11/math.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/11/bits/stl_list.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/c++/11/tr1/ell_integral.tcc:
-
-/opt/ros/humble/include/rcl/rcl/error_handling.h:
-
-/usr/include/c++/11/tr1/exp_integral.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/11/iostream:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
-
-/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
-
-/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
-
-/opt/ros/humble/include/tf2/tf2/impl/utils.hpp:
-
-/opt/ros/humble/include/tf2/tf2/convert.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
 
@@ -2057,71 +2069,19 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
-
-/usr/include/c++/11/initializer_list:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
-/usr/include/c++/11/ratio:
-
-/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
-
-/usr/include/c++/11/thread:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/opt/ros/humble/include/tf2/tf2/time.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/usr/include/unistd.h:
-
-/opt/ros/humble/include/tf2/tf2/utils.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/opt/ros/humble/include/tf2/tf2/exceptions.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
-
 /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
-
-/usr/include/c++/11/stdlib.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
 
@@ -2139,11 +2099,7 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/c++/11/iosfwd:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
+/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
 
@@ -2153,6 +2109,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
@@ -2161,6 +2119,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp:
+
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
@@ -2168,6 +2128,12 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
+
+/usr/include/c++/11/iosfwd:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/security_options.h:
 
@@ -2192,12 +2158,6 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
-
-/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
 
 /usr/include/stdio.h:
 
@@ -2237,7 +2197,105 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 
 /usr/include/c++/11/cassert:
 
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
+
+/opt/ros/humble/include/rcl/rcl/error_handling.h:
+
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/opt/ros/humble/include/rclcpp/rclcpp/typesupport_helpers.hpp:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
+
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
+
 /usr/include/kdl/frames.inl:
+
+/opt/ros/humble/include/tf2/tf2/convert.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/opt/ros/humble/include/tf2/tf2/exceptions.hpp:
+
+/usr/include/c++/11/ratio:
+
+/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/opt/ros/humble/include/tf2/tf2/time.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
+
+/usr/include/c++/11/math.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
+
+/usr/include/c++/11/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
 
 /usr/include/c++/11/atomic:
 
@@ -2328,6 +2386,8 @@ CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o: /h
 /usr/include/c++/11/map:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
+
+/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_control_mode.hpp:
 
 /usr/include/c++/11/bits/stl_map.h:
 

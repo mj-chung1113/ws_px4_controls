@@ -1,0 +1,37 @@
+[0.009s] Invoking command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller -- -j20 -l20
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target path_follower_node[0m
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target manual_path_logger_node[0m
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
+[0.060s] [ 16%] [32mBuilding CXX object CMakeFiles/path_follower_node.dir/src/path_follower_node.cpp.o[0m
+[0.060s] [ 50%] Built target manual_path_logger_node
+[0.069s] [ 83%] Built target mission_follower_node
+[6.003s] [100%] [32m[1mLinking CXX executable path_follower_node[0m
+[6.310s] [100%] Built target path_follower_node
+[6.317s] Invoked command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller -- -j20 -l20
+[6.318s] Invoking command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller
+[6.322s] -- Install configuration: ""
+[6.322s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/path_follower_node
+[6.325s] -- Set runtime path of "/home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/path_follower_node" to ""
+[6.325s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/manual_path_logger_node
+[6.325s] -- Set runtime path of "/home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/manual_path_logger_node" to ""
+[6.325s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/mission_follower_node
+[6.327s] -- Set runtime path of "/home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/lib/ugv_controller/mission_follower_node" to ""
+[6.327s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/launch
+[6.327s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/launch/path_follower.launch.py
+[6.327s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/mission.csv
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ament_index/resource_index/package_run_dependencies/ugv_controller
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ament_index/resource_index/parent_prefix_path/ugv_controller
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/environment/ament_prefix_path.sh
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/environment/ament_prefix_path.dsv
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/environment/path.sh
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/environment/path.dsv
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/local_setup.bash
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/local_setup.sh
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/local_setup.zsh
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/local_setup.dsv
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/package.dsv
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ament_index/resource_index/packages/ugv_controller
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/cmake/ugv_controllerConfig.cmake
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/cmake/ugv_controllerConfig-version.cmake
+[6.328s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/ugv_controller/share/ugv_controller/package.xml
+[6.329s] Invoked command in '/home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ugv_ws/build/ugv_controller

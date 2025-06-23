@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::main_loop()[m[K’:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:210:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::send_setpoint_as_enu(__gnu_cxx::__alloc_traits<std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > >, geometry_msgs::msg::Point_<std::allocator<void> > >::value_type&)[m[K’
+  210 |                 [01;31m[Ksend_setpoint_as_enu(waypoints_enu_[current_wp_idx_])[m[K; // ENU 좌표계에서 이륙 명령
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:380:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double, const Quaternion&)[m[K’
+  380 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double y, double z, const geometry_msgs::msg::Quaternion& q)
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:380:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:393:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid UavController::send_setpoint_as_enu(double, double, double)[m[K’
+  393 |     void [01;36m[Ksend_setpoint_as_enu[m[K(double x, double y, double z)
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:393:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

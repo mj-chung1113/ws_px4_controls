@@ -1,0 +1,7 @@
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:21:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/tf2/static_transform_broadcaster.h: No such file or directory
+   21 | #include [01;31m[K<tf2_ros/tf2/static_transform_broadcaster.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

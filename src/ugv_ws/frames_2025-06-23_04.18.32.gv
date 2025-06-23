@@ -1,0 +1,28 @@
+digraph G {
+"X1_asp" -> "X1_asp/rear_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"map" -> "X1_asp"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"x500_gimbal_0/camera_link" -> "x500_gimbal_0/camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/camera_link"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"X1_asp" -> "X1_asp/front_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"X1_asp/base_link" -> "X1_asp/base_link/camera_front"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"X1_asp" -> "X1_asp/base_link"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"X1_asp" -> "X1_asp/front_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"X1_asp/base_link" -> "X1_asp/base_link/gpu_lidar"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"X1_asp" -> "X1_asp/rear_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"map" -> "x500_gimbal_0"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/cgo3_vertical_arm_link"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/cgo3_mount_link"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/rotor_3"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/rotor_1"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/rotor_0"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/rotor_2"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/cgo3_horizontal_arm_link"[label=" Broadcaster: default_authority\nAverage rate: 250.201\nBuffer length: 4.968\nMost recent transform: 3024.736\nOldest transform: 3019.768\n"];
+"X1_asp" -> "X1_asp/aruco_marker_6_link"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"map" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"map" -> "X1_asp/odom"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+"x500_gimbal_0" -> "x500_gimbal_0/base_link"[label=" Broadcaster: default_authority\nAverage rate: 27.981\nBuffer length: 4.932\nMost recent transform: 3024.72\nOldest transform: 3019.788\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1750619912.3535786"[ shape=plaintext ] ;
+}->"map";
+}

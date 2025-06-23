@@ -1,0 +1,142 @@
+[0.012s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[4.086s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:90:38:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.087s]    90 |     rclcpp::Publisher<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr takeoff_pub_;
+[4.087s]       |                                      [01;31m[K^~~~[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:90:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.087s]    90 |     rclcpp::Publisher<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr takeoff_pub_;
+[4.087s]       |                                          [01;31m[K^[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:90:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.087s]    90 |     rclcpp::Publisher<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K takeoff_pub_;
+[4.087s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[4.087s]       |                                                      [32m[K;[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:90:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ktakeoff_pub_[m[K’ does not name a type
+[4.087s]    90 |     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr [01;31m[Ktakeoff_pub_[m[K;
+[4.087s]       |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:91:38:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.087s]    91 |     rclcpp::Publisher<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr takeoff_sub_;
+[4.087s]       |                                      [01;31m[K^~~~[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:91:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.087s]    91 |     rclcpp::Publisher<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr takeoff_sub_;
+[4.087s]       |                                          [01;31m[K^[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:91:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.087s]    91 |     rclcpp::Publisher<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K takeoff_sub_;
+[4.087s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[4.087s]       |                                                      [32m[K;[m[K
+[4.087s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:91:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint UavController::SharedPtr[m[K’
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:90:45:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint UavController::SharedPtr[m[K’
+[4.088s]    90 |     rclcpp::Publisher<std_msgs::msg::Bool>::[01;36m[KSharedPtr[m[K takeoff_pub_;
+[4.088s]       |                                             [01;36m[K^~~~~~~~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:91:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ktakeoff_sub_[m[K’ does not name a type
+[4.088s]    91 |     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr [01;31m[Ktakeoff_sub_[m[K;
+[4.088s]       |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:124:42:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[4.088s]   124 |     void takeoff_cb(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg)
+[4.088s]       |                                          [01;31m[K^~~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:124:58:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[4.088s]   124 |     void takeoff_cb(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+[4.088s]       |                                                          [01;31m[K^~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:124:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[4.088s]   124 |     void takeoff_cb[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+[4.088s]       |                    [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+[4.088s]       |                                                         [32m[K)[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:124:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.088s]   124 |     void takeoff_cb(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg)
+[4.088s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[4.088s]       |                                                         [32m[K;[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:124:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[4.088s]   124 |     void takeoff_cb(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+[4.088s]       |                                                          [01;31m[K^~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In constructor ‘[01m[KUavController::UavController()[m[K’:
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktakeoff_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktakeoff_cb[m[K’?
+[4.088s]    50 |         [01;31m[Ktakeoff_pub_[m[K = create_publisher<std_msgs::msg::Bool>("/drone_takeoff", 10);
+[4.088s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[4.088s]       |         [32m[Ktakeoff_cb[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:50:56:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.088s]    50 |         takeoff_pub_ = create_publisher<std_msgs::msg::[01;31m[KBool[m[K>("/drone_takeoff", 10);
+[4.088s]       |                                                        [01;31m[K^~~~[m[K
+[4.088s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:50:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::create_publisher<<expression error> >(const char [15], int)[m[K’
+[4.088s]    50 |         takeoff_pub_ = [01;31m[Kcreate_publisher<std_msgs::msg::Bool>("/drone_takeoff", 10)[m[K;
+[4.088s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.088s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[4.088s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.088s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.089s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.089s]                  from [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:11[m[K:
+[4.089s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[4.089s]    73 | [01;36m[KNode[m[K::create_publisher(
+[4.089s]       | [01;36m[K^~~~[m[K
+[4.089s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.089s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:50:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.089s]    50 |         takeoff_pub_ = [01;31m[Kcreate_publisher<std_msgs::msg::Bool>("/drone_takeoff", 10)[m[K;
+[4.089s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.089s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktakeoff_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktakeoff_sent_[m[K’?
+[4.089s]    55 |         [01;31m[Ktakeoff_sub_[m[K = create_subscription<std_msgs::msg::Bool>(
+[4.089s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[4.089s]       |         [32m[Ktakeoff_sent_[m[K
+[4.089s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:55:59:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.089s]    55 |         takeoff_sub_ = create_subscription<std_msgs::msg::[01;31m[KBool[m[K>(
+[4.089s]       |                                                           [01;31m[K^~~~[m[K
+[4.089s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:55:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUavController::create_subscription<<expression error> >(const char [12], int, std::_Bind_helper<false, void (UavController::*)(...), UavController*, const std::_Placeholder<1>&>::type)[m[K’
+[4.089s]    55 |         takeoff_sub_ = [01;31m[Kcreate_subscription<std_msgs::msg::Bool>([m[K
+[4.089s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.089s]    56 | [01;31m[K            "/do_takeoff", 10, std::bind(&UavController::takeoff_cb, this, std::placeholders::_1))[m[K;
+[4.089s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.089s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.089s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.089s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.089s]                  from [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:11[m[K:
+[4.089s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[4.089s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[4.089s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.089s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.089s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:55:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.089s]    55 |         takeoff_sub_ = [01;31m[Kcreate_subscription<std_msgs::msg::Bool>([m[K
+[4.089s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.090s]    56 | [01;31m[K            "/do_takeoff", 10, std::bind(&UavController::takeoff_cb, this, std::placeholders::_1))[m[K;
+[4.090s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::main_loop()[m[K’:
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:213:36:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.090s]   213 |                     std_msgs::msg::[01;31m[KBool[m[K flag;
+[4.090s]       |                                    [01;31m[K^~~~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:214:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+[4.090s]   214 |                     [01;31m[Kflag[m[K.data = true;
+[4.090s]       |                     [01;31m[K^~~~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:215:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktakeoff_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktakeoff_cb[m[K’?
+[4.090s]   215 |                     [01;31m[Ktakeoff_pub_[m[K->publish(flag);
+[4.090s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[4.090s]       |                     [32m[Ktakeoff_cb[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:266:28:[m[K [01;31m[Kerror: [m[Kjump to case label
+[4.090s]   266 |         case MissionState::[01;31m[KWAIT_BEFORE_SEARCHING[m[K:
+[4.090s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:242:25:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >& wp[m[K’
+[4.090s]   242 |             const auto& [01;36m[Kwp[m[K = waypoints_enu_[current_wp_idx_];
+[4.090s]       |                         [01;36m[K^~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:282:28:[m[K [01;31m[Kerror: [m[Kjump to case label
+[4.090s]   282 |         case MissionState::[01;31m[KSEARCHING_FOR_MARKER[m[K:
+[4.090s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:242:25:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >& wp[m[K’
+[4.090s]   242 |             const auto& [01;36m[Kwp[m[K = waypoints_enu_[current_wp_idx_];
+[4.090s]       |                         [01;36m[K^~[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:298:28:[m[K [01;31m[Kerror: [m[Kjump to case label
+[4.091s]   298 |         case MissionState::[01;31m[KPRECISION_LANDING[m[K:
+[4.091s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:242:25:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >& wp[m[K’
+[4.091s]   242 |             const auto& [01;36m[Kwp[m[K = waypoints_enu_[current_wp_idx_];
+[4.091s]       |                         [01;36m[K^~[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:308:28:[m[K [01;31m[Kerror: [m[Kjump to case label
+[4.091s]   308 |         case MissionState::[01;31m[KMISSION_COMPLETE[m[K:
+[4.091s]       |                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:242:25:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >& wp[m[K’
+[4.091s]   242 |             const auto& [01;36m[Kwp[m[K = waypoints_enu_[current_wp_idx_];
+[4.091s]       |                         [01;36m[K^~[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:204:15:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KWAIT_BEFORE_SEARCHING[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[4.091s]   204 |         switch[01;35m[K([m[Kstate_)
+[4.091s]       |               [01;35m[K^[m[K
+[4.091s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:204:15:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSEARCHING_FOR_MARKER[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[4.092s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:204:15:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KMISSION_COMPLETE[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[4.092s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:204:15:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KPRECISION_LANDING[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[4.092s] gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+[4.092s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+[4.092s] gmake: *** [Makefile:146: all] Error 2
+[4.092s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg' returned '2': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20

@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup -- -j20 -l20
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target pose_tf_broadcaster[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_tf_broadcaster.dir/src/pose_tf_broadcaster.cpp.o[0m
+[5.223s] [100%] [32m[1mLinking CXX executable pose_tf_broadcaster[0m
+[5.512s] [100%] Built target pose_tf_broadcaster
+[5.519s] Invoked command in '/home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup -- -j20 -l20
+[5.520s] Invoking command in '/home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup
+[5.526s] -- Install configuration: ""
+[5.526s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster
+[5.529s] -- Set runtime path of "/home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster" to ""
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/launch
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/launch/pose_tf_broadcaster.launch.py
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/launch/topic_bridge.launch.py
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/ament_index/resource_index/package_run_dependencies/gazebo_env_setup
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/ament_index/resource_index/parent_prefix_path/gazebo_env_setup
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.sh
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.dsv
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.sh
+[5.530s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.dsv
+[5.531s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.bash
+[5.531s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.sh
+[5.531s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.zsh
+[5.531s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.dsv
+[5.532s] -- Installing: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/package.dsv
+[5.532s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/ament_index/resource_index/packages/gazebo_env_setup
+[5.532s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig.cmake
+[5.532s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig-version.cmake
+[5.532s] -- Up-to-date: /home/jmj/pro_asp_ws/ugv_ws/install/gazebo_env_setup/share/gazebo_env_setup/package.xml
+[5.537s] Invoked command in '/home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ugv_ws/build/gazebo_env_setup

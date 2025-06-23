@@ -198,19 +198,6 @@ uav_controller_pkg_uninstall/fast:
 .PHONY : uav_controller_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named offboard_control_node
-
-# Build rule for target.
-offboard_control_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offboard_control_node
-.PHONY : offboard_control_node
-
-# fast build rule for target.
-offboard_control_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_node.dir/build.make CMakeFiles/offboard_control_node.dir/build
-.PHONY : offboard_control_node/fast
-
-#=============================================================================
 # Target rules for targets named uav_controller
 
 # Build rule for target.
@@ -222,67 +209,6 @@ uav_controller: cmake_check_build_system
 uav_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uav_controller.dir/build.make CMakeFiles/uav_controller.dir/build
 .PHONY : uav_controller/fast
-
-#=============================================================================
-# Target rules for targets named pose_to_tf_broadcaster
-
-# Build rule for target.
-pose_to_tf_broadcaster: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pose_to_tf_broadcaster
-.PHONY : pose_to_tf_broadcaster
-
-# fast build rule for target.
-pose_to_tf_broadcaster/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_to_tf_broadcaster.dir/build.make CMakeFiles/pose_to_tf_broadcaster.dir/build
-.PHONY : pose_to_tf_broadcaster/fast
-
-src/offboard_control_node.o: src/offboard_control_node.cpp.o
-.PHONY : src/offboard_control_node.o
-
-# target to build an object file
-src/offboard_control_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_node.dir/build.make CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.o
-.PHONY : src/offboard_control_node.cpp.o
-
-src/offboard_control_node.i: src/offboard_control_node.cpp.i
-.PHONY : src/offboard_control_node.i
-
-# target to preprocess a source file
-src/offboard_control_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_node.dir/build.make CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.i
-.PHONY : src/offboard_control_node.cpp.i
-
-src/offboard_control_node.s: src/offboard_control_node.cpp.s
-.PHONY : src/offboard_control_node.s
-
-# target to generate assembly for a file
-src/offboard_control_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_node.dir/build.make CMakeFiles/offboard_control_node.dir/src/offboard_control_node.cpp.s
-.PHONY : src/offboard_control_node.cpp.s
-
-src/pose_to_tf_broadcaster.o: src/pose_to_tf_broadcaster.cpp.o
-.PHONY : src/pose_to_tf_broadcaster.o
-
-# target to build an object file
-src/pose_to_tf_broadcaster.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_to_tf_broadcaster.dir/build.make CMakeFiles/pose_to_tf_broadcaster.dir/src/pose_to_tf_broadcaster.cpp.o
-.PHONY : src/pose_to_tf_broadcaster.cpp.o
-
-src/pose_to_tf_broadcaster.i: src/pose_to_tf_broadcaster.cpp.i
-.PHONY : src/pose_to_tf_broadcaster.i
-
-# target to preprocess a source file
-src/pose_to_tf_broadcaster.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_to_tf_broadcaster.dir/build.make CMakeFiles/pose_to_tf_broadcaster.dir/src/pose_to_tf_broadcaster.cpp.i
-.PHONY : src/pose_to_tf_broadcaster.cpp.i
-
-src/pose_to_tf_broadcaster.s: src/pose_to_tf_broadcaster.cpp.s
-.PHONY : src/pose_to_tf_broadcaster.s
-
-# target to generate assembly for a file
-src/pose_to_tf_broadcaster.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_to_tf_broadcaster.dir/build.make CMakeFiles/pose_to_tf_broadcaster.dir/src/pose_to_tf_broadcaster.cpp.s
-.PHONY : src/pose_to_tf_broadcaster.cpp.s
 
 src/uav_controller.o: src/uav_controller.cpp.o
 .PHONY : src/uav_controller.o
@@ -323,15 +249,7 @@ help:
 	@echo "... test"
 	@echo "... uav_controller_pkg_uninstall"
 	@echo "... uninstall"
-	@echo "... offboard_control_node"
-	@echo "... pose_to_tf_broadcaster"
 	@echo "... uav_controller"
-	@echo "... src/offboard_control_node.o"
-	@echo "... src/offboard_control_node.i"
-	@echo "... src/offboard_control_node.s"
-	@echo "... src/pose_to_tf_broadcaster.o"
-	@echo "... src/pose_to_tf_broadcaster.i"
-	@echo "... src/pose_to_tf_broadcaster.s"
 	@echo "... src/uav_controller.o"
 	@echo "... src/uav_controller.i"
 	@echo "... src/uav_controller.s"
