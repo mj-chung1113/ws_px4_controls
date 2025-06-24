@@ -34,17 +34,26 @@ public:
 private:
   double Kp_, Ki_, Kd_;
   double prev_error_, integral_;
-  bool mission_start_ = false;
 };
 
 class PathFollower : public rclcpp::Node
 {
 public:
+  enum class UGVState
+  {
+    WAITING_FOR_START,
+    FOLLOWING_PATH,
+    STOPPING_FOR_DRONE,        // 드론 이륙 위해 정지 + 2초 대기 시작
+    WAITING_FOR_DRONE_TAKEOFF, // 2초 대기 완료 후 드론 이륙 신호 기다리는 중
+    DRONE_TAKEOFF_COMPLETE     // 드론 이륙 완료 후 다음 웨이포인트로 이동 직전
+  };
   PathFollower()
       : Node("mission_follower_node"), tf_buffer_(this->get_clock()), tf_listener_(tf_buffer_),
-        pid_speed_(1.0, 0.0, 0.1), pid_steer_(2.0, 0.0, 0.1), current_target_index_(0), drone_takeoff_(false)
+        pid_speed_(1.0, 0.0, 0.1), pid_steer_(2.0, 0.0, 0.1), current_target_index_(0), done_takeoff_(false)
   // 초기화
   {
+    // Define UGV states
+
     // 파라미터 선언 및 로드
     declare_parameter<std::string>("path_file", "");
     declare_parameter<double>("arrival_threshold", 0.5);
@@ -56,39 +65,38 @@ public:
 
     RCLCPP_INFO(get_logger(), "[param check] path_file: %s", path_file_.c_str());
 
-    // 주행 publisher
+    // Publishers
     cmd_pub_ = create_publisher<geometry_msgs::msg::Twist>("/model/X1_asp/cmd_vel", 10);
     takeoff_pub_ = create_publisher<std_msgs::msg::Bool>("/do_takeoff", 10);
+    ugv_arrival_pub_ = create_publisher<std_msgs::msg::Bool>("/ugv/mission2_arrived", 10);
 
-    // 드론 이륙 완료 여부 subscriber(Boolean)
+    // Subscribers
     takeoff_sub_ = create_subscription<std_msgs::msg::Bool>("/done_takeoff", 10,
-                                                            std::bind(&PathFollower::droneTakeoffCallback, this, std::placeholders::_1));
-    ready_to_go_sub = create_subscription<std_msgs::msg::Bool>(
-        "ready_to_go", 10, std::bind(&PathFollower::startCallback, this, std::placeholders::_1));
-    ugv_arrival_pub_ = create_publisher<std_msgs::msg::Bool>(
-        "ugv/mission2_arrived", 10);
+                                                            std::bind(&PathFollower::droneTakeoffCallback, this, _1));
+    ready_to_go_sub = create_subscription<std_msgs::msg::Bool>("/ready_to_go", 10,
+                                                               std::bind(&PathFollower::readyToGoCallback, this, _1));
 
-    // 시각화 publisher
+    // Visualization publishers
     marker_pub_ = create_publisher<visualization_msgs::msg::Marker>("target_marker", 10);
-    path_pub_ = create_publisher<visualization_msgs::msg::Marker>("path_marker", rclcpp::QoS(1).transient_local()); // latched QoS
+    path_pub_ = create_publisher<visualization_msgs::msg::Marker>("path_marker", rclcpp::QoS(1).transient_local());
 
-    // 경로 rviz 시각화
+    // Load path and publish initial path marker
     load_path();
     publish_path_marker();
 
-    // 제어 루프 타이머
+    // Control loop timer
     timer_ = create_wall_timer(std::chrono::milliseconds(100), std::bind(&PathFollower::control_loop, this));
   }
 
 private:
-  void startCallback(const std_msgs::msg::Bool::SharedPtr msg)
+  void readyToGoCallback(const std_msgs::msg::Bool::SharedPtr msg)
   {
-    if ((msg->data) && (mission_start_ == false))
+    if (msg->data && current_ugv_state_ == UGVState::WAITING_FOR_START)
     {
-      mission_start_ = true; // 미션 시작 플래그 설정
-      RCLCPP_INFO(get_logger(), "[UGV] ready_to_go==true 수신");
-      current_target_index_ = 0; // 웨이포인트 인덱스 초기화
-      done_takeoff_ = false;     // 드론 이륙 상태 초기화
+      current_ugv_state_ = UGVState::FOLLOWING_PATH; // Transition to following path
+      RCLCPP_INFO(get_logger(), "[UGV] /ready_to_go received. Transitioning to FOLLOWING_PATH state.");
+      current_target_index_ = 0; // Reset waypoint index
+      done_takeoff_ = false;     // Ensure drone takeoff state is false initially
     }
   }
   // drone_takeoff 토픽 수신
@@ -96,7 +104,7 @@ private:
   {
     if (msg->data)
     {
-      RCLCPP_INFO(get_logger(), "[UGV] drone_takeoff==true 수신");
+      RCLCPP_INFO(get_logger(), "[UGV] done_takeoff==true 수신");
       done_takeoff_ = true;
     }
   }
@@ -133,6 +141,7 @@ private:
   {
     try
     {
+      // Lookup transform from "map" to "X1_asp/base_link"
       auto transform = tf_buffer_.lookupTransform("map", "X1_asp/base_link", tf2::TimePointZero);
       current_x_ = transform.transform.translation.x;
       current_y_ = transform.transform.translation.y;
@@ -146,79 +155,148 @@ private:
     }
     catch (const tf2::TransformException &ex)
     {
-      RCLCPP_WARN(get_logger(), "TF 실패: %s", ex.what());
+      RCLCPP_WARN_THROTTLE(get_logger(), *this->get_clock(), 1000, "TF failed: %s", ex.what()); // Throttle warning
       return false;
     }
   }
 
-  // 제어 루프
+  // Main control loop
   void control_loop()
   {
-    if (mission_start_ == false)
+    geometry_msgs::msg::Twist cmd; // Initialize cmd_vel message
+
+    // No pose update or waypoint processing if waiting for start
+    if (current_ugv_state_ == UGVState::WAITING_FOR_START)
     {
-      RCLCPP_INFO(get_logger(), "미션 시작 대기중...");
+      cmd.linear.x = 0.0;
+      cmd.angular.z = 0.0;
+      cmd_pub_->publish(cmd); // Ensure UGV is stopped
+      RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000, "UGV waiting for mission start signal...");
+      return; // Exit loop until ready_to_go is received
+    }
+
+    // For any state other than WAITING_FOR_START, we need pose and waypoints
+    if (!update_pose() || current_target_index_ >= path_.size())
+    {
+      // If we lose pose or run out of waypoints, stop the UGV
+      cmd.linear.x = 0.0;
+      cmd.angular.z = 0.0;
+      cmd_pub_->publish(cmd);
+      RCLCPP_ERROR(get_logger(), "Failed to update pose or current_target_index_ out of bounds. Stopping UGV.");
+      // Consider adding error handling or mission abort logic here
       return;
     }
-    if (!update_pose() || current_target_index_ >= path_.size())
-      return;
 
     auto [goal_x, goal_y, goal_state] = path_[current_target_index_];
     double dx = goal_x - current_x_;
     double dy = goal_y - current_y_;
     double dist = std::hypot(dx, dy);
 
+    // --- Mission Completion Check ---
     if (current_target_index_ == path_.size() - 1 && dist < arrival_thresh_)
     {
-      geometry_msgs::msg::Twist stop;
-      cmd_pub_->publish(stop); // ① 차량 완전 정지
-      RCLCPP_INFO(get_logger(),
-                  "모든 웨이포인트 완료 → 노드 종료합니다.");
-      timer_->cancel();   // ② 주행 타이머 끄기
-      rclcpp::shutdown(); // ③ 노드 종료
+      cmd.linear.x = 0.0;
+      cmd.angular.z = 0.0;
+      cmd_pub_->publish(cmd); // UGV fully stops
+      RCLCPP_INFO(get_logger(), "All waypoints completed. Shutting down node.");
+      // Publish final arrival signal if needed, then shut down
+      std_msgs::msg::Bool arrival_msg;
+      arrival_msg.data = true;
+      ugv_arrival_pub_->publish(arrival_msg);
+      timer_->cancel();
+      rclcpp::shutdown();
       return;
     }
 
-    double target_yaw = std::atan2(dy, dx);
-    double yaw_error = std::atan2(std::sin(target_yaw - current_yaw_), std::cos(target_yaw - current_yaw_));
-
-    // --- state == 2 처리 로직 ---
-    if (goal_state == 2 && dist < arrival_thresh_)
+    // --- State Machine Logic ---
+    switch (current_ugv_state_)
     {
-      // 1) 정지
-      geometry_msgs::msg::Twist stop;
-      std_msgs::msg::Bool msg;
-      cmd_pub_->publish(stop);
-      msg.data = true;
-      takeoff_pub_->publish(msg); // 드론 이륙 신호 전송
-      // 2) 드론 이륙 신호 대기
-      if (!done_takeoff_)
+    case UGVState::FOLLOWING_PATH:
+      // Check if UGV has arrived at a state 2 waypoint
+      if (goal_state == 2 && dist < arrival_thresh_)
       {
-        RCLCPP_INFO(get_logger(), "state=2 지점 도착 → 드론 이륙 대기중…");
-        return;
+        RCLCPP_INFO(get_logger(), "Arrived at state 2 waypoint. Transitioning to STOPPING_FOR_DRONE.");
+        current_ugv_state_ = UGVState::STOPPING_FOR_DRONE;
+        // Start the 2-second one-shot delay timer
+        delay_timer_ = this->create_wall_timer(
+            std::chrono::seconds(2),
+            [this]()
+            {
+              RCLCPP_INFO(this->get_logger(), "2-second delay complete. Transitioning to WAITING_FOR_DRONE_TAKEOFF.");
+              this->current_ugv_state_ = UGVState::WAITING_FOR_DRONE_TAKEOFF;
+              this->delay_timer_->cancel(); // Cancel timer as it's one-shot
+            },
+            nullptr); // No specific callback group needed
       }
-      // 3) 이륙 신호 수신 시 다음 웨이포인트로 전진
-      RCLCPP_INFO(get_logger(), "이륙 신호 수신 → 다음 웨이포인트로 이동");
-      done_takeoff_ = true;
-      ++current_target_index_;
+      else
+      {
+        // Normal path following PID control
+        double target_yaw = std::atan2(dy, dx);
+        double yaw_error = std::atan2(std::sin(target_yaw - current_yaw_), std::cos(target_yaw - current_yaw_));
+        double dt = 0.1; // Based on 100ms timer
+        cmd.linear.x = std::clamp(pid_speed_.compute(dist, dt), -max_speed_, max_speed_);
+        cmd.angular.z = std::clamp(pid_steer_.compute(yaw_error, dt), -1.0, 1.0);
+
+        // Increment waypoint if arrived (for normal waypoints)
+        if (dist < arrival_thresh_ && current_target_index_ + 1 < path_.size())
+        {
+          ++current_target_index_;
+          RCLCPP_INFO(get_logger(), "Moving to next waypoint (%zu/%zu)", current_target_index_, path_.size());
+        }
+      }
+      break;
+
+    case UGVState::STOPPING_FOR_DRONE:
+      // UGV remains stopped and sends initial takeoff signal
+      cmd.linear.x = 0.0;
+      cmd.angular.z = 0.0;
+      { // Scope for takeoff_signal
+        std_msgs::msg::Bool takeoff_signal;
+        takeoff_signal.data = true;
+        takeoff_pub_->publish(takeoff_signal);
+      }
+      // No waypoint increment here; delay_timer_ will handle state transition
+      break;
+
+    case UGVState::WAITING_FOR_DRONE_TAKEOFF:
+      // UGV remains stopped and continuously sends takeoff signal
+      cmd.linear.x = 0.0;
+      cmd.angular.z = 0.0;
+      { // Scope for takeoff_signal
+        std_msgs::msg::Bool takeoff_signal;
+        takeoff_signal.data = true;
+        takeoff_pub_->publish(takeoff_signal);
+      }
+
+      // Check if drone takeoff is confirmed
+      if (done_takeoff_)
+      {
+        RCLCPP_INFO(get_logger(), "Drone takeoff confirmed. Transitioning to DRONE_TAKEOFF_COMPLETE.");
+        done_takeoff_ = false; // Reset for potential future state 2 waypoints
+        current_ugv_state_ = UGVState::DRONE_TAKEOFF_COMPLETE;
+      }
+      break;
+
+    case UGVState::DRONE_TAKEOFF_COMPLETE:
+      // Drone takeoff is complete, UGV prepares to move to the next waypoint
+      RCLCPP_INFO(get_logger(), "Drone mission phase complete. Moving to next waypoint.");
+      ++current_target_index_;                       // Move to the actual next waypoint
+      current_ugv_state_ = UGVState::FOLLOWING_PATH; // Revert to path following state
+      // The loop will execute again, recalculating PID for the new target.
+      // No 'break' needed here if you want to immediately compute the first command for the next segment
+      // However, a 'break' and let the next control_loop iteration handle it is generally safer for state transitions.
+      // For clarity, I'll add break and allow the next loop cycle to start from FOLLOWING_PATH.
+      break;
+
+    case UGVState::WAITING_FOR_START: // This state is handled at the very beginning of the function
+      // This case should ideally not be reached if the initial check works
+      // But included for completeness of the switch statement.
+      break;
     }
 
-    // 주행 제어 PID
-    double dt = 0.1;
-    double speed = std::clamp(pid_speed_.compute(dist, dt), -max_speed_, max_speed_);
-    double steer = std::clamp(pid_steer_.compute(yaw_error, dt), -1.0, 1.0);
+    cmd_pub_->publish(cmd); // Publish the computed command velocity
 
-    geometry_msgs::msg::Twist cmd;
-    cmd.linear.x = speed;
-    cmd.angular.z = steer;
-    cmd_pub_->publish(cmd);
-
-    // 도착 판정 후 waypoint 인덱스 증가
-    if (dist < arrival_thresh_ && current_target_index_ + 1 < path_.size())
-    {
-      ++current_target_index_;
-      RCLCPP_INFO(get_logger(), "다음 waypoint로 이동 (%zu/%zu)", current_target_index_, path_.size());
-    }
-
+    // Publish markers regardless of state (for current goal visualization)
     publish_marker(goal_x, goal_y);
     publish_path_marker();
   }
@@ -276,12 +354,14 @@ private:
     path_pub_->publish(line);
   }
 
-  // 멤버 변수
+  // Member variables
   std::string path_file_;
   double arrival_thresh_, max_speed_;
   double current_x_{0.0}, current_y_{0.0}, current_yaw_{0.0};
   size_t current_target_index_;
-  bool drone_takeoff_;
+  bool done_takeoff_;          // Flag set by droneTakeoffCallback
+  UGVState current_ugv_state_; // Current state of the UGV
+
   std::vector<std::tuple<double, double, int>> path_;
 
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub_;
@@ -290,8 +370,9 @@ private:
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_pub_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr ugv_arrival_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr takeoff_sub_;
-
+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr ready_to_go_sub;
   rclcpp::TimerBase::SharedPtr timer_;
+  rclcpp::TimerBase::SharedPtr delay_timer_; // For the 2-second delay
 
   tf2_ros::Buffer tf_buffer_;
   tf2_ros::TransformListener tf_listener_;

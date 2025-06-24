@@ -1,0 +1,10 @@
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/uninstall.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/drone_takeoff_pub_uninstall.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/drone_takeoff_pub.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/test.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/edit_cache.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/rebuild_cache.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/list_install_components.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/install.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/install/local.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub/CMakeFiles/install/strip.dir

@@ -1,0 +1,9 @@
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/uninstall.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/vision_opencv_uninstall.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/test.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/edit_cache.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/rebuild_cache.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/list_install_components.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/install.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/install/local.dir
+/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv/CMakeFiles/install/strip.dir

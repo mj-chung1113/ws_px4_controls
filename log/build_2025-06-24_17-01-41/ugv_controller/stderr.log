@@ -1,0 +1,6 @@
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:154:7:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPathFollower::[m[K’ on member ‘[01m[Kcontrol_loop[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  154 |  void [01;31m[KPathFollower[m[K::control_loop()
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

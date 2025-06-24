@@ -1,0 +1,70 @@
+[ 33%] Built target path_follower_node
+[35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o[0m
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:362:3:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ does not name a type
+  362 |   [01;31m[KUGVState[m[K current_ugv_state_; // Current state of the UGV
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::readyToGoCallback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:93:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_ugv_state_[m[K’ was not declared in this scope
+   93 |   if (msg->data && [01;31m[Kcurrent_ugv_state_[m[K == UGVState::WAITING_FOR_START)
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:93:44:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+   93 | rent_ugv_state_ == [01;31m[KUGVState[m[K::WAITING_FOR_START)
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:95:28:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+   95 | rrent_ugv_state_ = [01;31m[KUGVState[m[K::FOLLOWING_PATH; // Transition to following path
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::control_loop()[m[K’:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:168:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_ugv_state_[m[K’ was not declared in this scope
+  168 |     if ([01;31m[Kcurrent_ugv_state_[m[K == UGVState::WAITING_FOR_START)
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:168:31:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  168 | rent_ugv_state_ == [01;31m[KUGVState[m[K::WAITING_FOR_START)
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:211:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_ugv_state_[m[K’ was not declared in this scope
+  211 |     switch ([01;31m[Kcurrent_ugv_state_[m[K)
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:213:10:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  213 |     case [01;31m[KUGVState[m[K::FOLLOWING_PATH:
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:218:30:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  218 | rrent_ugv_state_ = [01;31m[KUGVState[m[K::STOPPING_FOR_DRONE;
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In lambda function:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:225:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PathFollower[m[K’ has no member named ‘[01m[Kcurrent_ugv_state_[m[K’
+  225 |              this->[01;31m[Kcurrent_ugv_state_[m[K = UGVState::WAITING_FOR_DRONE_TAKEOFF;
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:225:42:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  225 | rrent_ugv_state_ = [01;31m[KUGVState[m[K::WAITING_FOR_DRONE_TAKEOFF;
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::control_loop()[m[K’:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:248:10:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  248 |     case [01;31m[KUGVState[m[K::STOPPING_FOR_DRONE:
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:260:10:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  260 |     case [01;31m[KUGVState[m[K::WAITING_FOR_DRONE_TAKEOFF:
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:275:30:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  275 | rrent_ugv_state_ = [01;31m[KUGVState[m[K::DRONE_TAKEOFF_COMPLETE;
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:279:10:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  279 |     case [01;31m[KUGVState[m[K::DRONE_TAKEOFF_COMPLETE:
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:283:28:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  283 | rrent_ugv_state_ = [01;31m[KUGVState[m[K::FOLLOWING_PATH; // Revert to path following state
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:290:10:[m[K [01;31m[Kerror: [m[K‘[01m[KUGVState[m[K’ has not been declared
+  290 |     case [01;31m[KUGVState[m[K::WAITING_FOR_START: // This state is handled at the very beginning of the function
+      |          [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

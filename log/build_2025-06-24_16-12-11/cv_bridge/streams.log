@@ -1,0 +1,120 @@
+[0.017s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge
+[0.076s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.153s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.232s] -- Detecting C compile features
+[0.232s] -- Detecting C compile features - done
+[0.235s] -- Detecting CXX compiler ABI info
+[0.321s] -- Detecting CXX compiler ABI info - done
+[0.328s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.328s] -- Detecting CXX compile features
+[0.329s] -- Detecting CXX compile features - done
+[0.330s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.810s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.114s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed 
+[2.134s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 
+[2.137s] -- Found rcpputils: 2.4.5 (/opt/ros/humble/share/rcpputils/cmake)
+[2.156s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.179s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.184s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.192s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.210s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.229s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.466s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[2.595s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[2.596s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[2.711s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[2.712s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[2.842s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[2.848s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.979s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.984s] -- Looking for pthread.h
+[3.128s] -- Looking for pthread.h - found
+[3.128s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.276s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.277s] -- Found Threads: TRUE  
+[5.215s] -- Configuring done
+[5.237s] -- Generating done
+[5.244s] -- Build files have been written to: /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge
+[5.274s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge
+[5.277s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge -- -j16 -l16
+[5.359s] [  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[5.360s] [ 12%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[5.360s] [ 18%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[5.367s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.384s] [ 25%] Built target ament_cmake_python_copy_cv_bridge
+[5.816s] running egg_info
+[5.842s] creating cv_bridge.egg-info
+[5.842s] writing cv_bridge.egg-info/PKG-INFO
+[5.842s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[5.845s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[5.845s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[5.910s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[5.911s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[6.013s] [ 25%] Built target ament_cmake_python_build_cv_bridge_egg
+[6.401s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[6.499s] [ 31%] Built target gtest_main
+[9.301s] [ 37%] [32m[1mLinking CXX static library libgtest.a[0m
+[9.388s] [ 37%] Built target gtest
+[11.085s] [ 43%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[11.253s] [ 43%] Built target cv_bridge
+[11.270s] [ 75%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[11.271s] [ 75%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o[0m
+[11.271s] [ 75%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[11.271s] [ 75%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[11.271s] [ 75%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[11.272s] [ 81%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[11.272s] [ 87%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[13.593s] [ 93%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[14.099s] [ 93%] Built target cv_bridge-utest
+[14.595s] [100%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[14.746s] [100%] Built target cv_bridge_boost
+[14.756s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge -- -j16 -l16
+[14.758s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge
+[14.767s] -- Install configuration: ""
+[14.767s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[14.767s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[14.767s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info
+[14.767s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[14.768s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[14.800s] Listing '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[14.800s] Compiling '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...
+[14.800s] Compiling '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...
+[14.808s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so
+[14.811s] -- Set runtime path of "/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so" to ""
+[14.811s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[14.811s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so
+[14.811s] -- Set runtime path of "/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""
+[14.812s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge
+[14.812s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge
+[14.812s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h
+[14.812s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h
+[14.812s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so
+[14.812s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[14.812s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[14.812s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/path.sh
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.bash
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.sh
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.dsv
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[14.813s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[14.814s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.xml
+[14.817s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
+CMAKE_SOURCE_DIR = /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces
+CMAKE_BINARY_DIR = /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces
 
 # Utility rule file for ament_cmake_python_copy_aruco_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/compiler_depend.
 include CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_aruco_interfaces:
-	/usr/bin/cmake -E copy_directory /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/rosidl_generator_py/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/ament_cmake_python/aruco_interfaces/aruco_interfaces
+	/usr/bin/cmake -E copy_directory /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/rosidl_generator_py/aruco_interfaces /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/ament_cmake_python/aruco_interfaces/aruco_interfaces
 
 ament_cmake_python_copy_aruco_interfaces: CMakeFiles/ament_cmake_python_copy_aruco_interfaces
 ament_cmake_python_copy_aruco_interfaces: CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_aruco_interfaces.dir/depend
 

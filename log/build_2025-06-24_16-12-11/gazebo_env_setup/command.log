@@ -1,0 +1,3 @@
+Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup
+Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup
+Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup -- -j16 -l16

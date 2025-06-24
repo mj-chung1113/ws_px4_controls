@@ -1,0 +1,1029 @@
+[0.090s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.090s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79e212a53190>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79e212a527a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79e212a527a0>>, mixin_verb=('build',))
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.123s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/acdl1/mj_ws/ws_px4_controls'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.140s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_controller_pkg' with type 'ros.ament_cmake' and name 'uav_controller_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/drone_takeoff_pub' with type 'ros.ament_cmake' and name 'drone_takeoff_pub'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/gazebo_env_setup' with type 'ros.ament_cmake' and name 'gazebo_env_setup'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/ugv_controller' with type 'ros.ament_cmake' and name 'ugv_controller'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/utilities_pkg' with type 'ros.ament_cmake' and name 'utilities_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/build) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/build) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/build) ignored
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/install) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/install) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/install) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/log) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/log) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/log) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/aruco_interfaces' with type 'ros.ament_cmake' and name 'aruco_interfaces'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/multi_tracker' with type 'ros.ament_cmake' and name 'multi_tracker'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.177s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/humble
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.210s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'cv_bridge' is in: /opt/ros/humble
+	'image_geometry' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding cv_bridge image_geometry
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_target' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'drone_takeoff_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.214s] DEBUG:colcon.colcon_core.verb:Building package 'drone_takeoff_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/drone_takeoff_pub', 'symlink_install': False, 'test_result_base': None}
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_target' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'gazebo_env_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.214s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_env_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup', 'symlink_install': False, 'test_result_base': None}
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.215s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry', 'symlink_install': False, 'test_result_base': None}
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.215s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_target' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'ugv_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.216s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller', 'symlink_install': False, 'test_result_base': None}
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_target' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'multi_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.216s] DEBUG:colcon.colcon_core.verb:Building package 'multi_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker', 'symlink_install': False, 'test_result_base': None}
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.217s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests', 'symlink_install': False, 'test_result_base': None}
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.217s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_target' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.217s] Level 5:colcon.colcon_core.verb:set package 'uav_controller_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.217s] DEBUG:colcon.colcon_core.verb:Building package 'uav_controller_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'utilities_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'utilities_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/utilities_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv', 'merge_install': False, 'path': '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/vision_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.218s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.219s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.219s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/px4_msgs' with build type 'ament_cmake'
+[0.220s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/px4_msgs'
+[0.221s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.223s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge' with build type 'ament_cmake'
+[0.223s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge'
+[0.223s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.225s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces' with build type 'ament_cmake'
+[0.225s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces'
+[0.225s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.225s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.227s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry' with build type 'ament_cmake'
+[0.228s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry'
+[0.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.228s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.229s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/drone_takeoff_pub' with build type 'ament_cmake'
+[0.229s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/drone_takeoff_pub'
+[0.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup' with build type 'ament_cmake'
+[0.231s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup'
+[0.232s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.232s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.233s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller' with build type 'ament_cmake'
+[0.233s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller'
+[0.233s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.233s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs -- -j16 -l16
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge -- -j16 -l16
+[0.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces -- -j16 -l16
+[0.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/image_geometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry -- -j16 -l16
+[0.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub -- -j16 -l16
+[0.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup -- -j16 -l16
+[0.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller -- -j16 -l16
+[0.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup -- -j16 -l16
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup
+[0.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub -- -j16 -l16
+[0.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub
+[0.366s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_env_setup)
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/gazebo_env_setup
+[0.372s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup' for CMake module files
+[0.373s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup' for CMake config files
+[0.373s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_env_setup', 'cmake_prefix_path')
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.ps1'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.dsv'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.sh'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/bin'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib/pkgconfig/gazebo_env_setup.pc'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib/python3.10/site-packages'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/bin'
+[0.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.ps1'
+[0.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.dsv'
+[0.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.sh'
+[0.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.bash'
+[0.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.zsh'
+[0.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/colcon-core/packages/gazebo_env_setup)
+[0.380s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_env_setup)
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup' for CMake module files
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup' for CMake config files
+[0.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_env_setup', 'cmake_prefix_path')
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.ps1'
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.dsv'
+[0.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/hook/cmake_prefix_path.sh'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/bin'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib/pkgconfig/gazebo_env_setup.pc'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/lib/python3.10/site-packages'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/bin'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.ps1'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.dsv'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.sh'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.bash'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.zsh'
+[0.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup/share/colcon-core/packages/gazebo_env_setup)
+[0.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drone_takeoff_pub)
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub' for CMake module files
+[0.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/drone_takeoff_pub
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub' for CMake config files
+[0.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('drone_takeoff_pub', 'cmake_prefix_path')
+[0.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.ps1'
+[0.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.dsv'
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.sh'
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/bin'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib/pkgconfig/drone_takeoff_pub.pc'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib/python3.10/site-packages'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/bin'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.ps1'
+[0.393s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.dsv'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.sh'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.bash'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.zsh'
+[0.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/colcon-core/packages/drone_takeoff_pub)
+[0.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drone_takeoff_pub)
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub' for CMake module files
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub' for CMake config files
+[0.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('drone_takeoff_pub', 'cmake_prefix_path')
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.ps1'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.dsv'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/hook/cmake_prefix_path.sh'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/bin'
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib/pkgconfig/drone_takeoff_pub.pc'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib/python3.10/site-packages'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/bin'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.ps1'
+[0.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.sh'
+[0.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.bash'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.zsh'
+[0.403s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/colcon-core/packages/drone_takeoff_pub)
+[0.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge -- -j16 -l16
+[0.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge
+[0.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces -- -j16 -l16
+[0.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces
+[0.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge' for CMake module files
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge' for CMake config files
+[0.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib'
+[0.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/bin'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/python3.10/site-packages'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/bin'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.ps1'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.dsv'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.sh'
+[0.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.bash'
+[0.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.zsh'
+[0.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[0.739s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge' for CMake module files
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge' for CMake config files
+[0.740s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib'
+[0.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[0.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[0.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/bin'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib/python3.10/site-packages'
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/bin'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.dsv'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.sh'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.bash'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.zsh'
+[0.751s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[0.752s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests' with build type 'ament_python'
+[0.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'ament_prefix_path')
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.ps1'
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.dsv'
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.sh'
+[0.754s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.754s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_interfaces)
+[0.756s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces' for CMake module files
+[0.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces' for CMake config files
+[0.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_interfaces', 'cmake_prefix_path')
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.ps1'
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.dsv'
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.sh'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib'
+[0.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_interfaces', 'ld_library_path_lib')
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.ps1'
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.dsv'
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.sh'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/bin'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib/pkgconfig/aruco_interfaces.pc'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib/python3.10/site-packages'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/bin'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.ps1'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.dsv'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.sh'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.bash'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.zsh'
+[0.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/colcon-core/packages/aruco_interfaces)
+[0.788s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_interfaces)
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces' for CMake module files
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces' for CMake config files
+[0.788s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_interfaces', 'cmake_prefix_path')
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.dsv'
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/cmake_prefix_path.sh'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib'
+[0.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_interfaces', 'ld_library_path_lib')
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.ps1'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.dsv'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/hook/ld_library_path_lib.sh'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/bin'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib/pkgconfig/aruco_interfaces.pc'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib/python3.10/site-packages'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/bin'
+[0.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.ps1'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.dsv'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.sh'
+[0.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.bash'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/aruco_interfaces/package.zsh'
+[0.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/share/colcon-core/packages/aruco_interfaces)
+[1.020s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests'
+[1.020s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry -- -j16 -l16
+[1.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/image_geometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry
+[1.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[1.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry
+[1.079s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry' for CMake module files
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry' for CMake config files
+[1.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[1.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib'
+[1.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[1.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/bin'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib/python3.10/site-packages'
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/bin'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.ps1'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.sh'
+[1.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.bash'
+[1.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.zsh'
+[1.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/colcon-core/packages/image_geometry)
+[1.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry' for CMake module files
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry' for CMake config files
+[1.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib'
+[1.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/bin'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib/python3.10/site-packages'
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/bin'
+[1.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.ps1'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.sh'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.bash'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/image_geometry/package.zsh'
+[1.095s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/share/colcon-core/packages/image_geometry)
+[1.095s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/vision_opencv' with build type 'ament_cmake'
+[1.096s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/vision_opencv'
+[1.096s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.096s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv -- -j16 -l16
+[1.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv -- -j16 -l16
+[1.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv
+[1.153s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv' for CMake module files
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/vision_opencv
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv' for CMake config files
+[1.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/bin'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/lib/python3.10/site-packages'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/bin'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.ps1'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.dsv'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.sh'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.bash'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.zsh'
+[1.158s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[1.158s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[1.158s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv' for CMake module files
+[1.159s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv' for CMake config files
+[1.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[1.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[1.159s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[1.160s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/bin'
+[1.160s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[1.160s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/lib/python3.10/site-packages'
+[1.161s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/bin'
+[1.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.ps1'
+[1.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.dsv'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.sh'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.bash'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/vision_opencv/package.zsh'
+[1.163s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[1.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/opencv_tests build --build-base /home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/build install --record /home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/install.log --single-version-externally-managed install_data
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests' for CMake module files
+[1.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/opencv_tests build --build-base /home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/build install --record /home/acdl1/mj_ws/ws_px4_controls/build/opencv_tests/install.log --single-version-externally-managed install_data
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests' for CMake config files
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/bin'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib/pkgconfig/opencv_tests.pc'
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages'
+[1.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'pythonpath')
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/pythonpath.ps1'
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/pythonpath.dsv'
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/hook/pythonpath.sh'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/bin'
+[1.819s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opencv_tests)
+[1.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/package.ps1'
+[1.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/package.dsv'
+[1.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/package.sh'
+[1.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/package.bash'
+[1.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests/package.zsh'
+[1.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/share/colcon-core/packages/opencv_tests)
+[9.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller -- -j16 -l16
+[9.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller
+[9.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_controller)
+[9.599s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller' for CMake module files
+[9.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller
+[9.600s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller' for CMake config files
+[9.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_controller', 'cmake_prefix_path')
+[9.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.ps1'
+[9.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.dsv'
+[9.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.sh'
+[9.601s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib'
+[9.601s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/bin'
+[9.601s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib/pkgconfig/ugv_controller.pc'
+[9.601s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib/python3.10/site-packages'
+[9.601s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/bin'
+[9.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.ps1'
+[9.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.dsv'
+[9.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.sh'
+[9.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.bash'
+[9.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.zsh'
+[9.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/colcon-core/packages/ugv_controller)
+[9.604s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_controller)
+[9.604s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller' for CMake module files
+[9.604s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller' for CMake config files
+[9.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_controller', 'cmake_prefix_path')
+[9.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.ps1'
+[9.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.dsv'
+[9.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/hook/cmake_prefix_path.sh'
+[9.605s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib'
+[9.605s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/bin'
+[9.605s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib/pkgconfig/ugv_controller.pc'
+[9.605s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/lib/python3.10/site-packages'
+[9.605s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/bin'
+[9.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.ps1'
+[9.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.dsv'
+[9.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.sh'
+[9.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.bash'
+[9.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/ugv_controller/package.zsh'
+[9.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller/share/colcon-core/packages/ugv_controller)
+[201.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs -- -j16 -l16
+[201.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs
+[202.121s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[202.121s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs' for CMake module files
+[202.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_msgs
+[202.122s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs' for CMake config files
+[202.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[202.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[202.123s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[202.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[202.124s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib'
+[202.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[202.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[202.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[202.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[202.125s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/bin'
+[202.125s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[202.125s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib/python3.10/site-packages'
+[202.126s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/bin'
+[202.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.ps1'
+[202.126s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.dsv'
+[202.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.sh'
+[202.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.bash'
+[202.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.zsh'
+[202.128s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[202.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[202.129s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs' for CMake module files
+[202.130s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs' for CMake config files
+[202.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[202.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[202.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[202.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[202.132s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib'
+[202.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[202.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[202.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[202.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[202.133s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/bin'
+[202.133s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[202.133s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib/python3.10/site-packages'
+[202.134s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/bin'
+[202.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.ps1'
+[202.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.dsv'
+[202.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.sh'
+[202.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.bash'
+[202.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.zsh'
+[202.136s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[202.137s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker' with build type 'ament_cmake'
+[202.137s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker'
+[202.137s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[202.137s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[202.139s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/px4_ros_com' with build type 'ament_cmake'
+[202.140s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/px4_ros_com'
+[202.140s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[202.140s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[202.143s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg' with build type 'ament_cmake'
+[202.143s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg'
+[202.143s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[202.143s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[202.146s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/acdl1/mj_ws/ws_px4_controls/src/utilities_pkg' with build type 'ament_cmake'
+[202.146s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/acdl1/mj_ws/ws_px4_controls/src/utilities_pkg'
+[202.146s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[202.146s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[202.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker
+[202.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com
+[202.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg
+[202.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/utilities_pkg -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg
+[203.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/utilities_pkg -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg
+[203.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg -- -j16 -l16
+[203.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg
+[203.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg -- -j16 -l16
+[203.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker
+[203.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker -- -j16 -l16
+[203.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/acdl1/mj_ws/ws_px4_controls/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com
+[203.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com -- -j16 -l16
+[218.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg -- -j16 -l16
+[218.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg
+[218.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(utilities_pkg)
+[218.810s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg' for CMake module files
+[218.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/utilities_pkg
+[218.811s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg' for CMake config files
+[218.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('utilities_pkg', 'cmake_prefix_path')
+[218.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.ps1'
+[218.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.dsv'
+[218.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.sh'
+[218.813s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib'
+[218.813s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/bin'
+[218.813s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib/pkgconfig/utilities_pkg.pc'
+[218.813s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib/python3.10/site-packages'
+[218.813s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/bin'
+[218.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.ps1'
+[218.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.dsv'
+[218.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.sh'
+[218.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.bash'
+[218.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.zsh'
+[218.815s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/colcon-core/packages/utilities_pkg)
+[218.816s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(utilities_pkg)
+[218.816s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg' for CMake module files
+[218.817s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg' for CMake config files
+[218.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('utilities_pkg', 'cmake_prefix_path')
+[218.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.ps1'
+[218.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.dsv'
+[218.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/hook/cmake_prefix_path.sh'
+[218.818s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib'
+[218.818s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/bin'
+[218.819s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib/pkgconfig/utilities_pkg.pc'
+[218.819s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/lib/python3.10/site-packages'
+[218.819s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/bin'
+[218.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.ps1'
+[218.820s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.dsv'
+[218.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.sh'
+[218.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.bash'
+[218.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/utilities_pkg/package.zsh'
+[218.822s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg/share/colcon-core/packages/utilities_pkg)
+[225.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker -- -j16 -l16
+[225.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker
+[225.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_tracker)
+[225.055s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker' for CMake module files
+[225.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/multi_tracker
+[225.056s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker' for CMake config files
+[225.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_tracker', 'cmake_prefix_path')
+[225.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.ps1'
+[225.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.dsv'
+[225.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.sh'
+[225.058s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib'
+[225.058s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/bin'
+[225.058s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib/pkgconfig/multi_tracker.pc'
+[225.058s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib/python3.10/site-packages'
+[225.058s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/bin'
+[225.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.ps1'
+[225.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.dsv'
+[225.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.sh'
+[225.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.bash'
+[225.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.zsh'
+[225.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/colcon-core/packages/multi_tracker)
+[225.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_tracker)
+[225.061s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker' for CMake module files
+[225.061s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker' for CMake config files
+[225.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_tracker', 'cmake_prefix_path')
+[225.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.ps1'
+[225.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.dsv'
+[225.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/hook/cmake_prefix_path.sh'
+[225.062s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib'
+[225.062s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/bin'
+[225.062s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib/pkgconfig/multi_tracker.pc'
+[225.062s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/lib/python3.10/site-packages'
+[225.063s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/bin'
+[225.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.ps1'
+[225.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.dsv'
+[225.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.sh'
+[225.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.bash'
+[225.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.zsh'
+[225.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker/share/colcon-core/packages/multi_tracker)
+[227.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg -- -j16 -l16
+[227.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg
+[227.122s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_controller_pkg)
+[227.123s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg' for CMake module files
+[227.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/uav_controller_pkg
+[227.124s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg' for CMake config files
+[227.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_controller_pkg', 'cmake_prefix_path')
+[227.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.ps1'
+[227.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.dsv'
+[227.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.sh'
+[227.126s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib'
+[227.126s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/bin'
+[227.126s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib/pkgconfig/uav_controller_pkg.pc'
+[227.126s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib/python3.10/site-packages'
+[227.127s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/bin'
+[227.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.ps1'
+[227.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.dsv'
+[227.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.sh'
+[227.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.bash'
+[227.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.zsh'
+[227.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/colcon-core/packages/uav_controller_pkg)
+[227.130s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_controller_pkg)
+[227.130s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg' for CMake module files
+[227.130s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg' for CMake config files
+[227.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_controller_pkg', 'cmake_prefix_path')
+[227.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.ps1'
+[227.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.dsv'
+[227.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/hook/cmake_prefix_path.sh'
+[227.131s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib'
+[227.132s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/bin'
+[227.132s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib/pkgconfig/uav_controller_pkg.pc'
+[227.132s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/lib/python3.10/site-packages'
+[227.132s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/bin'
+[227.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.ps1'
+[227.132s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.dsv'
+[227.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.sh'
+[227.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.bash'
+[227.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.zsh'
+[227.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg/share/colcon-core/packages/uav_controller_pkg)
+[230.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com -- -j16 -l16
+[230.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com
+[230.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[230.436s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com' for CMake module files
+[230.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com
+[230.437s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com' for CMake config files
+[230.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[230.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[230.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[230.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[230.439s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib'
+[230.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[230.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[230.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[230.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[230.440s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/bin'
+[230.440s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[230.440s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/python3.10/site-packages'
+[230.440s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/bin'
+[230.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[230.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[230.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.sh'
+[230.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.bash'
+[230.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[230.442s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[230.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[230.443s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com' for CMake module files
+[230.443s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com' for CMake config files
+[230.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[230.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[230.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[230.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[230.444s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib'
+[230.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[230.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[230.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[230.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[230.445s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/bin'
+[230.445s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[230.445s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/python3.10/site-packages'
+[230.446s] Level 1:colcon.colcon_core.environment:checking '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/bin'
+[230.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[230.446s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[230.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.sh'
+[230.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.bash'
+[230.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[230.448s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[230.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[230.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[230.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[230.448s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[230.455s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[230.455s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[230.455s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[230.467s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[230.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/acdl1/mj_ws/ws_px4_controls/install/local_setup.ps1'
+[230.468s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/acdl1/mj_ws/ws_px4_controls/install/_local_setup_util_ps1.py'
+[230.469s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/acdl1/mj_ws/ws_px4_controls/install/setup.ps1'
+[230.470s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/acdl1/mj_ws/ws_px4_controls/install/local_setup.sh'
+[230.470s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/acdl1/mj_ws/ws_px4_controls/install/_local_setup_util_sh.py'
+[230.471s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/acdl1/mj_ws/ws_px4_controls/install/setup.sh'
+[230.472s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/acdl1/mj_ws/ws_px4_controls/install/local_setup.bash'
+[230.472s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/acdl1/mj_ws/ws_px4_controls/install/setup.bash'
+[230.473s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/acdl1/mj_ws/ws_px4_controls/install/local_setup.zsh'
+[230.473s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/acdl1/mj_ws/ws_px4_controls/install/setup.zsh'

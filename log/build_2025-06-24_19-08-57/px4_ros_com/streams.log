@@ -1,0 +1,78 @@
+[0.014s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com -- -j16 -l16
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.077s] [ 18%] Built target vehicle_gps_position_listener
+[0.077s] [ 25%] Built target debug_vect_advertiser
+[0.077s] [ 37%] Built target sensor_combined_listener
+[0.077s] [ 50%] Built target cli_pose_command
+[0.077s] [ 62%] Built target frame_transforms
+[0.083s] [ 75%] Built target offboard_control_key
+[0.083s] [ 75%] Built target ament_cmake_python_copy_px4_ros_com
+[0.084s] [ 81%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[0.084s] [ 93%] Built target offboard_control_srv
+[0.342s] running egg_info
+[0.362s] writing px4_ros_com.egg-info/PKG-INFO
+[0.362s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.362s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.428s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.429s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.471s] [ 93%] Built target ament_cmake_python_build_px4_ros_com_egg
+[17.519s] [100%] [32m[1mLinking CXX executable offboard_control[0m
+[18.790s] [100%] Built target offboard_control
+[18.804s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com -- -j16 -l16
+[18.818s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com
+[18.829s] -- Install configuration: ""
+[18.829s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[18.829s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[18.829s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[18.829s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[18.837s] -- Set runtime path of "/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control_key
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/cli_pose_command
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[18.838s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/include/px4_ros_com
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/libframe_transforms.so
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[18.839s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[18.840s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[18.840s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[18.840s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[18.840s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[18.840s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[18.841s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[18.877s] Listing '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[18.884s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[18.884s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[18.884s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[18.885s] -- Installing: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.dsv
+[18.885s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[18.886s] -- Up-to-date: /home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/share/px4_ros_com/package.xml
+[18.888s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/acdl1/mj_ws/ws_px4_controls/build/px4_ros_com

@@ -31,8 +31,8 @@
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지
 
 #define TAKEOFFALTITUDE 5.0                                                    // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
-#define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
-#define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
+#define WP_LOAD_PATH "/home/acdl1/mj_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
+#define MARKER_SAVE_PATH "/home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp"
 
 enum class MissionState
 {
@@ -78,7 +78,7 @@ public:
         //     "/fmu/out/vehicle_local_position", sensor_qos,
         //     std::bind(&UavController::odometry_cb, this, std::placeholders::_1)); // Corrected bind for odometry_cb
 
-        main_timer_ = create_wall_timer(std::chrono::milliseconds(20), std::bind(&UavController::main_loop, this));
+        main_timer_ = create_wall_timer(std::chrono::milliseconds(50), std::bind(&UavController::main_loop, this));
 
         RCLCPP_INFO(get_logger(), "UavController initialised. Mission starts");
         std::this_thread::sleep_for(std::chrono::seconds(2));
@@ -272,8 +272,8 @@ private:
         update_pose(); // Update current drone pose from TF
 
         RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
-                             "State: %d, Altitude: %.2f m, WP_Idx: %zu",
-                             static_cast<int>(state_), current_pose_enu_.position.z, current_wp_idx_);
+                             "State: %d, enu_x=  %.2f , enu_y=%.2f, enu_z=%.2f, WP_Idx: %zu",
+                             static_cast<int>(state_),current_pose_enu_.position.x,current_pose_enu_.position.y, current_pose_enu_.position.z, current_wp_idx_);
         switch (state_)
         {
         case MissionState::IDLE:

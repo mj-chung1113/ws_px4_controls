@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000442] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.000567] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000587] (-) JobUnselected: {'identifier': 'drone_takeoff_pub'}
+[0.000613] (-) JobUnselected: {'identifier': 'gazebo_env_setup'}
+[0.000630] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000643] (-) JobUnselected: {'identifier': 'multi_tracker'}
+[0.000655] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000667] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000679] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000691] (-) JobUnselected: {'identifier': 'uav_controller_pkg'}
+[0.000703] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.000714] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000728] (ugv_controller) JobQueued: {'identifier': 'ugv_controller', 'dependencies': OrderedDict()}
+[0.000753] (ugv_controller) JobStarted: {'identifier': 'ugv_controller'}
+[0.007036] (ugv_controller) JobProgress: {'identifier': 'ugv_controller', 'progress': 'cmake'}
+[0.007547] (ugv_controller) JobProgress: {'identifier': 'ugv_controller', 'progress': 'build'}
+[0.008184] (ugv_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller', '--', '-j16', '-l16'], 'cwd': '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'acdl1'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/lib:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/acdl1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1579'), ('SYSTEMD_EXEC_PID', '2001'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3614'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/acdl1/mj_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'acdl1'), ('JOURNAL_STREAM', '8:17763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'acdl1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/acdl1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/acdl1-Alienware-Aurora-R11:@/tmp/.ICE-unix/1817,unix/acdl1-Alienware-Aurora-R11:/tmp/.ICE-unix/1817'), ('INVOCATION_ID', '07990619266545c6b2504975c6873f93'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1a954ac1-4cf1-44c5-852d-2a7fd2c6e5e2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/acdl1/mj_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/mj_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/mj_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/mj_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/mj_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/mj_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/mj_ws/ws_px4_controls/install/image_geometry:/home/acdl1/mj_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/mj_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/mj_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[0.059775] (ugv_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mission_follower_node\x1b[0m\n'}
+[0.077638] (ugv_controller) StdoutLine: {'line': b'[ 50%] Built target manual_path_logger_node\n'}
+[0.078139] (ugv_controller) StdoutLine: {'line': b'[ 66%] Built target path_follower_node\n'}
+[0.084258] (ugv_controller) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o\x1b[0m\n'}
+[0.099823] (-) TimerEvent: {}
+[0.200141] (-) TimerEvent: {}
+[0.300511] (-) TimerEvent: {}
+[0.400967] (-) TimerEvent: {}
+[0.501299] (-) TimerEvent: {}
+[0.601596] (-) TimerEvent: {}
+[0.701887] (-) TimerEvent: {}
+[0.802327] (-) TimerEvent: {}
+[0.902661] (-) TimerEvent: {}
+[1.003039] (-) TimerEvent: {}
+[1.103387] (-) TimerEvent: {}
+[1.203771] (-) TimerEvent: {}
+[1.304194] (-) TimerEvent: {}
+[1.404546] (-) TimerEvent: {}
+[1.504934] (-) TimerEvent: {}
+[1.605540] (-) TimerEvent: {}
+[1.706150] (-) TimerEvent: {}
+[1.806832] (-) TimerEvent: {}
+[1.907679] (-) TimerEvent: {}
+[2.008216] (-) TimerEvent: {}
+[2.108897] (-) TimerEvent: {}
+[2.209752] (-) TimerEvent: {}
+[2.310491] (-) TimerEvent: {}
+[2.411197] (-) TimerEvent: {}
+[2.511882] (-) TimerEvent: {}
+[2.612775] (-) TimerEvent: {}
+[2.713425] (-) TimerEvent: {}
+[2.814144] (-) TimerEvent: {}
+[2.914856] (-) TimerEvent: {}
+[3.015751] (-) TimerEvent: {}
+[3.116346] (-) TimerEvent: {}
+[3.216976] (-) TimerEvent: {}
+[3.314174] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PathFollower::control_loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.314584] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdy\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.314718] (ugv_controller) StderrLine: {'line': b'  182 |     double target_yaw = std::atan2(\x1b[01;31m\x1b[Kdy\x1b[m\x1b[K, dx);\n'}
+[3.314803] (ugv_controller) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.317055] (-) TimerEvent: {}
+[3.322672] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.323125] (ugv_controller) StderrLine: {'line': b'  182 |     double target_yaw = std::atan2(dy, \x1b[01;31m\x1b[Kdx\x1b[m\x1b[K);\n'}
+[3.323251] (ugv_controller) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.334082] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.334471] (ugv_controller) StderrLine: {'line': b'  186 |     if (\x1b[01;31m\x1b[Kgoal_state\x1b[m\x1b[K == 2 && dist < arrival_thresh_)\n'}
+[3.334588] (ugv_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.339718] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.339977] (ugv_controller) StderrLine: {'line': b'  186 |     if (goal_state == 2 && \x1b[01;31m\x1b[Kdist\x1b[m\x1b[K < arrival_thresh_)\n'}
+[3.340078] (ugv_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.347811] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:216:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.348050] (ugv_controller) StderrLine: {'line': b'  216 |     double speed = std::clamp(pid_speed_.compute(\x1b[01;31m\x1b[Kdist\x1b[m\x1b[K, dt), -max_speed_, max_speed_);\n'}
+[3.348143] (ugv_controller) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.354729] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.354953] (ugv_controller) StderrLine: {'line': b'  231 |     publish_marker(\x1b[01;31m\x1b[Kgoal_x\x1b[m\x1b[K, goal_y);\n'}
+[3.355026] (ugv_controller) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.359515] (ugv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.359634] (ugv_controller) StderrLine: {'line': b'  231 |     publish_marker(goal_x, \x1b[01;31m\x1b[Kgoal_y\x1b[m\x1b[K);\n'}
+[3.359687] (ugv_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.417149] (-) TimerEvent: {}
+[3.517497] (-) TimerEvent: {}
+[3.617922] (-) TimerEvent: {}
+[3.718710] (-) TimerEvent: {}
+[3.819200] (-) TimerEvent: {}
+[3.919718] (-) TimerEvent: {}
+[4.020110] (-) TimerEvent: {}
+[4.120508] (-) TimerEvent: {}
+[4.220920] (-) TimerEvent: {}
+[4.321157] (-) TimerEvent: {}
+[4.421453] (-) TimerEvent: {}
+[4.521782] (-) TimerEvent: {}
+[4.622161] (-) TimerEvent: {}
+[4.722430] (-) TimerEvent: {}
+[4.822922] (-) TimerEvent: {}
+[4.923360] (-) TimerEvent: {}
+[5.023700] (-) TimerEvent: {}
+[5.124089] (-) TimerEvent: {}
+[5.224748] (-) TimerEvent: {}
+[5.325116] (-) TimerEvent: {}
+[5.425440] (-) TimerEvent: {}
+[5.525814] (-) TimerEvent: {}
+[5.626147] (-) TimerEvent: {}
+[5.726458] (-) TimerEvent: {}
+[5.826941] (-) TimerEvent: {}
+[5.927445] (-) TimerEvent: {}
+[6.028014] (-) TimerEvent: {}
+[6.128590] (-) TimerEvent: {}
+[6.229207] (-) TimerEvent: {}
+[6.329730] (-) TimerEvent: {}
+[6.430285] (-) TimerEvent: {}
+[6.530776] (-) TimerEvent: {}
+[6.631381] (-) TimerEvent: {}
+[6.732072] (-) TimerEvent: {}
+[6.822169] (ugv_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1\n'}
+[6.822423] (ugv_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2\n'}
+[6.822509] (ugv_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.824741] (ugv_controller) CommandEnded: {'returncode': 2}
+[6.832213] (-) TimerEvent: {}
+[6.838718] (ugv_controller) JobEnded: {'identifier': 'ugv_controller', 'rc': 2}
+[6.849417] (-) EventReactorShutdown: {}

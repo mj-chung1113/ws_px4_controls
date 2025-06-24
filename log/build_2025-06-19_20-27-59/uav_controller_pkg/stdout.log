@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
-[ 66%] Built target offboard_control_node
-[ 66%] Built target pose_to_tf_broadcaster
-[ 83%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m

@@ -1,0 +1,8 @@
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In constructor ‘[01m[KPathFollower::PathFollower()[m[K’:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kready_to_go_sub[m[K’ was not declared in this scope
+   66 |     [01;31m[Kready_to_go_sub[m[K = create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

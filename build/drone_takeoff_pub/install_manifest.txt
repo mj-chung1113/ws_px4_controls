@@ -1,0 +1,16 @@
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/lib/drone_takeoff_pub/drone_takeoff_pub
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/ament_index/resource_index/package_run_dependencies/drone_takeoff_pub
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/ament_index/resource_index/parent_prefix_path/drone_takeoff_pub
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/environment/ament_prefix_path.sh
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/environment/ament_prefix_path.dsv
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/environment/path.sh
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/environment/path.dsv
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/local_setup.bash
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/local_setup.sh
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/local_setup.zsh
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/local_setup.dsv
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.dsv
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/ament_index/resource_index/packages/drone_takeoff_pub
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/cmake/drone_takeoff_pubConfig.cmake
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/cmake/drone_takeoff_pubConfig-version.cmake
+/home/acdl1/mj_ws/ws_px4_controls/install/drone_takeoff_pub/share/drone_takeoff_pub/package.xml

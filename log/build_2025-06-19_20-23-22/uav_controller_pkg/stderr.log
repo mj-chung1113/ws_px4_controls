@@ -1,8 +1,0 @@
-[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:28:10:[m[K [01;31m[Kfatal error: [m[Kmulti_tracker/msg/marker_pose_id.hpp: No such file or directory
-   28 | #include [01;31m[K<multi_tracker/msg/marker_pose_id.hpp>[m[K // 커스텀 메시지
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/uav_controller.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller -- -j16 -l16
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
+[0.077s] [ 50%] Built target manual_path_logger_node
+[0.077s] [ 66%] Built target path_follower_node
+[0.084s] [ 83%] [32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o[0m
+[3.314s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::control_loop()[m[K’:
+[3.314s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kdy[m[K’ was not declared in this scope
+[3.314s]   182 |     double target_yaw = std::atan2([01;31m[Kdy[m[K, dx);
+[3.314s]       |                                    [01;31m[K^~[m[K
+[3.322s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kdx[m[K’ was not declared in this scope
+[3.322s]   182 |     double target_yaw = std::atan2(dy, [01;31m[Kdx[m[K);
+[3.323s]       |                                        [01;31m[K^~[m[K
+[3.334s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_state[m[K’ was not declared in this scope
+[3.334s]   186 |     if ([01;31m[Kgoal_state[m[K == 2 && dist < arrival_thresh_)
+[3.334s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.339s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+[3.339s]   186 |     if (goal_state == 2 && [01;31m[Kdist[m[K < arrival_thresh_)
+[3.339s]       |                            [01;31m[K^~~~[m[K
+[3.347s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:216:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+[3.347s]   216 |     double speed = std::clamp(pid_speed_.compute([01;31m[Kdist[m[K, dt), -max_speed_, max_speed_);
+[3.347s]       |                                                  [01;31m[K^~~~[m[K
+[3.354s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_x[m[K’ was not declared in this scope
+[3.354s]   231 |     publish_marker([01;31m[Kgoal_x[m[K, goal_y);
+[3.354s]       |                    [01;31m[K^~~~~~[m[K
+[3.359s] [01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_y[m[K’ was not declared in this scope
+[3.359s]   231 |     publish_marker(goal_x, [01;31m[Kgoal_y[m[K);
+[3.359s]       |                            [01;31m[K^~~~~~[m[K
+[6.822s] gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+[6.822s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+[6.822s] gmake: *** [Makefile:146: all] Error 2
+[6.824s] Invoked command in '/home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/mj_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/acdl1/mj_ws/ws_px4_controls/build/ugv_controller -- -j16 -l16

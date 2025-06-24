@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'offboard_control'
+gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:206: offboard_control] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:258: CMakeFiles/offboard_control.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

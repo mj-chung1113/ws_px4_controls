@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
+[ 50%] Built target manual_path_logger_node
+[ 66%] Built target path_follower_node
+[ 83%] [32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o[0m
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:[m[K In member function ‘[01m[Kvoid PathFollower::control_loop()[m[K’:
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kdy[m[K’ was not declared in this scope
+  182 |     double target_yaw = std::atan2([01;31m[Kdy[m[K, dx);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:182:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kdx[m[K’ was not declared in this scope
+  182 |     double target_yaw = std::atan2(dy, [01;31m[Kdx[m[K);
+      |                                        [01;31m[K^~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_state[m[K’ was not declared in this scope
+  186 |     if ([01;31m[Kgoal_state[m[K == 2 && dist < arrival_thresh_)
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:186:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+  186 |     if (goal_state == 2 && [01;31m[Kdist[m[K < arrival_thresh_)
+      |                            [01;31m[K^~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:216:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+  216 |     double speed = std::clamp(pid_speed_.compute([01;31m[Kdist[m[K, dt), -max_speed_, max_speed_);
+      |                                                  [01;31m[K^~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_x[m[K’ was not declared in this scope
+  231 |     publish_marker([01;31m[Kgoal_x[m[K, goal_y);
+      |                    [01;31m[K^~~~~~[m[K
+[01m[K/home/acdl1/mj_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller/src/mission_follower_node.cpp:231:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_y[m[K’ was not declared in this scope
+  231 |     publish_marker(goal_x, [01;31m[Kgoal_y[m[K);
+      |                            [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mission_follower_node.dir/build.make:76: CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mission_follower_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

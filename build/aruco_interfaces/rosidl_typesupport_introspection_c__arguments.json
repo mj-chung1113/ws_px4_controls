@@ -1,9 +1,9 @@
 {
   "package_name": "aruco_interfaces",
-  "output_dir": "/home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/rosidl_typesupport_introspection_c/aruco_interfaces",
+  "output_dir": "/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/rosidl_typesupport_introspection_c/aruco_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/rosidl_adapter/aruco_interfaces:msg/MarkerPoseId.idl"
+    "/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/rosidl_adapter/aruco_interfaces:msg/MarkerPoseId.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -78,7 +78,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/rosidl_adapter/aruco_interfaces/msg/MarkerPoseId.idl",
+    "/home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/rosidl_adapter/aruco_interfaces/msg/MarkerPoseId.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
