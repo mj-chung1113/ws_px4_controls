@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000287] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.000313] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000327] (-) JobUnselected: {'identifier': 'drone_takeoff_pub'}
+[0.000339] (-) JobUnselected: {'identifier': 'gazebo_env_setup'}
+[0.000350] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000361] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000372] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000383] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000393] (-) JobUnselected: {'identifier': 'uav_controller_pkg'}
+[0.000403] (-) JobUnselected: {'identifier': 'ugv_controller'}
+[0.000414] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.000425] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000437] (multi_tracker) JobQueued: {'identifier': 'multi_tracker', 'dependencies': OrderedDict([('aruco_interfaces', '/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces'), ('cv_bridge', '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge'), ('px4_msgs', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs')])}
+[0.000738] (multi_tracker) JobStarted: {'identifier': 'multi_tracker'}
+[0.016643] (multi_tracker) JobProgress: {'identifier': 'multi_tracker', 'progress': 'cmake'}
+[0.017337] (multi_tracker) JobProgress: {'identifier': 'multi_tracker', 'progress': 'build'}
+[0.018230] (multi_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker', '--', '-j20', '-l20'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1070'), ('SYSTEMD_EXEC_PID', '2246'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '155179'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:14478'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1990,unix/jmj:/tmp/.ICE-unix/1990'), ('INVOCATION_ID', '5556df213570466f809a1da1564ccec7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry:/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:15e61eb2-0b11-45dd-b80d-d59b3540373d'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry:/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[0.064527] (multi_tracker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_tracker_node\x1b[0m\n'}
+[0.082758] (multi_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/multi_tracker_node.dir/src/multi_tracker_node.cpp.o\x1b[0m\n'}
+[0.099716] (-) TimerEvent: {}
+[0.200018] (-) TimerEvent: {}
+[0.300256] (-) TimerEvent: {}
+[0.400536] (-) TimerEvent: {}
+[0.500855] (-) TimerEvent: {}
+[0.601192] (-) TimerEvent: {}
+[0.701468] (-) TimerEvent: {}
+[0.801720] (-) TimerEvent: {}
+[0.902003] (-) TimerEvent: {}
+[1.002278] (-) TimerEvent: {}
+[1.102548] (-) TimerEvent: {}
+[1.202841] (-) TimerEvent: {}
+[1.303109] (-) TimerEvent: {}
+[1.403329] (-) TimerEvent: {}
+[1.503573] (-) TimerEvent: {}
+[1.603871] (-) TimerEvent: {}
+[1.704170] (-) TimerEvent: {}
+[1.804416] (-) TimerEvent: {}
+[1.904675] (-) TimerEvent: {}
+[2.004946] (-) TimerEvent: {}
+[2.105264] (-) TimerEvent: {}
+[2.205560] (-) TimerEvent: {}
+[2.305832] (-) TimerEvent: {}
+[2.406058] (-) TimerEvent: {}
+[2.506290] (-) TimerEvent: {}
+[2.606546] (-) TimerEvent: {}
+[2.706922] (-) TimerEvent: {}
+[2.807165] (-) TimerEvent: {}
+[2.907401] (-) TimerEvent: {}
+[3.007668] (-) TimerEvent: {}
+[3.108023] (-) TimerEvent: {}
+[3.208326] (-) TimerEvent: {}
+[3.308588] (-) TimerEvent: {}
+[3.408862] (-) TimerEvent: {}
+[3.509308] (-) TimerEvent: {}
+[3.609728] (-) TimerEvent: {}
+[3.710098] (-) TimerEvent: {}
+[3.810452] (-) TimerEvent: {}
+[3.910794] (-) TimerEvent: {}
+[4.011117] (-) TimerEvent: {}
+[4.111495] (-) TimerEvent: {}
+[4.211802] (-) TimerEvent: {}
+[4.312032] (-) TimerEvent: {}
+[4.412286] (-) TimerEvent: {}
+[4.512535] (-) TimerEvent: {}
+[4.612884] (-) TimerEvent: {}
+[4.713209] (-) TimerEvent: {}
+[4.813438] (-) TimerEvent: {}
+[4.913716] (-) TimerEvent: {}
+[5.013997] (-) TimerEvent: {}
+[5.114338] (-) TimerEvent: {}
+[5.214673] (-) TimerEvent: {}
+[5.314963] (-) TimerEvent: {}
+[5.415275] (-) TimerEvent: {}
+[5.515499] (-) TimerEvent: {}
+[5.615743] (-) TimerEvent: {}
+[5.716183] (-) TimerEvent: {}
+[5.816542] (-) TimerEvent: {}
+[5.916854] (-) TimerEvent: {}
+[6.017130] (-) TimerEvent: {}
+[6.117377] (-) TimerEvent: {}
+[6.217702] (-) TimerEvent: {}
+[6.317970] (-) TimerEvent: {}
+[6.418199] (-) TimerEvent: {}
+[6.518409] (-) TimerEvent: {}
+[6.618632] (-) TimerEvent: {}
+[6.718970] (-) TimerEvent: {}
+[6.819255] (-) TimerEvent: {}
+[6.919502] (-) TimerEvent: {}
+[7.019719] (-) TimerEvent: {}
+[7.119996] (-) TimerEvent: {}
+[7.220296] (-) TimerEvent: {}
+[7.320616] (-) TimerEvent: {}
+[7.420903] (-) TimerEvent: {}
+[7.521140] (-) TimerEvent: {}
+[7.621384] (-) TimerEvent: {}
+[7.721710] (-) TimerEvent: {}
+[7.822055] (-) TimerEvent: {}
+[7.922368] (-) TimerEvent: {}
+[8.022667] (-) TimerEvent: {}
+[8.123062] (-) TimerEvent: {}
+[8.223393] (-) TimerEvent: {}
+[8.323695] (-) TimerEvent: {}
+[8.423992] (-) TimerEvent: {}
+[8.524268] (-) TimerEvent: {}
+[8.624633] (-) TimerEvent: {}
+[8.725014] (-) TimerEvent: {}
+[8.825327] (-) TimerEvent: {}
+[8.925575] (-) TimerEvent: {}
+[9.025828] (-) TimerEvent: {}
+[9.126107] (-) TimerEvent: {}
+[9.226411] (-) TimerEvent: {}
+[9.326702] (-) TimerEvent: {}
+[9.426944] (-) TimerEvent: {}
+[9.527189] (-) TimerEvent: {}
+[9.627424] (-) TimerEvent: {}
+[9.727675] (-) TimerEvent: {}
+[9.827925] (-) TimerEvent: {}
+[9.928194] (-) TimerEvent: {}
+[10.028439] (-) TimerEvent: {}
+[10.128692] (-) TimerEvent: {}
+[10.228937] (-) TimerEvent: {}
+[10.329205] (-) TimerEvent: {}
+[10.429510] (-) TimerEvent: {}
+[10.529806] (-) TimerEvent: {}
+[10.630092] (-) TimerEvent: {}
+[10.730378] (-) TimerEvent: {}
+[10.830687] (-) TimerEvent: {}
+[10.930952] (-) TimerEvent: {}
+[11.031354] (-) TimerEvent: {}
+[11.131597] (-) TimerEvent: {}
+[11.231849] (-) TimerEvent: {}
+[11.332132] (-) TimerEvent: {}
+[11.432378] (-) TimerEvent: {}
+[11.532590] (-) TimerEvent: {}
+[11.632822] (-) TimerEvent: {}
+[11.733052] (-) TimerEvent: {}
+[11.833319] (-) TimerEvent: {}
+[11.933660] (-) TimerEvent: {}
+[12.033933] (-) TimerEvent: {}
+[12.058694] (multi_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker/src/multi_tracker_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MultiTrackerNode::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.058877] (multi_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/multi_tracker/src/multi_tracker_node.cpp:131:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kselected_id\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[12.058940] (multi_tracker) StderrLine: {'line': b'  131 |         int \x1b[01;35m\x1b[Kselected_id\x1b[m\x1b[K = ids[best_marker_idx];\n'}
+[12.058986] (multi_tracker) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.067542] (multi_tracker) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable multi_tracker_node\x1b[0m\n'}
+[12.134019] (-) TimerEvent: {}
+[12.234320] (-) TimerEvent: {}
+[12.334645] (-) TimerEvent: {}
+[12.434941] (-) TimerEvent: {}
+[12.535310] (-) TimerEvent: {}
+[12.635687] (-) TimerEvent: {}
+[12.736022] (-) TimerEvent: {}
+[12.836280] (-) TimerEvent: {}
+[12.936535] (-) TimerEvent: {}
+[13.016025] (multi_tracker) StdoutLine: {'line': b'[100%] Built target multi_tracker_node\n'}
+[13.025881] (multi_tracker) CommandEnded: {'returncode': 0}
+[13.026564] (multi_tracker) JobProgress: {'identifier': 'multi_tracker', 'progress': 'install'}
+[13.033816] (multi_tracker) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1070'), ('SYSTEMD_EXEC_PID', '2246'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '155179'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:14478'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1990,unix/jmj:/tmp/.ICE-unix/1990'), ('INVOCATION_ID', '5556df213570466f809a1da1564ccec7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry:/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:15e61eb2-0b11-45dd-b80d-d59b3540373d'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/multi_tracker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv:/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller:/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg:/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com:/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker:/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry:/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup:/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[13.036593] (-) TimerEvent: {}
+[13.041103] (multi_tracker) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.041318] (multi_tracker) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/lib/multi_tracker/multi_tracker_node\n'}
+[13.046157] (multi_tracker) StdoutLine: {'line': b'-- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/lib/multi_tracker/multi_tracker_node" to ""\n'}
+[13.046450] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker//launch\n'}
+[13.046544] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker//launch/x1_aruco_detector.launch.py\n'}
+[13.046721] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker//launch/x500_aruco_detector.launch.py\n'}
+[13.046823] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/ament_index/resource_index/package_run_dependencies/multi_tracker\n'}
+[13.046875] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/ament_index/resource_index/parent_prefix_path/multi_tracker\n'}
+[13.046919] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/environment/ament_prefix_path.sh\n'}
+[13.046963] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/environment/ament_prefix_path.dsv\n'}
+[13.047005] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/environment/path.sh\n'}
+[13.047049] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/environment/path.dsv\n'}
+[13.047090] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/local_setup.bash\n'}
+[13.047131] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/local_setup.sh\n'}
+[13.047172] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/local_setup.zsh\n'}
+[13.047212] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/local_setup.dsv\n'}
+[13.047271] (multi_tracker) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.dsv\n'}
+[13.047311] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/ament_index/resource_index/packages/multi_tracker\n'}
+[13.047353] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.047394] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/cmake/multi_trackerConfig.cmake\n'}
+[13.047436] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/cmake/multi_trackerConfig-version.cmake\n'}
+[13.047477] (multi_tracker) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker/share/multi_tracker/package.xml\n'}
+[13.048271] (multi_tracker) CommandEnded: {'returncode': 0}
+[13.063213] (multi_tracker) JobEnded: {'identifier': 'multi_tracker', 'rc': 0}
+[13.063763] (-) EventReactorShutdown: {}

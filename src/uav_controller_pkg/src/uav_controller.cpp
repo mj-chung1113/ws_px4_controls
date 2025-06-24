@@ -31,8 +31,8 @@
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지
 
 #define TAKEOFFALTITUDE 5.0                                                    // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
-#define WP_LOAD_PATH "/home/acdl1/mj_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
-#define MARKER_SAVE_PATH "/home/acdl1/mj_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp"
+#define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
+#define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
 
 enum class MissionState
 {
@@ -183,7 +183,7 @@ private:
         // If current_pose_enu_.orientation is already the drone's orientation in map ENU,
         // you might want to use that for local_static if you want local_static to be aligned with drone's initial yaw.
         // For a pure ENU-to-NED conversion, consider a fixed transform.
-        tf2::Quaternion q_enu_to_ned;
+        // tf2::Quaternion q_enu_to_ned;
         // Standard ENU to NED rotation: rotate -90 deg about X, then 180 deg about Z.
         // Or, a more common one: X_ned = Y_enu, Y_ned = X_enu, Z_ned = -Z_enu (which corresponds to rotating about Z by -90, then X by 180)
         // Let's use a standard fixed transform that aligns 'map' ENU to 'local_static' NED for the frame itself,
@@ -273,7 +273,7 @@ private:
 
         RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
                              "State: %d, enu_x=  %.2f , enu_y=%.2f, enu_z=%.2f, WP_Idx: %zu",
-                             static_cast<int>(state_),current_pose_enu_.position.x,current_pose_enu_.position.y, current_pose_enu_.position.z, current_wp_idx_);
+                             static_cast<int>(state_), current_pose_enu_.position.x, current_pose_enu_.position.y, current_pose_enu_.position.z, current_wp_idx_);
         switch (state_)
         {
         case MissionState::IDLE:
@@ -299,9 +299,11 @@ private:
 
             // Create a Pose from the current waypoint Point
             geometry_msgs::msg::Pose target_pose;
-            target_pose.position = waypoints_enu_[current_wp_idx_];
+            target_pose.position.x = current_pose_enu_.position.x; // Use current drone's position
+            target_pose.position.y = current_pose_enu_.position.y; // Use current drone's position
+            target_pose.position.z = TAKEOFFALTITUDE;              // Set desired takeoff altitude
             // For takeoff, use fixed heading or current heading. Let's use FIXED_HEADING_QUATERNION_ for consistency.
-            target_pose.orientation = FIXED_HEADING_QUATERNION_;
+            target_pose.orientation = current_pose_enu_.orientation; // Use current drone's orientation
 
             send_setpoint_enu_to_ned(target_pose); // Pass a Pose object
             RCLCPP_INFO(get_logger(), "send_setpoint");
@@ -548,11 +550,12 @@ private:
         try
         {
             // Transform from "map" to "local_static"
-            geometry_msgs::msg::PoseStamped transformed_pose_stamped; // Declare here to be accessible for logging
-            transformed_pose_stamped = tf_buffer_->transform(
-                input_pose_stamped, "local_static", tf2::durationFromSec(0.1));
+            auto transformed_pose_stamped = tf_buffer_->transform(input_pose_stamped, "local_static", tf2::durationFromSec(0.1));
 
-            pose_cmd_pub_->publish(transformed_pose_stamped); // Publish the transformed pose
+            geometry_msgs::msg::PoseStamped final_target_pose = transformed_pose_stamped; // Declare here to be accessible for logging
+            final_target_pose.header.stamp = input_pose_stamped.header.stamp;             // Update timestamp after transform
+            pose_cmd_pub_->publish(final_target_pose);                                    // Publish the transformed pose
+
             // Yaw 값을 가져오는 새로운 방법: Matrix3x3을 통한 RPY 추출
             tf2::Quaternion q_tf2;
             tf2::fromMsg(transformed_pose_stamped.pose.orientation, q_tf2); // geometry_msgs::msg::Quaternion을 tf2::Quaternion으로 변환

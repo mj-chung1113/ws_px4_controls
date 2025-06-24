@@ -19,6 +19,7 @@ def generate_launch_description():
             output='screen'
         ),
 
+
         # X1 카메라 (image + camera_info)
         ExecuteProcess(
             cmd=[

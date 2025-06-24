@@ -36,6 +36,14 @@ public:
     twist_sub_ = create_subscription<geometry_msgs::msg::Twist>("/command/twist", 10, std::bind(&OffboardControl::twist_callback, this, _1));
     gimbal_pitch_sub_ = create_subscription<std_msgs::msg::Float32>("/gimbal_pitch_degree", 10, std::bind(&OffboardControl::gimbal_callback, this, std::placeholders::_1));
     timer_ = create_wall_timer(std::chrono::milliseconds(50), std::bind(&OffboardControl::timer_callback, this));
+
+    setpoint_.position[0] = 0.0f;  // N
+    setpoint_.position[1] = 0.0f;  // E
+    setpoint_.position[2] = -5.0f; // D (NED 기준 2m 상공)
+    setpoint_.yaw = 0.0f;          // 원하는 yaw, 혹은 NAN
+
+    // 초기 모드는 위치 제어
+    mode_ = ControlMode::POSITION;
   }
 
 private:

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target mission_follower_node[0m
-[ 50%] Built target manual_path_logger_node
-[ 66%] Built target path_follower_node
-[ 83%] [32mBuilding CXX object CMakeFiles/mission_follower_node.dir/src/mission_follower_node.cpp.o[0m

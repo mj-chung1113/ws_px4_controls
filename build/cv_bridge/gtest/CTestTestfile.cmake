@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /opt/ros/humble/src/gtest_vendor
-# Build directory: /home/acdl1/mj_ws/ws_px4_controls/build/cv_bridge/gtest
+# Build directory: /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

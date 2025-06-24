@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry
+CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry
+CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/image_geometry
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry /home/acdl1/mj_ws/ws_px4_controls/build/image_geometry/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/image_geometry && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/image_geometry /home/jmj/pro_asp_ws/ws_px4_controls/build/image_geometry /home/jmj/pro_asp_ws/ws_px4_controls/build/image_geometry /home/jmj/pro_asp_ws/ws_px4_controls/build/image_geometry/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

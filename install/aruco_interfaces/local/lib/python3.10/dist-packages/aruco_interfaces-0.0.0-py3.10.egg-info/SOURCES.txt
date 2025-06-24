@@ -4,5 +4,3 @@ aruco_interfaces.egg-info/PKG-INFO
 aruco_interfaces.egg-info/SOURCES.txt
 aruco_interfaces.egg-info/dependency_links.txt
 aruco_interfaces.egg-info/top_level.txt
-aruco_interfaces/msg/__init__.py
-aruco_interfaces/msg/_marker_pose_id.py

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/acdl1/mj_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
+CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces
+CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/mj_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
