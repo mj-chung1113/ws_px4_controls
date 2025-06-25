@@ -1,0 +1,19 @@
+[0.011s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target uav_controller[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o[0m
+[5.310s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In constructor ‘[01m[KUavController::UavController()[m[K’:
+[5.310s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:76:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ksensor_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[5.310s]    76 |         auto [01;35m[Ksensor_qos[m[K = rclcpp::SensorDataQoS();
+[5.310s]       |              [01;35m[K^~~~~~~~~~[m[K
+[5.310s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::aruco_marker_cb(aruco_interfaces::msg::MarkerPoseId_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.310s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:481:14:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ is not a member of ‘[01m[Ktf2[m[K’; did you mean ‘[01m[KTransformStorage[m[K’?
+[5.310s]   481 |         tf2::[01;31m[KTransformStamped[m[K tf_base_to_map;
+[5.310s]       |              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.310s]       |              [32m[KTransformStorage[m[K
+[5.310s] [01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:482:41:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_base_to_map[m[K’ was not declared in this scope
+[5.310s]   482 |         tf2::fromMsg(current_pose_enu_, [01;31m[Ktf_base_to_map[m[K);
+[5.310s]       |                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.312s] gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+[5.312s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+[5.312s] gmake: *** [Makefile:146: all] Error 2
+[5.314s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg' returned '2': AMENT_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg -- -j20 -l20

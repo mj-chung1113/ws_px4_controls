@@ -477,17 +477,17 @@ private:
 
         // Look up transform from "map" to "x500_gimbal_0/base_link"
         geometry_msgs::msg::TransformStamped tf_map_to_base_link;
-        tf_map_to_base_link = current_pose_enu_;
-        // try
-        // {
-        //     tf_map_to_base_link = tf_buffer_->lookupTransform(
-        //         "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
-        // }
-        // catch (const tf2::TransformException &ex)
-        // {
-        //     RCLCPP_WARN(get_logger(), "TF lookupTransform failed in aruco_marker_cb: %s", ex.what());
-        //     return;
-        // }
+
+        try
+        {
+            tf_map_to_base_link = tf_buffer_->lookupTransform(
+                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
+        }
+        catch (const tf2::TransformException &ex)
+        {
+            RCLCPP_WARN(get_logger(), "TF lookupTransform failed in aruco_marker_cb: %s", ex.what());
+            return;
+        }
 
         geometry_msgs::msg::PoseStamped marker_in_base;
         marker_in_base.header.frame_id = "x500_gimbal_0/base_link";
