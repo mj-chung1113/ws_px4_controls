@@ -152,10 +152,10 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                 geometry_msgs::msg::PoseStamped marker_in_camera;
                 marker_in_camera.header.stamp = msg->header.stamp;
                 marker_in_camera.header.frame_id = "x500_gimbal_0/camera";
-                marker_in_camera.pose.position.x = -tvecs[i][2];                             // Z in camera
-                marker_in_camera.pose.position.y = tvecs[i][0] + _param_marker_size / 2.0f;  // Y in camera  1
-                marker_in_camera.pose.position.z = -tvecs[i][1] - _param_marker_size / 2.0f; // X in camera  0
-                marker_in_camera.pose.orientation = tf2::toMsg(q);                           // orientation
+                marker_in_camera.pose.position.x = tvecs[i][2];    // Z in camera
+                marker_in_camera.pose.position.y = tvecs[i][0];    // Y in camera  1
+                marker_in_camera.pose.position.z = -tvecs[i][1];   // X in camera  0
+                marker_in_camera.pose.orientation = tf2::toMsg(q); // orientation
 
                 geometry_msgs::msg::PoseStamped marker_in_base;
 

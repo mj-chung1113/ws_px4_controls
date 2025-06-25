@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000596] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.001034] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.001276] (-) JobUnselected: {'identifier': 'drone_takeoff_pub'}
+[0.001650] (-) JobUnselected: {'identifier': 'gazebo_env_setup'}
+[0.001682] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.001702] (-) JobUnselected: {'identifier': 'multi_tracker'}
+[0.001743] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.001768] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001784] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.001800] (-) JobUnselected: {'identifier': 'ugv_controller'}
+[0.001816] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.001830] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.001851] (uav_controller_pkg) JobQueued: {'identifier': 'uav_controller_pkg', 'dependencies': OrderedDict([('aruco_interfaces', '/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces'), ('px4_msgs', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs')])}
+[0.001879] (uav_controller_pkg) JobStarted: {'identifier': 'uav_controller_pkg'}
+[0.019407] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'cmake'}
+[0.020827] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'build'}
+[0.020954] (uav_controller_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg', '--', '-j20', '-l20'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1070'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2018'), ('BUNDLED_DEBUGPY_PATH', '/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '542215'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:13872'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin:/home/jmj/.local/bin:/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/jmj/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1990,unix/jmj:/tmp/.ICE-unix/1990'), ('INVOCATION_ID', 'cc5f44d46e5d471ba2964bd8cb8d4a25'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e5e7ace6e39acdd7.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad40b38978.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.068711] (uav_controller_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_controller\x1b[0m\n'}
+[0.087361] (uav_controller_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o\x1b[0m\n'}
+[0.099432] (-) TimerEvent: {}
+[0.200049] (-) TimerEvent: {}
+[0.300415] (-) TimerEvent: {}
+[0.401824] (-) TimerEvent: {}
+[0.502800] (-) TimerEvent: {}
+[0.603115] (-) TimerEvent: {}
+[0.703406] (-) TimerEvent: {}
+[0.803698] (-) TimerEvent: {}
+[0.904011] (-) TimerEvent: {}
+[1.004356] (-) TimerEvent: {}
+[1.104827] (-) TimerEvent: {}
+[1.205507] (-) TimerEvent: {}
+[1.305908] (-) TimerEvent: {}
+[1.406329] (-) TimerEvent: {}
+[1.506686] (-) TimerEvent: {}
+[1.607048] (-) TimerEvent: {}
+[1.707391] (-) TimerEvent: {}
+[1.807720] (-) TimerEvent: {}
+[1.908157] (-) TimerEvent: {}
+[2.008511] (-) TimerEvent: {}
+[2.108988] (-) TimerEvent: {}
+[2.209318] (-) TimerEvent: {}
+[2.309683] (-) TimerEvent: {}
+[2.410024] (-) TimerEvent: {}
+[2.510348] (-) TimerEvent: {}
+[2.610767] (-) TimerEvent: {}
+[2.711218] (-) TimerEvent: {}
+[2.811626] (-) TimerEvent: {}
+[2.912036] (-) TimerEvent: {}
+[3.012371] (-) TimerEvent: {}
+[3.113212] (-) TimerEvent: {}
+[3.213626] (-) TimerEvent: {}
+[3.314135] (-) TimerEvent: {}
+[3.414588] (-) TimerEvent: {}
+[3.515001] (-) TimerEvent: {}
+[3.615487] (-) TimerEvent: {}
+[3.716061] (-) TimerEvent: {}
+[3.816411] (-) TimerEvent: {}
+[3.916744] (-) TimerEvent: {}
+[4.017147] (-) TimerEvent: {}
+[4.117538] (-) TimerEvent: {}
+[4.217820] (-) TimerEvent: {}
+[4.318275] (-) TimerEvent: {}
+[4.419391] (-) TimerEvent: {}
+[4.519892] (-) TimerEvent: {}
+[4.620263] (-) TimerEvent: {}
+[4.720562] (-) TimerEvent: {}
+[4.820860] (-) TimerEvent: {}
+[4.921175] (-) TimerEvent: {}
+[5.021492] (-) TimerEvent: {}
+[5.121917] (-) TimerEvent: {}
+[5.222278] (-) TimerEvent: {}
+[5.322581] (-) TimerEvent: {}
+[5.422920] (-) TimerEvent: {}
+[5.523295] (-) TimerEvent: {}
+[5.623653] (-) TimerEvent: {}
+[5.724059] (-) TimerEvent: {}
+[5.824570] (-) TimerEvent: {}
+[5.924981] (-) TimerEvent: {}
+[6.025346] (-) TimerEvent: {}
+[6.125805] (-) TimerEvent: {}
+[6.226100] (-) TimerEvent: {}
+[6.326447] (-) TimerEvent: {}
+[6.427032] (-) TimerEvent: {}
+[6.527409] (-) TimerEvent: {}
+[6.627723] (-) TimerEvent: {}
+[6.728057] (-) TimerEvent: {}
+[6.828396] (-) TimerEvent: {}
+[6.928838] (-) TimerEvent: {}
+[7.029927] (-) TimerEvent: {}
+[7.130290] (-) TimerEvent: {}
+[7.230697] (-) TimerEvent: {}
+[7.331072] (-) TimerEvent: {}
+[7.432120] (-) TimerEvent: {}
+[7.532516] (-) TimerEvent: {}
+[7.633334] (-) TimerEvent: {}
+[7.733655] (-) TimerEvent: {}
+[7.833998] (-) TimerEvent: {}
+[7.934398] (-) TimerEvent: {}
+[8.034925] (-) TimerEvent: {}
+[8.135387] (-) TimerEvent: {}
+[8.235767] (-) TimerEvent: {}
+[8.336267] (-) TimerEvent: {}
+[8.436551] (-) TimerEvent: {}
+[8.536850] (-) TimerEvent: {}
+[8.637151] (-) TimerEvent: {}
+[8.737473] (-) TimerEvent: {}
+[8.837775] (-) TimerEvent: {}
+[8.938171] (-) TimerEvent: {}
+[9.038556] (-) TimerEvent: {}
+[9.138959] (-) TimerEvent: {}
+[9.239359] (-) TimerEvent: {}
+[9.339728] (-) TimerEvent: {}
+[9.440062] (-) TimerEvent: {}
+[9.540467] (-) TimerEvent: {}
+[9.641006] (-) TimerEvent: {}
+[9.741729] (-) TimerEvent: {}
+[9.842321] (-) TimerEvent: {}
+[9.942925] (-) TimerEvent: {}
+[10.043554] (-) TimerEvent: {}
+[10.143912] (-) TimerEvent: {}
+[10.244547] (-) TimerEvent: {}
+[10.345025] (-) TimerEvent: {}
+[10.445422] (-) TimerEvent: {}
+[10.545944] (-) TimerEvent: {}
+[10.646280] (-) TimerEvent: {}
+[10.746798] (-) TimerEvent: {}
+[10.848829] (-) TimerEvent: {}
+[10.949158] (-) TimerEvent: {}
+[11.049482] (-) TimerEvent: {}
+[11.149867] (-) TimerEvent: {}
+[11.250336] (-) TimerEvent: {}
+[11.352214] (-) TimerEvent: {}
+[11.452588] (-) TimerEvent: {}
+[11.552992] (-) TimerEvent: {}
+[11.654119] (-) TimerEvent: {}
+[11.754548] (-) TimerEvent: {}
+[11.854834] (-) TimerEvent: {}
+[11.955621] (-) TimerEvent: {}
+[12.055901] (-) TimerEvent: {}
+[12.156222] (-) TimerEvent: {}
+[12.256679] (-) TimerEvent: {}
+[12.357006] (-) TimerEvent: {}
+[12.457360] (-) TimerEvent: {}
+[12.557754] (-) TimerEvent: {}
+[12.658035] (-) TimerEvent: {}
+[12.758341] (-) TimerEvent: {}
+[12.859143] (-) TimerEvent: {}
+[12.959639] (-) TimerEvent: {}
+[13.060058] (-) TimerEvent: {}
+[13.160467] (-) TimerEvent: {}
+[13.260782] (-) TimerEvent: {}
+[13.361077] (-) TimerEvent: {}
+[13.461480] (-) TimerEvent: {}
+[13.561899] (-) TimerEvent: {}
+[13.662232] (-) TimerEvent: {}
+[13.762626] (-) TimerEvent: {}
+[13.863092] (-) TimerEvent: {}
+[13.963468] (-) TimerEvent: {}
+[14.063909] (-) TimerEvent: {}
+[14.164475] (-) TimerEvent: {}
+[14.264935] (-) TimerEvent: {}
+[14.365226] (-) TimerEvent: {}
+[14.465577] (-) TimerEvent: {}
+[14.565898] (-) TimerEvent: {}
+[14.666274] (-) TimerEvent: {}
+[14.766552] (-) TimerEvent: {}
+[14.866869] (-) TimerEvent: {}
+[14.967303] (-) TimerEvent: {}
+[15.067619] (-) TimerEvent: {}
+[15.167966] (-) TimerEvent: {}
+[15.268354] (-) TimerEvent: {}
+[15.368638] (-) TimerEvent: {}
+[15.469091] (-) TimerEvent: {}
+[15.569728] (-) TimerEvent: {}
+[15.670095] (-) TimerEvent: {}
+[15.770399] (-) TimerEvent: {}
+[15.870771] (-) TimerEvent: {}
+[15.971190] (-) TimerEvent: {}
+[16.071527] (-) TimerEvent: {}
+[16.171871] (-) TimerEvent: {}
+[16.272233] (-) TimerEvent: {}
+[16.372637] (-) TimerEvent: {}
+[16.473128] (-) TimerEvent: {}
+[16.573495] (-) TimerEvent: {}
+[16.674020] (-) TimerEvent: {}
+[16.774344] (-) TimerEvent: {}
+[16.874704] (-) TimerEvent: {}
+[16.975164] (-) TimerEvent: {}
+[17.076147] (-) TimerEvent: {}
+[17.176501] (-) TimerEvent: {}
+[17.276821] (-) TimerEvent: {}
+[17.377214] (-) TimerEvent: {}
+[17.477574] (-) TimerEvent: {}
+[17.577975] (-) TimerEvent: {}
+[17.679837] (-) TimerEvent: {}
+[17.780330] (-) TimerEvent: {}
+[17.880634] (-) TimerEvent: {}
+[17.980947] (-) TimerEvent: {}
+[18.029110] (uav_controller_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KUavController::UavController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.029296] (uav_controller_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:76:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Ksensor_qos\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[18.029367] (uav_controller_pkg) StderrLine: {'line': b'   76 |         auto \x1b[01;35m\x1b[Ksensor_qos\x1b[m\x1b[K = rclcpp::SensorDataQoS();\n'}
+[18.029426] (uav_controller_pkg) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.040393] (uav_controller_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable uav_controller\x1b[0m\n'}
+[18.081135] (-) TimerEvent: {}
+[18.181828] (-) TimerEvent: {}
+[18.282271] (-) TimerEvent: {}
+[18.382568] (-) TimerEvent: {}
+[18.482981] (-) TimerEvent: {}
+[18.583602] (-) TimerEvent: {}
+[18.683996] (-) TimerEvent: {}
+[18.785084] (-) TimerEvent: {}
+[18.885535] (-) TimerEvent: {}
+[18.985855] (-) TimerEvent: {}
+[19.086826] (-) TimerEvent: {}
+[19.124141] (uav_controller_pkg) StdoutLine: {'line': b'[100%] Built target uav_controller\n'}
+[19.139113] (uav_controller_pkg) CommandEnded: {'returncode': 0}
+[19.140260] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'install'}
+[19.149799] (uav_controller_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg'], 'cwd': '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jmj'), ('LC_TIME', 'ko_KR.UTF-8'), ('CCACHE_DIR', '/var/tmp/ccache'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/home/jmj'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/jmj/pro_asp_ws'), ('TERM_PROGRAM_VERSION', '1.96.4'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/jmj/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/jmj/.nvm/versions/node/v22.14.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1070'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2018'), ('BUNDLED_DEBUGPY_PATH', '/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '542215'), ('NVM_DIR', '/home/jmj/.nvm'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jmj'), ('JOURNAL_STREAM', '8:13872'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jmj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jmj/anaconda3/bin:/usr/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/anaconda3/bin:/usr/bin:/opt/ros/humble/bin:/home/jmj/.nvm/versions/node/v22.14.0/bin:/usr/local/cuda/bin:/home/jmj/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jmj/.local/bin:/home/jmj/.local/bin:/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/jmj/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/jmj/.local/bin'), ('SESSION_MANAGER', 'local/jmj:@/tmp/.ICE-unix/1990,unix/jmj:/tmp/.ICE-unix/1990'), ('INVOCATION_ID', 'cc5f44d46e5d471ba2964bd8cb8d4a25'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jmj/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e5e7ace6e39acdd7.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ad40b38978.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jmj/pro_asp_ws/ws_px4_controls/build/uav_controller_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs:/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble')]), 'shell': False}
+[19.159772] (uav_controller_pkg) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[19.160110] (uav_controller_pkg) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/lib/uav_controller_pkg/uav_controller\n'}
+[19.182201] (uav_controller_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/lib/uav_controller_pkg/uav_controller" to ""\n'}
+[19.182509] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/package_run_dependencies/uav_controller_pkg\n'}
+[19.182601] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/parent_prefix_path/uav_controller_pkg\n'}
+[19.182757] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/ament_prefix_path.sh\n'}
+[19.182946] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/ament_prefix_path.dsv\n'}
+[19.183079] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/path.sh\n'}
+[19.183189] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/path.dsv\n'}
+[19.183302] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.bash\n'}
+[19.183399] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.sh\n'}
+[19.183485] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.zsh\n'}
+[19.183572] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.dsv\n'}
+[19.183664] (uav_controller_pkg) StdoutLine: {'line': b'-- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.dsv\n'}
+[19.183880] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/packages/uav_controller_pkg\n'}
+[19.184059] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/cmake/uav_controller_pkgConfig.cmake\n'}
+[19.184133] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/cmake/uav_controller_pkgConfig-version.cmake\n'}
+[19.184194] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.xml\n'}
+[19.185337] (uav_controller_pkg) CommandEnded: {'returncode': 0}
+[19.186906] (-) TimerEvent: {}
+[19.204989] (uav_controller_pkg) JobEnded: {'identifier': 'uav_controller_pkg', 'rc': 0}
+[19.205772] (-) EventReactorShutdown: {}

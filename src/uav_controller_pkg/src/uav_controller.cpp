@@ -271,9 +271,9 @@ private:
     {
         update_pose(); // Update current drone pose from TF
 
-        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
-                             "State: %d, enu_x=  %.2f , enu_y=%.2f, enu_z=%.2f, WP_Idx: %zu",
-                             static_cast<int>(state_), current_pose_enu_.position.x, current_pose_enu_.position.y, current_pose_enu_.position.z, current_wp_idx_);
+        // RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+        //                      "State: %d, enu_x=  %.2f , enu_y=%.2f, enu_z=%.2f, WP_Idx: %zu",
+        //                      static_cast<int>(state_), current_pose_enu_.position.x, current_pose_enu_.position.y, current_pose_enu_.position.z, current_wp_idx_);
         switch (state_)
         {
         case MissionState::IDLE:
@@ -295,7 +295,7 @@ private:
 
         case MissionState::TAKEOFF:
         {
-            send_gimbal_target_pitch_degree(-90.0);
+            send_gimbal_target_pitch_degree(-90.0f);
 
             // Create a Pose from the current waypoint Point
             geometry_msgs::msg::Pose target_pose;
@@ -331,10 +331,12 @@ private:
 
                 if (next_label == 'h')
                 {
+                    RCLCPP_INFO(get_logger(), "H DETECTED, setting gimbal pitch to 0 degrees.");
                     send_gimbal_target_pitch_degree(0.0f); // Forward
                 }
                 else if (next_label == 'm' || next_label == 'p')
                 {
+                    RCLCPP_INFO(get_logger(), "M OR P DETECTED, setting gimbal pitch to -90 degrees.");
                     send_gimbal_target_pitch_degree(-90.0f); // Downward
                 }
             }
@@ -473,25 +475,19 @@ private:
         if (state_ != MissionState::SEARCHING_FOR_MARKER)
             return;
 
-        // Check if marker ID has been seen before
-        if (seen_marker_ids_.count(msg->id) > 0)
-        {
-            RCLCPP_DEBUG(get_logger(), "Marker #%d already seen. Skipping.", msg->id);
-            return;
-        }
-
         // Look up transform from "map" to "x500_gimbal_0/base_link"
         geometry_msgs::msg::TransformStamped tf_map_to_base_link;
-        try
-        {
-            tf_map_to_base_link = tf_buffer_->lookupTransform(
-                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
-        }
-        catch (const tf2::TransformException &ex)
-        {
-            RCLCPP_WARN(get_logger(), "TF lookupTransform failed in aruco_marker_cb: %s", ex.what());
-            return;
-        }
+        tf_map_to_base_link = current_pose_enu_;
+        // try
+        // {
+        //     tf_map_to_base_link = tf_buffer_->lookupTransform(
+        //         "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
+        // }
+        // catch (const tf2::TransformException &ex)
+        // {
+        //     RCLCPP_WARN(get_logger(), "TF lookupTransform failed in aruco_marker_cb: %s", ex.what());
+        //     return;
+        // }
 
         geometry_msgs::msg::PoseStamped marker_in_base;
         marker_in_base.header.frame_id = "x500_gimbal_0/base_link";
@@ -539,8 +535,8 @@ private:
 
     void send_setpoint_enu_to_ned(const geometry_msgs::msg::Pose &target_pose_map)
     {
-        RCLCPP_INFO(this->get_logger(), "send_setpoint_enu_to_ned called with target: x=%.2f, y=%.2f, z=%.2f",
-                    target_pose_map.position.x, target_pose_map.position.y, target_pose_map.position.z);
+        // RCLCPP_INFO(this->get_logger(), "send_setpoint_enu_to_ned called with target: x=%.2f, y=%.2f, z=%.2f",
+        //             target_pose_map.position.x, target_pose_map.position.y, target_pose_map.position.z);
 
         geometry_msgs::msg::PoseStamped input_pose_stamped;
         input_pose_stamped.header.frame_id = "map";
@@ -564,11 +560,11 @@ private:
             double roll, pitch, yaw;
             m.getRPY(roll, pitch, yaw); // Matrix3x3으로부터 Roll, Pitch, Yaw 추출
 
-            RCLCPP_INFO(this->get_logger(), "local_setpoint: x=%.2f, y=%.2f, z=%.2f, Yaw: %.2f (rad)",
-                        transformed_pose_stamped.pose.position.x,
-                        transformed_pose_stamped.pose.position.y,
-                        transformed_pose_stamped.pose.position.z,
-                        yaw); // 추출된 yaw 값 사용
+            // RCLCPP_INFO(this->get_logger(), "local_setpoint: x=%.2f, y=%.2f, z=%.2f, Yaw: %.2f (rad)",
+            //             transformed_pose_stamped.pose.position.x,
+            //             transformed_pose_stamped.pose.position.y,
+            //             transformed_pose_stamped.pose.position.z,
+            //             yaw); // 추출된 yaw 값 사용
         } // tf2::Quaternion으로부터 Yaw를 추출
 
         catch (const tf2::TransformException &ex) // Correctly place catch block
