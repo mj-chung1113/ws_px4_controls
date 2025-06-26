@@ -370,7 +370,7 @@ private:
                 // For position control, orientation is often ignored by PX4 if position-only commands are sent.
                 // However, if you explicitly want to control yaw, you need to provide a valid quaternion.
                 // For simplicity, let's use the drone's current yaw if not heading locked.
-                target_pose.orientation = current_pose_enu_.orientation; // Use current drone's orientation
+                // target_pose.orientation = current_pose_enu_.orientation; // Use current drone's orientation
                 send_setpoint_enu_to_ned(target_pose);
             }
 

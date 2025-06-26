@@ -76,7 +76,7 @@ private:
     /* 아직 setpoint를 받은 적이 없다면 단순 송출만 */
     if (!target_command)
     {
-      RCLCPP_INFO(get_logger(), "Waiting for target command.");
+      RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000, "Waiting for target command.");
       return;
     }
 
@@ -89,7 +89,7 @@ private:
         publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
         publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0);
         armed_ = true;
-        RCLCPP_INFO(get_logger(), "Set OFFBOARD mode & ARM (after pose received)");
+        RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000, "Set OFFBOARD mode & ARM (after pose received)");
       }
     }
   }
@@ -208,7 +208,7 @@ private:
     cmd.from_external = true;
 
     vehicle_command_pub_->publish(cmd);
-    RCLCPP_INFO(get_logger(), ">>> Sent CONFIGURE(1001) – take primary control");
+    // RCLCPP_INFO(get_logger(), ">>> Sent CONFIGURE(1001) – take primary control");
   }
 };
 
