@@ -110,8 +110,8 @@ private:
     // setpoint_.yaw = static_cast<float>((M_PI / 2.0) - yaw_enu);
 
     // 로그를 추가하여 변환된 NED 값을 직접 확인하면 디버깅에 용이합니다.
-    RCLCPP_INFO(get_logger(), "Converted to NED -> N:%.2f, E:%.2f, D:%.2f, Yaw:%.2f",
-                setpoint_.position[0], setpoint_.position[1], setpoint_.position[2], setpoint_.yaw);
+    // RCLCPP_INFO(get_logger(), "Converted to NED -> N:%.2f, E:%.2f, D:%.2f, Yaw:%.2f",
+    //             setpoint_.position[0], setpoint_.position[1], setpoint_.position[2], setpoint_.yaw);
 
     target_command = true;
   }

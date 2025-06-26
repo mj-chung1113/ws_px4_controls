@@ -1,0 +1,30 @@
+[0.011s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup -- -j20 -l20
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target pose_tf_broadcaster[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_tf_broadcaster.dir/src/pose_tf_broadcaster.cpp.o[0m
+[6.494s] [100%] [32m[1mLinking CXX executable pose_tf_broadcaster[0m
+[6.834s] [100%] Built target pose_tf_broadcaster
+[6.844s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup -- -j20 -l20
+[6.854s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup
+[6.862s] -- Install configuration: ""
+[6.862s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster
+[6.865s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster" to ""
+[6.865s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch
+[6.865s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/pose_tf_broadcaster.launch.py
+[6.865s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/topic_bridge.launch copy.py
+[6.865s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/topic_bridge.launch.py
+[6.865s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/package_run_dependencies/gazebo_env_setup
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/parent_prefix_path/gazebo_env_setup
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.sh
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.dsv
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.sh
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.dsv
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.bash
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.sh
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.zsh
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.dsv
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.dsv
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/packages/gazebo_env_setup
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig.cmake
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig-version.cmake
+[6.866s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.xml
+[6.868s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup

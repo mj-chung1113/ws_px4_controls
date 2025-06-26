@@ -1,0 +1,8 @@
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:[m[K In member function ‘[01m[Kvoid UavController::local_pose_cb(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jmj/pro_asp_ws/ws_px4_controls/src/uav_controller_pkg/src/uav_controller.cpp:490:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_v[m[K’ was not declared in this scope; did you mean ‘[01m[Klocale_t[m[K’?
+  490 |         [01;31m[Klocal_v[m[K = msg; // PX4 로컬 위치 업데이트
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Klocale_t[m[K
+gmake[2]: *** [CMakeFiles/uav_controller.dir/build.make:76: CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -30,7 +30,7 @@
 
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지
 
-#define TAKEOFFALTITUDE 5.0                                                    // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
+#define TAKEOFFALTITUDE 10.0                                                   // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
 #define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
 #define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
 
@@ -52,69 +52,75 @@ public:
         : Node("uav_controller"), state_(MissionState::IDLE), current_wp_idx_(0), takeoff_sent_(false)
     {
         load_waypoints(WP_LOAD_PATH);
-        pose_cmd_pub_ = create_publisher<geometry_msgs::msg::PoseStamped>("/command/pose", 10);
-        takeoff_pub_ = create_publisher<std_msgs::msg::Bool>("/done_takeoff", 10);
+
+        // QOS =================================================================================
         rclcpp::QoS latching_qos(1);
         latching_qos.transient_local();
+        auto pose_qos = rclcpp::QoS(rclcpp::KeepLast(3));
+        auto sensor_qos = rclcpp::SensorDataQoS();
+
+        // PUBLISHERS ==========================================================================
+        pose_cmd_pub_ = create_publisher<geometry_msgs::msg::PoseStamped>("/command/pose", 10);
+        takeoff_pub_ = create_publisher<std_msgs::msg::Bool>("/done_takeoff", 10);
         gimbal_pitch_pub_ = this->create_publisher<std_msgs::msg::Float32>("/gimbal_pitch_degree", latching_qos);
         ready_to_go_pub_ = create_publisher<std_msgs::msg::Bool>("/ready_to_go", 10);
 
-        takeoff_sub_ = create_subscription<std_msgs::msg::Bool>(
-            "/do_takeoff", 10, std::bind(&UavController::takeoff_cb, this, std::placeholders::_1));
-
-        // aruco marker subsription
-        auto pose_qos = rclcpp::QoS(rclcpp::KeepLast(3));
-        marker_sub_ = create_subscription<aruco_interfaces::msg::MarkerPoseId>(
-            "/x500/target", pose_qos, std::bind(&UavController::aruco_marker_cb, this, std::placeholders::_1));
-
-        // TF2 buffer and listener initialization
+        // SUBSCRIBERS ==========================================================================
+        takeoff_sub_ = create_subscription<std_msgs::msg::Bool>("/do_takeoff", 10, std::bind(&UavController::takeoff_cb, this, std::placeholders::_1));
+        ugv_arrived_sub_ = create_subscription<std_msgs::msg::Bool>("/ugv_landing_spot_arrived", 10, std::bind(&UavController::ugvLandingSpotCallback, this, std::placeholders::_1));
+        marker_sub_ = create_subscription<aruco_interfaces::msg::MarkerPoseId>("/x500/target", pose_qos, std::bind(&UavController::aruco_marker_cb, this, std::placeholders::_1));
+        local_pose_sub_ = create_subscription<px4_msgs::msg::VehicleLocalPosition>(
+            "/fmu/out/vehicle_local_position", sensor_qos, std::bind(&UavController::local_pose_cb, this, std::placeholders::_1));
+        // TF2 buffer and listener
         tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
         tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
-        // TF2 broadcaster initialization
         static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this); // This should be StaticTransformBroadcaster if it's a fixed frame
 
-        auto sensor_qos = rclcpp::SensorDataQoS();
-        // local_pose_sub_ = create_subscription<px4_msgs::msg::VehicleLocalPosition>(
-        //     "/fmu/out/vehicle_local_position", sensor_qos,
-        //     std::bind(&UavController::odometry_cb, this, std::placeholders::_1)); // Corrected bind for odometry_cb
-
+        // MAIN LOOP =============================================================================
         main_timer_ = create_wall_timer(std::chrono::milliseconds(50), std::bind(&UavController::main_loop, this));
 
         RCLCPP_INFO(get_logger(), "UavController initialised. Mission starts");
         std::this_thread::sleep_for(std::chrono::seconds(2));
         state_ = MissionState::IDLE;
-        // set_local_static(); // This call should ideally happen after current_pose_enu_ is valid, or on demand.
-        // Moved into IDLE state logic.
     }
 
 private:
-    //=============================================================================
-    // Pubs/Subs
+    // Pubs============================================================================
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_cmd_pub_;
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr gimbal_pitch_pub_;
-    rclcpp::Subscription<aruco_interfaces::msg::MarkerPoseId>::SharedPtr marker_sub_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_pub_;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr takeoff_sub_;
-    rclcpp::TimerBase::SharedPtr main_timer_;
-    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_pose_sub_;
+    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr gimbal_pitch_pub_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr ready_to_go_pub_;
-    //=============================================================================
-    // TF2 related members
+
+    // Subs============================================================================
+    rclcpp::Subscription<aruco_interfaces::msg::MarkerPoseId>::SharedPtr marker_sub_;
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr takeoff_sub_;
+    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_pose_sub_;
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr ugv_arrived_sub_;
+
+    // main timer =====================================================================
+    rclcpp::TimerBase::SharedPtr main_timer_;
+
+    // TF2 related members ============================================================
     std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> static_broadcaster_; // Declared as a member
 
-    // Mission data
+    // Mission data ===================================================================
     MissionState state_;
     size_t current_wp_idx_;
     std::vector<geometry_msgs::msg::Point> waypoints_enu_;
     std::vector<geometry_msgs::msg::Point> precise_markers_world_;
     std::vector<char> waypoint_labels_;
+    px4_msgs::msg::VehicleLocalPosition::SharedPtr local_v_;
     geometry_msgs::msg::Pose current_pose_enu_{}; // Updated from px4_msgs/VehicleLocalPosition via TF
     geometry_msgs::msg::Point landing_spot_enu_{};
     bool takeoff_sent_;
-    bool set_localstatic_ = false; // 로컬 좌표계 설정 완료 여부
-
+    bool set_localstatic_ = false;       // 로컬 좌표계(NED) 설정 완료 여부
+    bool ugv_landing_ready_{false};      // UGV 착륙지점 도착 여부
+    float stopped_vel_threshold_ = 0.1f; // m/s, 드론이 정지했다고 판단하는 속도 임계값
+    bool is_drone_stable_{false};
+    float stable_timeout_ = 5.0f;    // seconds, 드론이 안정화되었다고 판단하는 시간 임계값
+    float searching_timeout_ = 2.0f; // seconds, 마커 검색 시간 임계값
     // Hovering time variables
     rclcpp::Time wait_start_time_;
     rclcpp::Time search_start_time_;
@@ -307,7 +313,7 @@ private:
 
             send_setpoint_enu_to_ned(target_pose); // Pass a Pose object
             RCLCPP_INFO(get_logger(), "send_setpoint");
-            if (current_pose_enu_.position.z > TAKEOFFALTITUDE - 0.5) // Reduced tolerance for reaching altitude
+            if (current_pose_enu_.position.z > 0.5f * TAKEOFFALTITUDE - 0.5) // Reduced tolerance for reaching altitude
             {
                 if (!takeoff_sent_)
                 {
@@ -398,9 +404,9 @@ private:
             }
             send_setpoint_enu_to_ned(target_pose);
 
-            if ((this->now() - wait_start_time_).seconds() > 2.0)
+            if (is_drone_stable_ || (this->now() - wait_start_time_).seconds() > stable_timeout_)
             {
-                RCLCPP_INFO(get_logger(), "2s wait done. Now start marker searching.");
+                RCLCPP_INFO(get_logger(), "drone stabled");
                 search_start_time_ = this->now();
                 state_ = MissionState::SEARCHING_FOR_MARKER;
             }
@@ -424,7 +430,7 @@ private:
                 }
                 send_setpoint_enu_to_ned(target_pose);
 
-                if ((this->now() - search_start_time_).seconds() > 2.0)
+                if ((this->now() - search_start_time_).seconds() > searching_timeout_)
                 {
                     RCLCPP_WARN(get_logger(), "No marker found at WP %zu within 2s. Moving on.", current_wp_idx_);
                     ++current_wp_idx_; // Move to next waypoint
@@ -435,6 +441,7 @@ private:
         }
         case MissionState::PRECISION_LANDING:
         {
+
             RCLCPP_INFO(get_logger(), "Executing precision landing at [N: %.2f, E: %.2f]", landing_spot_enu_.x, landing_spot_enu_.y);
 
             geometry_msgs::msg::Pose landing_pose;
@@ -453,19 +460,48 @@ private:
         case MissionState::MISSION_COMPLETE:
         {
             RCLCPP_INFO(get_logger(), "Mission complete. Hovering at final location.");
+            if (ugv_landing_ready_) // UGV 도착
+            {
+                RCLCPP_INFO(get_logger(), "UGV READY FOR LANDING");
+                state_ = MissionState::PRECISION_LANDING;
+            }
+            else
+            {
+                RCLCPP_INFO(get_logger(), "UGV is not ready for landing. Proceeding to hover and prepare for landing.");
+                break;
+            }
+
             if (!waypoints_enu_.empty())
             {
                 const auto &last_wp_point = waypoints_enu_.back();
                 geometry_msgs::msg::Pose hover_pose;
                 hover_pose.position.x = last_wp_point.x;
                 hover_pose.position.y = last_wp_point.y;
-                hover_pose.position.z = last_wp_point.z + 5.0;          // Hover 5m above last waypoint
+                hover_pose.position.z = last_wp_point.z + 4.0;          // Hover 5m above last waypoint
                 hover_pose.orientation = current_pose_enu_.orientation; // Maintain current yaw for hovering
 
                 send_setpoint_enu_to_ned(hover_pose); // Send the full Pose for hovering
             }
             break;
         }
+        }
+    }
+    void local_pose_cb(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg)
+    {
+
+        local_v_ = msg; // PX4 로컬 위치 업데이트
+
+        // 3D 속도
+        float speed = std::sqrt(msg->vx * msg->vx + msg->vy * msg->vy + msg->vz * msg->vz);
+
+        // 안정화 상태 감지
+        if (speed < stopped_vel_threshold_)
+        {
+            is_drone_stable_ = true;
+        }
+        else
+        {
+            is_drone_stable_ = false;
         }
     }
 
@@ -572,7 +608,10 @@ private:
             RCLCPP_WARN(this->get_logger(), "Could not transform 'map' to 'local_static': %s", ex.what());
         }
     }
-
+    void ugvLandingSpotCallback(const std_msgs::msg::Bool::SharedPtr msg)
+    {
+        ugv_landing_ready_ = msg->data;
+    }
     // Helper to load waypoints from CSV
     void load_waypoints(const std::string &filename)
     {

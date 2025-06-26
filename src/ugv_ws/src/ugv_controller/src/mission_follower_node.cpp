@@ -45,7 +45,8 @@ public:
     FOLLOWING_PATH,
     STOPPING_FOR_DRONE,        // 드론 이륙 위해 정지 + 2초 대기 시작
     WAITING_FOR_DRONE_TAKEOFF, // 2초 대기 완료 후 드론 이륙 신호 기다리는 중
-    DRONE_TAKEOFF_COMPLETE     // 드론 이륙 완료 후 다음 웨이포인트로 이동 직전
+    DRONE_TAKEOFF_COMPLETE,    // 드론 이륙 완료 후 다음 웨이포인트로 이동 직전
+    DRONE_LANDING_WAITING
   };
   PathFollower()
       : Node("mission_follower_node"), tf_buffer_(this->get_clock()), tf_listener_(tf_buffer_),
@@ -68,7 +69,7 @@ public:
     // Publishers
     cmd_pub_ = create_publisher<geometry_msgs::msg::Twist>("/model/X1_asp/cmd_vel", 10);
     takeoff_pub_ = create_publisher<std_msgs::msg::Bool>("/do_takeoff", 10);
-    ugv_arrival_pub_ = create_publisher<std_msgs::msg::Bool>("/ugv/mission2_arrived", 10);
+    ugv_landing_arrival_pub_ = create_publisher<std_msgs::msg::Bool>("/ugv_landing_spot_arrived", 10);
 
     // Subscribers
     takeoff_sub_ = create_subscription<std_msgs::msg::Bool>("/done_takeoff", 10,
@@ -198,11 +199,13 @@ private:
       cmd.linear.x = 0.0;
       cmd.angular.z = 0.0;
       cmd_pub_->publish(cmd); // UGV fully stops
+      current_ugv_state_ = UGVState::DRONE_LANDING_WAITING;
       RCLCPP_INFO(get_logger(), "All waypoints completed. Shutting down node.");
+
       // Publish final arrival signal if needed, then shut down
-      std_msgs::msg::Bool arrival_msg;
-      arrival_msg.data = true;
-      ugv_arrival_pub_->publish(arrival_msg);
+      std_msgs::msg::Bool landing_ready_msg;
+      landing_ready_msg.data = true;
+      ugv_landing_arrival_pub_->publish(landing_ready_msg);
       timer_->cancel();
       rclcpp::shutdown();
       return;
@@ -368,12 +371,11 @@ private:
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr path_pub_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_pub_;
-  rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr ugv_arrival_pub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr takeoff_sub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr ready_to_go_sub;
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::TimerBase::SharedPtr delay_timer_; // For the 2-second delay
-
+  rclcpp::TimerBase::SharedPtr delay_timer_;                                  // For the 2-second delay
+  rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr ugv_landing_arrival_pub_; // 랑데뷰 준비 완료 신호
   tf2_ros::Buffer tf_buffer_;
   tf2_ros::TransformListener tf_listener_;
 
