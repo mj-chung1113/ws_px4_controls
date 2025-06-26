@@ -1,0 +1,120 @@
+[0.028s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge
+[0.085s] -- The C compiler identification is GNU 11.4.0
+[0.153s] -- The CXX compiler identification is GNU 11.4.0
+[0.171s] -- Detecting C compiler ABI info
+[0.230s] -- Detecting C compiler ABI info - done
+[0.237s] -- Check for working C compiler: /usr/lib/ccache/gcc - skipped
+[0.238s] -- Detecting C compile features
+[0.239s] -- Detecting C compile features - done
+[0.242s] -- Detecting CXX compiler ABI info
+[0.321s] -- Detecting CXX compiler ABI info - done
+[0.329s] -- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped
+[0.329s] -- Detecting CXX compile features
+[0.330s] -- Detecting CXX compile features - done
+[0.332s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.554s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.422s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed 
+[1.441s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 
+[1.444s] -- Found rcpputils: 2.4.5 (/opt/ros/humble/share/rcpputils/cmake)
+[1.461s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.494s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.501s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.513s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.534s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.978s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[1.985s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[1.985s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[2.014s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[2.014s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[2.116s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[2.124s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.255s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.256s] -- Looking for pthread.h
+[2.361s] -- Looking for pthread.h - found
+[2.361s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.442s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.445s] -- Found Threads: TRUE  
+[4.764s] -- Configuring done
+[4.790s] -- Generating done
+[4.797s] -- Build files have been written to: /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge
+[4.822s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge
+[4.824s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge -- -j20 -l20
+[4.919s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[4.919s] [ 25%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[4.919s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[4.919s] [ 25%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[4.931s] [ 25%] Built target ament_cmake_python_copy_cv_bridge
+[4.943s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.947s] [ 37%] [32m[1mLinking CXX static library libgtest.a[0m
+[4.954s] [ 43%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[5.051s] [ 43%] Built target gtest_main
+[5.099s] [ 43%] Built target gtest
+[5.194s] [ 43%] Built target cv_bridge
+[5.217s] [ 68%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[5.217s] [ 68%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[5.217s] [ 68%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[5.217s] [ 68%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[5.217s] [ 75%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o[0m
+[5.217s] [ 81%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[5.220s] [ 87%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[5.248s] [ 93%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[5.268s] [100%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[5.280s] running egg_info
+[5.280s] creating cv_bridge.egg-info
+[5.280s] writing cv_bridge.egg-info/PKG-INFO
+[5.280s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[5.280s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[5.284s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[5.285s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[5.286s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[5.361s] [100%] Built target ament_cmake_python_build_cv_bridge_egg
+[5.483s] [100%] Built target cv_bridge_boost
+[5.800s] [100%] Built target cv_bridge-utest
+[5.816s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge -- -j20 -l20
+[5.818s] Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge
+[5.828s] -- Install configuration: ""
+[5.829s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[5.829s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[5.829s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info
+[5.829s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt
+[5.830s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt
+[5.830s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO
+[5.830s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt
+[5.830s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge
+[5.831s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[5.831s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[5.868s] Listing '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[5.868s] Compiling '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...
+[5.868s] Compiling '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...
+[5.876s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so
+[5.878s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so" to ""
+[5.878s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[5.878s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so
+[5.878s] -- Set runtime path of "/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""
+[5.879s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge
+[5.879s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge
+[5.879s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h
+[5.879s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h
+[5.879s] -- Up-to-date: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/lib/libcv_bridge.so
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/path.sh
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[5.880s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.bash
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.sh
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.dsv
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[5.881s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[5.882s] -- Installing: /home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge/share/cv_bridge/package.xml
+[5.886s] Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge

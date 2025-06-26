@@ -142,7 +142,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
         }
         int selected_id = ids[best_marker_idx];
         std::vector<std::vector<cv::Point2f>> selected_corners = {corners[best_marker_idx]}; // Single element vector
-        
+
         if (!_camera_matrix.empty() && !_dist_coeffs.empty())
         {
             std::vector<cv::Vec3d> rvecs, tvecs; // Use vectors for multiple markers
@@ -172,45 +172,71 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                 RCLCPP_INFO(this->get_logger(), "3D marker center (camera): x=%.3f, y=%.3f, z=%.3f",
                             tvecs[i][0], tvecs[i][1], tvecs[i][2]);
                 //-======
-                geometry_msgs::msg::PoseStamped marker_in_camera;
-                marker_in_camera.header.stamp = msg->header.stamp;
-                marker_in_camera.header.frame_id = "x500_gimbal_0/camera";
-                marker_in_camera.pose.position.x = tvecs[i][2];    // Z in camera
-                marker_in_camera.pose.position.y = -tvecs[i][0];    // Y in camera  1
-                marker_in_camera.pose.position.z = tvecs[i][1];   // X in camera  00.5f * _param_marker_size
-                marker_in_camera.pose.orientation = tf2::toMsg(q); // orientation
-
-                geometry_msgs::msg::PoseStamped marker_in_base;
-
                 try
                 {
-                    tf_buffer_->transform(marker_in_camera, marker_in_base, "x500_gimbal_0/base_link", tf2::durationFromSec(0.5));
+                    geometry_msgs::msg::TransformStamped t_cam_to_base_stamped = tf_buffer_->lookupTransform(
+                        "x500_gimbal_0/camera_link", "x500_gimbal_0/base_link", tf2::TimePointZero);
+                    tf2::Transform t_cam_to_base;
+                    tf2::fromMsg(t_cam_to_base_stamped.transform, t_cam_to_base);
 
-                    // ====================== 수정 시작 ======================
-                    aruco_interfaces::msg::MarkerPoseId aruco_marker_msg;
-                    aruco_marker_msg.header.stamp = marker_in_base.header.stamp;       // TF 변환 후의 타임스탬프 사용
-                    aruco_marker_msg.header.frame_id = marker_in_base.header.frame_id; // "x500_gimbal_0/base_link"
-                    aruco_marker_msg.pose = marker_in_base.pose;
-                    aruco_marker_msg.id = ids[i];
+                    tf2::Vector3 v_cam_to_base = t_cam_to_base.getOrigin();
+                    tf2::Quaternion q_cam_to_base = t_cam_to_base.getRotation();
 
-                    _aruco_marker_pub->publish(aruco_marker_msg);
+                    // OpenCV -> base_link 기준 변환
+                    tf2::Vector3 v_base_to_marker_assumed(-tvecs[i][2], tvecs[i][0], -tvecs[i][1]);
 
-                    // _target_pose_pub->publish(marker_in_base); // 이 라인 제거
-                    // std_msgs::msg::Int32 id_msg;
-                    // id_msg.data = ids[i];
-                    // _target_id_pub->publish(id_msg); // 이 라인 제거
-                    // ====================== 수정 끝 ======================
+                    // camera offset은 0
+                    tf2::Vector3 v_camera_offset_in_base(-0.07, 0.0, -0.16);
+                    tf2::Vector3 v_rotated_offset = tf2::quatRotate(q_cam_to_base, v_camera_offset_in_base);
 
-                    _target[0] = marker_in_base.pose.position.x;
-                    _target[1] = marker_in_base.pose.position.y;
-                    _target[2] = marker_in_base.pose.position.z;
+                    tf2::Vector3 final_pos_in_cam = v_cam_to_base + v_base_to_marker_assumed + v_rotated_offset;
+
+                    // 방향 (rvec → quaternion)
+                    cv::Mat rot_mat;
+                    cv::Rodrigues(rvecs[i], rot_mat);
+                    tf2::Matrix3x3 R_marker_in_cv(
+                        rot_mat.at<double>(0, 0), rot_mat.at<double>(0, 1), rot_mat.at<double>(0, 2),
+                        rot_mat.at<double>(1, 0), rot_mat.at<double>(1, 1), rot_mat.at<double>(1, 2),
+                        rot_mat.at<double>(2, 0), rot_mat.at<double>(2, 1), rot_mat.at<double>(2, 2));
+                    tf2::Quaternion q_marker_in_cv;
+                    R_marker_in_cv.getRotation(q_marker_in_cv);
+
+                    tf2::Matrix3x3 R_cv_to_ros;
+                    R_cv_to_ros.setValue(0, 1, 0,
+                                         0, 0, -1,
+                                         -1, 0, 0);
+                    tf2::Quaternion q_cv_to_ros;
+                    R_cv_to_ros.getRotation(q_cv_to_ros);
+
+                    tf2::Quaternion q_final = q_cv_to_ros * q_marker_in_cv;
+
+                    geometry_msgs::msg::Pose final_relative_pose;
+                    final_relative_pose.position.x = final_pos_in_cam.x();
+                    final_relative_pose.position.y = final_pos_in_cam.y();
+                    final_relative_pose.position.z = final_pos_in_cam.z();
+                    final_relative_pose.orientation = tf2::toMsg(q_final);
+
+                    geometry_msgs::msg::PoseStamped marker_in_camera;
+                    marker_in_camera.header.stamp = msg->header.stamp;
+                    marker_in_camera.header.frame_id = "x500_gimbal_0/camera_link";
+                    marker_in_camera.pose = final_relative_pose;
+
+                    marker_in_camera.pose.orientation = tf2::toMsg(q_final);
+
+                    geometry_msgs::msg::PoseStamped marker_in_map = tf_buffer_->transform(
+                        marker_in_camera, "map", tf2::durationFromSec(0.3));
+
+                    // publish
+                    aruco_interfaces::msg::MarkerPoseId aruco_target;
+                    aruco_target.header = marker_in_map.header;
+                    aruco_target.pose = marker_in_map.pose;
+                    aruco_target.id = ids[i];
+                    _aruco_marker_pub->publish(aruco_target);
                 }
                 catch (tf2::TransformException &ex)
                 {
                     RCLCPP_WARN(this->get_logger(), "TF transform failed: %s", ex.what());
                 }
-
-                // =================== NEW/CHANGED LOGIC ENDS HERE ===================
             }
         }
         else
