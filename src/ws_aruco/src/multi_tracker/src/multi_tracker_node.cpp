@@ -4,6 +4,7 @@
 #include <tf2_ros/buffer.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <aruco_interfaces/msg/marker_pose_id.hpp>
+#include <std_msgs/msg/float32.hpp>
 
 MultiTrackerNode::MultiTrackerNode()
     : Node("multi_tracker_node")
@@ -28,6 +29,10 @@ MultiTrackerNode::MultiTrackerNode()
     _camera_info_sub = this->create_subscription<sensor_msgs::msg::CameraInfo>(
         _camera_info_topic, image_qos,
         std::bind(&MultiTrackerNode::camera_info_callback, this, std::placeholders::_1));
+
+    marker_size_sub_ = this->create_subscription<std_msgs::msg::Float32>(
+        "/mk_size", image_qos,
+        std::bind(&MultiTrackerNode::marker_size_callback, this, std::placeholders::_1));
 
     //_target_id_pub = this->create_publisher<std_msgs::msg::Int32>(_target_id_topic, pose_qos);
     _image_pub = this->create_publisher<sensor_msgs::msg::Image>(_image_proc_topic, image_qos);
@@ -64,6 +69,12 @@ void MultiTrackerNode::loadParameters()
     // get_parameter("target_pose_topic", _target_pose_topic);
     get_parameter("aruco_marker_topic", _aruco_marker_topic);
 }
+void MultiTrackerNode::marker_size_callback(const std_msgs::msg::Float32::SharedPtr msg)
+{
+    _param_marker_size = msg->data;
+
+    RCLCPP_WARN(this->get_logger(), "[marker_size_callback] 마커 사이즈 업데이트됨: %f", _param_marker_size);
+}
 
 void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr msg)
 {
@@ -88,6 +99,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
         std::vector<std::vector<cv::Point2f>> corners;
         cv::aruco::detectMarkers(cv_ptr->image, _dictionary, corners, ids, _detectorParams);
         cv::aruco::drawDetectedMarkers(cv_ptr->image, corners, ids);
+
         if (ids.empty())
         {
             // No markers detected, just publish the processed image and return
@@ -130,7 +142,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
         }
         int selected_id = ids[best_marker_idx];
         std::vector<std::vector<cv::Point2f>> selected_corners = {corners[best_marker_idx]}; // Single element vector
-
+        
         if (!_camera_matrix.empty() && !_dist_coeffs.empty())
         {
             std::vector<cv::Vec3d> rvecs, tvecs; // Use vectors for multiple markers
@@ -139,7 +151,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
             for (size_t i = 0; i < ids.size(); i++)
             {
                 // Annotate image with axes
-                cv::drawFrameAxes(cv_ptr->image, _camera_matrix, _dist_coeffs, rvecs[i], tvecs[i], _param_marker_size / 2.0f);
+                cv::drawFrameAxes(cv_ptr->image, _camera_matrix, _dist_coeffs, rvecs[i], tvecs[i], _param_marker_size);
                 cv::Mat R;
                 cv::Rodrigues(rvecs[i], R);
                 tf2::Matrix3x3 tf_rot(
@@ -148,20 +160,31 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                     R.at<double>(2, 0), R.at<double>(2, 1), R.at<double>(2, 2));
                 tf2::Quaternion q;
                 tf_rot.getRotation(q);
+                //====
+                cv::Point2f marker_center(0, 0);
+                for (const auto &pt : corners[i])
+                {
+                    marker_center += pt;
+                }
+                marker_center /= 4.0;
 
+                RCLCPP_INFO(this->get_logger(), "2D marker center (image): x=%.2f, y=%.2f", marker_center.x, marker_center.y);
+                RCLCPP_INFO(this->get_logger(), "3D marker center (camera): x=%.3f, y=%.3f, z=%.3f",
+                            tvecs[i][0], tvecs[i][1], tvecs[i][2]);
+                //-======
                 geometry_msgs::msg::PoseStamped marker_in_camera;
                 marker_in_camera.header.stamp = msg->header.stamp;
                 marker_in_camera.header.frame_id = "x500_gimbal_0/camera";
                 marker_in_camera.pose.position.x = tvecs[i][2];    // Z in camera
-                marker_in_camera.pose.position.y = tvecs[i][0];    // Y in camera  1
-                marker_in_camera.pose.position.z = -tvecs[i][1];   // X in camera  0
+                marker_in_camera.pose.position.y = -tvecs[i][0];    // Y in camera  1
+                marker_in_camera.pose.position.z = tvecs[i][1];   // X in camera  00.5f * _param_marker_size
                 marker_in_camera.pose.orientation = tf2::toMsg(q); // orientation
 
                 geometry_msgs::msg::PoseStamped marker_in_base;
 
                 try
                 {
-                    tf_buffer_->transform(marker_in_camera, marker_in_base, "x500_gimbal_0/base_link", tf2::durationFromSec(0.1));
+                    tf_buffer_->transform(marker_in_camera, marker_in_base, "x500_gimbal_0/base_link", tf2::durationFromSec(0.5));
 
                     // ====================== 수정 시작 ======================
                     aruco_interfaces::msg::MarkerPoseId aruco_marker_msg;

@@ -18,8 +18,8 @@ ground_truths_ordered = [
     (-78.855506896972656, 109.81887817382812, 3.8079309463500977),
 ]
 
-input_csv_path = 'marker_location.csv'
-output_csv_path = 'evaluation_results.csv'
+input_csv_path = 'ws_px4_controls/marker_location.csv'
+output_csv_path = 'ws_px4_controls/evaluation_results.csv'
 
 def evaluate_csv_predictions(input_csv_path, output_csv_path):
     with open(input_csv_path, 'r') as f:

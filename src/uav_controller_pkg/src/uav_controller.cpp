@@ -30,9 +30,9 @@
 
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지
 
-#define TAKEOFFALTITUDE 10.0                                                         // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
-#define WP_LOAD_PATH "/home/acdl1/competition_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
-#define MARKER_SAVE_PATH "/home/acdl1/competition_ws/ws_px4_controls/marker_location.csv"
+#define TAKEOFFALTITUDE 10.0                                                   // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
+#define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
+#define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
 
 enum class MissionState
 {
@@ -44,7 +44,11 @@ enum class MissionState
     MISSION_COMPLETE,
     PRECISION_LANDING
 };
-
+enum class PrecisionLandingPhase
+{
+    XY_ALIGN,
+    DESCENDING
+};
 class UavController : public rclcpp::Node
 {
 public:
@@ -64,7 +68,7 @@ public:
         takeoff_pub_ = create_publisher<std_msgs::msg::Bool>("/done_takeoff", 10);
         gimbal_pitch_pub_ = this->create_publisher<std_msgs::msg::Float32>("/gimbal_pitch_degree", latching_qos);
         ready_to_go_pub_ = create_publisher<std_msgs::msg::Bool>("/ready_to_go", 10);
-
+        marker_size_pub_ = create_publisher<std_msgs::msg::Float32>("/mk_size", 10);
         // SUBSCRIBERS ==========================================================================
         takeoff_sub_ = create_subscription<std_msgs::msg::Bool>("/do_takeoff", 10, std::bind(&UavController::takeoff_cb, this, std::placeholders::_1));
         ugv_arrived_sub_ = create_subscription<std_msgs::msg::Bool>("/ugv_landing_spot_arrived", 10, std::bind(&UavController::ugvLandingSpotCallback, this, std::placeholders::_1));
@@ -90,7 +94,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr takeoff_pub_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr gimbal_pitch_pub_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr ready_to_go_pub_;
-
+    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr marker_size_pub_;
     // Subs============================================================================
     rclcpp::Subscription<aruco_interfaces::msg::MarkerPoseId>::SharedPtr marker_sub_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr takeoff_sub_;
@@ -107,6 +111,7 @@ private:
 
     // Mission data ===================================================================
     MissionState state_;
+    PrecisionLandingPhase precision_landing_phase_ = PrecisionLandingPhase::XY_ALIGN;
     size_t current_wp_idx_;
     std::vector<geometry_msgs::msg::Point> waypoints_enu_;
     std::vector<geometry_msgs::msg::Point> precise_markers_world_;
@@ -114,13 +119,17 @@ private:
     px4_msgs::msg::VehicleLocalPosition::SharedPtr local_v_;
     geometry_msgs::msg::Pose current_pose_enu_{}; // Updated from px4_msgs/VehicleLocalPosition via TF
     geometry_msgs::msg::Point landing_spot_enu_{};
+    geometry_msgs::msg::Point latest_marker_position_;
     bool takeoff_sent_;
     bool set_localstatic_ = false;       // 로컬 좌표계(NED) 설정 완료 여부
     bool ugv_landing_ready_{false};      // UGV 착륙지점 도착 여부
-    float stopped_vel_threshold_ = 0.1f; // m/s, 드론이 정지했다고 판단하는 속도 임계값
+    float stopped_vel_threshold_ = 0.1f; // m/s, 드론이 정지했다고 판단하는 속도
     bool is_drone_stable_{false};
-    float stable_timeout_ = 5.0f;    // seconds, 드론이 안정화되었다고 판단하는 시간 임계값
-    float searching_timeout_ = 2.0f; // seconds, 마커 검색 시간 임계값
+    float stable_timeout_ = 5.0f;      // seconds, 드론이 안정화되었다고 판단하는 시간 임계값
+    float searching_timeout_ = 2.0f;   // seconds, 마커 검색 시간 임계값
+    double target_landing_z_ = 0.0;    // 다음 하강 목표 고도
+    const double landing_step_ = 0.5;  // 한 번에 몇 m씩 내릴지
+    const double landing_min_z_ = 0.3; // 이하면 착륙 완료로 간주
     // Hovering time variables
     rclcpp::Time wait_start_time_;
     rclcpp::Time search_start_time_;
@@ -226,7 +235,7 @@ private:
         {
             // Lookup transform from "map" to "x500_gimbal_0/base_link"
             geometry_msgs::msg::TransformStamped transform = tf_buffer_->lookupTransform(
-                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(1.0));
+                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.5));
 
             // Update current_pose_enu_ (ENU frame relative to map origin)
             current_pose_enu_.position.x = transform.transform.translation.x; // East
@@ -337,12 +346,12 @@ private:
 
                 if (next_label == 'h')
                 {
-                    RCLCPP_INFO(get_logger(), "H DETECTED, setting gimbal pitch to 0 degrees.");
+                    // RCLCPP_INFO(get_logger(), "H DETECTED, setting gimbal pitch to 0 degrees.");
                     send_gimbal_target_pitch_degree(0.0f); // Forward
                 }
                 else if (next_label == 'm' || next_label == 'p')
                 {
-                    RCLCPP_INFO(get_logger(), "M OR P DETECTED, setting gimbal pitch to -90 degrees.");
+                    // RCLCPP_INFO(get_logger(), "M OR P DETECTED, setting gimbal pitch to -90 degrees.");
                     send_gimbal_target_pitch_degree(-90.0f); // Downward
                 }
             }
@@ -441,22 +450,68 @@ private:
         }
         case MissionState::PRECISION_LANDING:
         {
-
-            RCLCPP_INFO(get_logger(), "Executing precision landing at [N: %.2f, E: %.2f]", landing_spot_enu_.x, landing_spot_enu_.y);
+            RCLCPP_INFO_THROTTLE(get_logger(), *this->get_clock(), 1000,
+                                 "[Landing] Phase: %s | Target [N: %.2f, E: %.2f, Z: %.2f]",
+                                 precision_landing_phase_ == PrecisionLandingPhase::XY_ALIGN ? "XY_ALIGN" : "DESCENDING",
+                                 landing_spot_enu_.x, landing_spot_enu_.y, target_landing_z_);
 
             geometry_msgs::msg::Pose landing_pose;
-            landing_pose.position = landing_spot_enu_;
-            landing_pose.orientation = current_pose_enu_.orientation; // Maintain current yaw for landing
+            landing_pose.orientation = current_pose_enu_.orientation; // Yaw 유지
 
-            send_setpoint_enu_to_ned(landing_pose); // Send the full Pose for landing
+            double dx = latest_marker_position_.x - current_pose_enu_.position.x;
+            double dy = latest_marker_position_.y - current_pose_enu_.position.y;
+            double dist_xy = std::hypot(dx, dy);
 
-            if (current_pose_enu_.position.z < 0.5) // Assuming 0.5m is close enough to ground for landing complete
+            switch (precision_landing_phase_)
             {
-                RCLCPP_INFO(get_logger(), "Precision landing complete. Mission finished.");
-                main_timer_->cancel(); // Stop the main loop
+            case PrecisionLandingPhase::XY_ALIGN:
+            {
+                // Step 1: x, y 먼저 정렬
+                landing_pose.position.x = latest_marker_position_.x;
+                landing_pose.position.y = latest_marker_position_.y;
+                landing_pose.position.z = current_pose_enu_.position.z; // z 유지
+
+                if (is_drone_stable_ && dist_xy < 0.2) // xy 정렬 완료
+                {
+                    precision_landing_phase_ = PrecisionLandingPhase::DESCENDING;
+                    target_landing_z_ = current_pose_enu_.position.z - landing_step_; // 하강 시작
+                    RCLCPP_INFO(get_logger(), "[Landing] XY 정렬 완료. 하강 단계 시작 (목표 z: %.2f)", target_landing_z_);
+                }
+                break;
             }
+
+            case PrecisionLandingPhase::DESCENDING:
+            {
+                landing_pose.position.x = latest_marker_position_.x;
+                landing_pose.position.y = latest_marker_position_.y;
+                landing_pose.position.z = target_landing_z_; // 이번에 목표할 z
+
+                if (current_pose_enu_.position.z <= landing_min_z_)
+                {
+                    RCLCPP_INFO(get_logger(), "Precision landing complete. Mission finished.");
+                    main_timer_->cancel();
+                    break;
+                }
+
+                // 다음 단계로 내려가도 될지 확인
+                if (is_drone_stable_ && dist_xy < 0.2 &&
+                    std::abs(current_pose_enu_.position.z - target_landing_z_) < 0.2)
+                {
+                    // 다음 단계로 z 더 낮추기
+                    target_landing_z_ -= landing_step_;
+                    if (target_landing_z_ < landing_min_z_)
+                        target_landing_z_ = landing_min_z_;
+                    RCLCPP_INFO(get_logger(), "[Landing] 다음 하강 목표 z: %.2f", target_landing_z_);
+                }
+
+                break;
+            }
+            }
+
+            send_setpoint_enu_to_ned(landing_pose);
             break;
         }
+
         case MissionState::MISSION_COMPLETE:
         {
             RCLCPP_INFO(get_logger(), "Mission complete. Hovering at final location.");
@@ -464,6 +519,9 @@ private:
             {
                 RCLCPP_INFO(get_logger(), "UGV READY FOR LANDING");
                 state_ = MissionState::PRECISION_LANDING;
+                std_msgs::msg::Float32 marker_size_msg;
+                marker_size_msg.data = 0.5;
+                marker_size_pub_->publish(marker_size_msg);
             }
             else
             {
@@ -477,7 +535,7 @@ private:
                 geometry_msgs::msg::Pose hover_pose;
                 hover_pose.position.x = last_wp_point.x;
                 hover_pose.position.y = last_wp_point.y;
-                hover_pose.position.z = last_wp_point.z + 4.0;          // Hover 5m above last waypoint
+                hover_pose.position.z = last_wp_point.z;                // Hover 5m above last waypoint
                 hover_pose.orientation = current_pose_enu_.orientation; // Maintain current yaw for hovering
 
                 send_setpoint_enu_to_ned(hover_pose); // Send the full Pose for hovering
@@ -511,47 +569,28 @@ private:
         if (state_ != MissionState::SEARCHING_FOR_MARKER)
             return;
 
-        // Look up transform from "map" to "x500_gimbal_0/base_link"
-        geometry_msgs::msg::TransformStamped tf_map_to_base_link;
-
-        try
-        {
-            tf_map_to_base_link = tf_buffer_->lookupTransform(
-                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(1.0));
-        }
-        catch (const tf2::TransformException &ex)
-        {
-            RCLCPP_WARN(get_logger(), "TF lookupTransform failed in aruco_marker_cb: %s", ex.what());
-            return;
-        }
-
-        geometry_msgs::msg::PoseStamped marker_in_base;
-        marker_in_base.header.frame_id = "x500_gimbal_0/base_link";
-        marker_in_base.header.stamp = msg->header.stamp; // Use marker's timestamp for transform
-        marker_in_base.pose = msg->pose;
-
-        geometry_msgs::msg::PoseStamped marker_in_map;
-        tf2::doTransform(marker_in_base, marker_in_map, tf_map_to_base_link);
+        latest_marker_position_ = msg->pose.position;
 
         // Record the new marker IDR
         seen_marker_ids_.insert(msg->id);
 
-        precise_markers_world_.push_back(marker_in_map.pose.position);
-
-        // Save marker ID and position to CSV
-        std::ofstream ofs(MARKER_SAVE_PATH, std::ios_base::app);
-        if (ofs)
+        precise_markers_world_.push_back(msg->pose.position);
+        if (msg->id != 10) // ✅ ID가 10이 아닐 때만 저장
         {
-            ofs.precision(15);
-            ofs << marker_in_map.pose.position.x << ","
-                << marker_in_map.pose.position.y << ","
-                << marker_in_map.pose.position.z << ","
-                << msg->id << "\n";
-            ofs.close(); // Close the file after writing
-        }
-        else
-        {
-            RCLCPP_ERROR(get_logger(), "Failed to open marker_location.csv for writing!");
+            std::ofstream ofs(MARKER_SAVE_PATH, std::ios_base::app);
+            if (ofs)
+            {
+                ofs.precision(15);
+                ofs << msg->pose.position.x << ","
+                    << msg->pose.position.y << ","
+                    << msg->pose.position.z << ","
+                    << msg->id << "\n";
+                ofs.close(); // Close the file after writing
+            }
+            else
+            {
+                RCLCPP_ERROR(get_logger(), "Failed to open marker_location.csv for writing!");
+            }
         }
 
         RCLCPP_INFO(get_logger(), "Marker #%d found! CSV saved. Proceeding to next waypoint.", msg->id);
@@ -559,7 +598,7 @@ private:
         if (current_wp_idx_ == waypoints_enu_.size() - 1)
         {
             RCLCPP_INFO(get_logger(), "Final marker found! Initiating precision landing.");
-            landing_spot_enu_ = marker_in_map.pose.position; // Store in ENU (map) coordinates
+            landing_spot_enu_ = msg->pose.position; // Store in ENU (map) coordinates
             state_ = MissionState::PRECISION_LANDING;
         }
         else

@@ -1,8 +1,8 @@
-# Install script for directory: /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces/aruco_interfaces__py
+# Install script for directory: /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/aruco_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/jmj/pro_asp_ws/ws_px4_controls/install/aruco_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

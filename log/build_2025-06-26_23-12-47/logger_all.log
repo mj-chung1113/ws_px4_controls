@@ -1,0 +1,374 @@
+[0.112s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'px4_msgs']
+[0.112s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['px4_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7634da703400>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7634da837c40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7634da837c40>>, mixin_verb=('build',))
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.272s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jmj/pro_asp_ws/ws_px4_controls'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller_pkg) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_controller_pkg' with type 'ros.ament_cmake' and name 'uav_controller_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/drone_takeoff_pub) by extension 'ros'
+[0.302s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/drone_takeoff_pub' with type 'ros.ament_cmake' and name 'drone_takeoff_pub'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/gazebo_env_setup) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/gazebo_env_setup' with type 'ros.ament_cmake' and name 'gazebo_env_setup'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_ws/src/ugv_controller) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_ws/src/ugv_controller' with type 'ros.ament_cmake' and name 'ugv_controller'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/utilities_pkg) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'src/utilities_pkg' with type 'ros.ament_cmake' and name 'utilities_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'ros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['cmake', 'python']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'cmake'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'python'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extensions ['python_setup_py']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco) by extension 'python_setup_py'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/aruco_interfaces) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/aruco_interfaces' with type 'ros.ament_cmake' and name 'aruco_interfaces'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/multi_tracker) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/multi_tracker' with type 'ros.ament_cmake' and name 'multi_tracker'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['cmake', 'python']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'cmake'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv) by extension 'python_setup_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/cv_bridge) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/image_geometry) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/opencv_tests) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/ws_aruco/src/vision_opencv/vision_opencv) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ws_aruco/src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.330s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aruco_interfaces' in 'src/ws_aruco/src/aruco_interfaces'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cv_bridge' in 'src/ws_aruco/src/vision_opencv/cv_bridge'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'drone_takeoff_pub' in 'src/ugv_ws/src/drone_takeoff_pub'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gazebo_env_setup' in 'src/ugv_ws/src/gazebo_env_setup'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'image_geometry' in 'src/ws_aruco/src/vision_opencv/image_geometry'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ugv_controller' in 'src/ugv_ws/src/ugv_controller'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'multi_tracker' in 'src/ws_aruco/src/multi_tracker'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'opencv_tests' in 'src/ws_aruco/src/vision_opencv/opencv_tests'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'px4_ros_com' in 'src/px4_ros_com'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'uav_controller_pkg' in 'src/uav_controller_pkg'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'utilities_pkg' in 'src/utilities_pkg'
+[0.331s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vision_opencv' in 'src/ws_aruco/src/vision_opencv/vision_opencv'
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.332s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/vision_opencv' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/utilities_pkg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/ugv_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_ros_com' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/multi_tracker' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.333s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/image_geometry' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.334s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/gazebo_env_setup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.334s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/drone_takeoff_pub' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.334s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.334s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/jmj/pro_asp_ws/ws_px4_controls/install
+[0.335s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 376 installed packages in /opt/ros/humble
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs', 'merge_install': False, 'path': '/home/jmj/pro_asp_ws/ws_px4_controls/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.365s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.367s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.367s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jmj/pro_asp_ws/ws_px4_controls/src/px4_msgs' with build type 'ament_cmake'
+[0.367s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jmj/pro_asp_ws/ws_px4_controls/src/px4_msgs'
+[0.369s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.369s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs
+[3.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/jmj/pro_asp_ws/ws_px4_controls/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs
+[3.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs -- -j20 -l20
+[119.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs -- -j20 -l20
+[119.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs
+[120.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[120.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jmj/pro_asp_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/jmj/pro_asp_ws/ws_px4_controls/build/px4_msgs
+[120.796s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' for CMake module files
+[120.797s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' for CMake config files
+[120.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[120.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[120.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[120.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[120.803s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib'
+[120.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[120.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[120.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[120.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[120.804s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/bin'
+[120.804s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[120.804s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/python3.10/site-packages'
+[120.805s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/bin'
+[120.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.ps1'
+[120.806s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.dsv'
+[120.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.sh'
+[120.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.bash'
+[120.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.zsh'
+[120.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[120.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[120.808s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' for CMake module files
+[120.809s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs' for CMake config files
+[120.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[120.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[120.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[120.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[120.813s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib'
+[120.813s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[120.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[120.814s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[120.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[120.814s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/bin'
+[120.815s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[120.815s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/lib/python3.10/site-packages'
+[120.815s] Level 1:colcon.colcon_core.environment:checking '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/bin'
+[120.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.ps1'
+[120.816s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.dsv'
+[120.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.sh'
+[120.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.bash'
+[120.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/px4_msgs/package.zsh'
+[120.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jmj/pro_asp_ws/ws_px4_controls/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[120.817s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[120.818s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[120.818s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[120.818s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[120.825s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[120.826s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[120.826s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[120.836s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[120.837s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jmj/pro_asp_ws/ws_px4_controls/install/local_setup.ps1'
+[120.838s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jmj/pro_asp_ws/ws_px4_controls/install/_local_setup_util_ps1.py'
+[120.839s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jmj/pro_asp_ws/ws_px4_controls/install/setup.ps1'
+[120.840s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jmj/pro_asp_ws/ws_px4_controls/install/local_setup.sh'
+[120.840s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jmj/pro_asp_ws/ws_px4_controls/install/_local_setup_util_sh.py'
+[120.840s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jmj/pro_asp_ws/ws_px4_controls/install/setup.sh'
+[120.841s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jmj/pro_asp_ws/ws_px4_controls/install/local_setup.bash'
+[120.842s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jmj/pro_asp_ws/ws_px4_controls/install/setup.bash'
+[120.842s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jmj/pro_asp_ws/ws_px4_controls/install/local_setup.zsh'
+[120.843s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jmj/pro_asp_ws/ws_px4_controls/install/setup.zsh'
