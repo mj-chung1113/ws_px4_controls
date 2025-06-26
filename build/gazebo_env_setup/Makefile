@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

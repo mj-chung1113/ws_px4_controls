@@ -30,9 +30,9 @@
 
 #include <aruco_interfaces/msg/marker_pose_id.hpp> // 커스텀 메시지
 
-#define TAKEOFFALTITUDE 10.0                                                   // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
-#define WP_LOAD_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
-#define MARKER_SAVE_PATH "/home/jmj/pro_asp_ws/ws_px4_controls/marker_location.csv"
+#define TAKEOFFALTITUDE 10.0                                                         // ENU, 드론이 이 높이로 상승하면 착륙 지점으로 이동
+#define WP_LOAD_PATH "/home/acdl1/competition_ws/ws_px4_controls/optimized_path.csv" // 웨이포인트 파일 경로
+#define MARKER_SAVE_PATH "/home/acdl1/competition_ws/ws_px4_controls/marker_location.csv"
 
 enum class MissionState
 {
@@ -77,10 +77,10 @@ public:
         static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this); // This should be StaticTransformBroadcaster if it's a fixed frame
 
         // MAIN LOOP =============================================================================
-        main_timer_ = create_wall_timer(std::chrono::milliseconds(50), std::bind(&UavController::main_loop, this));
+        main_timer_ = create_wall_timer(std::chrono::milliseconds(100), std::bind(&UavController::main_loop, this));
 
         RCLCPP_INFO(get_logger(), "UavController initialised. Mission starts");
-        std::this_thread::sleep_for(std::chrono::seconds(2));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
         state_ = MissionState::IDLE;
     }
 
@@ -226,7 +226,7 @@ private:
         {
             // Lookup transform from "map" to "x500_gimbal_0/base_link"
             geometry_msgs::msg::TransformStamped transform = tf_buffer_->lookupTransform(
-                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
+                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(1.0));
 
             // Update current_pose_enu_ (ENU frame relative to map origin)
             current_pose_enu_.position.x = transform.transform.translation.x; // East
@@ -517,7 +517,7 @@ private:
         try
         {
             tf_map_to_base_link = tf_buffer_->lookupTransform(
-                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(0.1));
+                "map", "x500_gimbal_0/base_link", tf2::TimePointZero, tf2::durationFromSec(1.0));
         }
         catch (const tf2::TransformException &ex)
         {

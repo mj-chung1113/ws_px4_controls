@@ -1,0 +1,29 @@
+[0.007s] Invoking command in '/home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup -- -j16 -l16
+[0.050s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_tf_broadcaster.dir/src/pose_tf_broadcaster.cpp.o[0m
+[6.992s] [100%] [32m[1mLinking CXX executable pose_tf_broadcaster[0m
+[7.336s] [100%] Built target pose_tf_broadcaster
+[7.345s] Invoked command in '/home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup -- -j16 -l16
+[7.354s] Invoking command in '/home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup
+[7.362s] -- Install configuration: ""
+[7.362s] -- Installing: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster
+[7.365s] -- Set runtime path of "/home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/lib/gazebo_env_setup/pose_tf_broadcaster" to ""
+[7.365s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch
+[7.365s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/pose_tf_broadcaster.launch.py
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/topic_bridge.launch.py
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/launch/topic_bridge.launch copy.py
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/package_run_dependencies/gazebo_env_setup
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/parent_prefix_path/gazebo_env_setup
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.sh
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/ament_prefix_path.dsv
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.sh
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/environment/path.dsv
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.bash
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.sh
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.zsh
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/local_setup.dsv
+[7.366s] -- Installing: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.dsv
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/ament_index/resource_index/packages/gazebo_env_setup
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig.cmake
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/cmake/gazebo_env_setupConfig-version.cmake
+[7.366s] -- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup/share/gazebo_env_setup/package.xml
+[7.367s] Invoked command in '/home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup

@@ -54,23 +54,6 @@ private:
 
       // 기본 TF 브로드캐스트
       tf_broadcaster_->sendTransform(transform);
-
-      // X1_asp → odom 추가 브로드캐스트
-      if (transform.child_frame_id == "X1_asp")
-      {
-        geometry_msgs::msg::TransformStamped odom_tf = transform;
-        odom_tf.child_frame_id = "X1_asp/odom";
-        tf_broadcaster_->sendTransform(odom_tf);
-      }
-
-      // base_link가 포함된 경우 → map → base_link 추가 브로드캐스트
-      if (transform.child_frame_id == "X1_asp/base_link")
-      {
-        geometry_msgs::msg::TransformStamped base_tf = transform;
-        base_tf.header.frame_id = "map";
-        base_tf.child_frame_id = "base_link";
-        tf_broadcaster_->sendTransform(base_tf);
-      }
     }
   }
 

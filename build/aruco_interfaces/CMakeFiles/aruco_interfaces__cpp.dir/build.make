@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces
 
 # Utility rule file for aruco_interfaces__cpp.
 
@@ -151,8 +151,8 @@ rosidl_generator_cpp/aruco_interfaces/msg/marker_pose_id.hpp: /opt/ros/humble/sh
 rosidl_generator_cpp/aruco_interfaces/msg/marker_pose_id.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/aruco_interfaces/msg/marker_pose_id.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/aruco_interfaces/msg/marker_pose_id.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/aruco_interfaces/msg/detail/marker_pose_id__builder.hpp: rosidl_generator_cpp/aruco_interfaces/msg/marker_pose_id.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aruco_interfaces/msg/detail/marker_pose_id__builder.hpp
@@ -184,6 +184,6 @@ CMakeFiles/aruco_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/aruco_interfaces__cpp.dir/clean
 
 CMakeFiles/aruco_interfaces__cpp.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/aruco_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/aruco_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/aruco_interfaces__cpp.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge/src
+# Install script for directory: /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge")
+  set(CMAKE_INSTALL_PREFIX "/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcv_bridge.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/src/libcv_bridge.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/src/libcv_bridge.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcv_bridge.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcv_bridge.so")
     file(RPATH_CHANGE
@@ -66,7 +66,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cv_bridge/cv_bridge" TYPE FILE FILES "/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/src/cv_bridge/cv_bridge_export.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cv_bridge/cv_bridge" TYPE FILE FILES "/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/src/cv_bridge/cv_bridge_export.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -76,12 +76,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost" TYPE MODULE FILES "/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/src/boost/cv_bridge_boost.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost" TYPE MODULE FILES "/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/src/boost/cv_bridge_boost.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so"
-         OLD_RPATH "/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/src:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/src:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so")

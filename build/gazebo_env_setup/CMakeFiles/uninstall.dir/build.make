@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup /home/jmj/pro_asp_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/gazebo_env_setup /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup /home/acdl1/competition_ws/ws_px4_controls/build/gazebo_env_setup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

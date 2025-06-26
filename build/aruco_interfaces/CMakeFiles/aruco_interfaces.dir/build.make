@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces
 
 # Utility rule file for aruco_interfaces.
 
@@ -66,7 +66,7 @@ include CMakeFiles/aruco_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/aruco_interfaces.dir/progress.make
 
-CMakeFiles/aruco_interfaces: /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces/msg/MarkerPoseId.msg
+CMakeFiles/aruco_interfaces: /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces/msg/MarkerPoseId.msg
 CMakeFiles/aruco_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/aruco_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/aruco_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -143,6 +143,6 @@ CMakeFiles/aruco_interfaces.dir/clean:
 .PHONY : CMakeFiles/aruco_interfaces.dir/clean
 
 CMakeFiles/aruco_interfaces.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces /home/jmj/pro_asp_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/aruco_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces /home/acdl1/competition_ws/ws_px4_controls/build/aruco_interfaces/CMakeFiles/aruco_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/aruco_interfaces.dir/depend
 

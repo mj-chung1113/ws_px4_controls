@@ -1,0 +1,56 @@
+[0.489s] Invoking command in '/home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests': AMENT_PREFIX_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/opencv_tests build --build-base /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build install --record /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/install.log --single-version-externally-managed install_data
+[0.610s] /home/acdl1/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.610s]   warnings.warn(msg)
+[0.636s] /home/acdl1/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[0.636s] !!
+[0.636s] 
+[0.637s]         ********************************************************************************
+[0.637s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[0.637s] 
+[0.637s]         License :: OSI Approved :: Apache Software License
+[0.637s] 
+[0.637s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[0.637s]         ********************************************************************************
+[0.637s] 
+[0.637s] !!
+[0.637s]   self._finalize_license_expression()
+[0.690s] running egg_info
+[0.703s] creating ../../../../../build/opencv_tests/opencv_tests.egg-info
+[0.703s] writing ../../../../../build/opencv_tests/opencv_tests.egg-info/PKG-INFO
+[0.703s] writing dependency_links to ../../../../../build/opencv_tests/opencv_tests.egg-info/dependency_links.txt
+[0.704s] writing entry points to ../../../../../build/opencv_tests/opencv_tests.egg-info/entry_points.txt
+[0.704s] writing requirements to ../../../../../build/opencv_tests/opencv_tests.egg-info/requires.txt
+[0.704s] writing top-level names to ../../../../../build/opencv_tests/opencv_tests.egg-info/top_level.txt
+[0.704s] writing manifest file '../../../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[0.731s] reading manifest file '../../../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[0.732s] writing manifest file '../../../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[0.732s] running build
+[0.732s] running build_py
+[0.732s] creating /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests
+[0.732s] copying opencv_tests/rosfacedetect.py -> /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests
+[0.733s] copying opencv_tests/broadcast.py -> /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests
+[0.733s] copying opencv_tests/__init__.py -> /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests
+[0.733s] copying opencv_tests/source.py -> /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests
+[0.733s] running install
+[0.736s] running install_lib
+[0.750s] creating /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests
+[0.750s] copying /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests/rosfacedetect.py -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests
+[0.750s] copying /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests/broadcast.py -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests
+[0.750s] copying /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests/__init__.py -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests
+[0.750s] copying /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build/lib/opencv_tests/source.py -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests
+[0.751s] byte-compiling /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests/rosfacedetect.py to rosfacedetect.cpython-310.pyc
+[0.751s] byte-compiling /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests/broadcast.py to broadcast.cpython-310.pyc
+[0.752s] byte-compiling /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests/__init__.py to __init__.cpython-310.pyc
+[0.752s] byte-compiling /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests/source.py to source.cpython-310.pyc
+[0.752s] running install_data
+[0.752s] creating /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/share/ament_index/resource_index/packages
+[0.752s] copying resource/opencv_tests -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/share/ament_index/resource_index/packages
+[0.752s] copying package.xml -> /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/share/opencv_tests
+[0.753s] running install_egg_info
+[0.766s] Copying ../../../../../build/opencv_tests/opencv_tests.egg-info to /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages/opencv_tests-3.2.1-py3.10.egg-info
+[0.767s] running install_scripts
+[0.795s] Installing broadcast script to /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/opencv_tests
+[0.795s] Installing rosfacedetect script to /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/opencv_tests
+[0.795s] Installing source script to /home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/opencv_tests
+[0.796s] writing list of installed files to '/home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/install.log'
+[0.819s] Invoked command in '/home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/opencv_tests build --build-base /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/build install --record /home/acdl1/competition_ws/ws_px4_controls/build/opencv_tests/install.log --single-version-externally-managed install_data

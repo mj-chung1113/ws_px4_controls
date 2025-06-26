@@ -1,6 +1,0 @@
-{
-  "package_name": "aruco_interfaces",
-  "non_idl_tuples": [
-    "/home/jmj/pro_asp_ws/ws_aruco/src/aruco_interfaces:msg/MarkerPoseId.msg"
-  ]
-}

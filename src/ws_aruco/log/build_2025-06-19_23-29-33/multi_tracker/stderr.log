@@ -1,4 +1,0 @@
-[01m[K/home/jmj/pro_asp_ws/ws_aruco/src/multi_tracker/src/multi_tracker_node.cpp:[m[K In member function ‘[01m[Kvoid MultiTrackerNode::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/jmj/pro_asp_ws/ws_aruco/src/multi_tracker/src/multi_tracker_node.cpp:122:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kselected_id[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  122 |         int [01;35m[Kselected_id[m[K = ids[best_marker_idx];
-      |             [01;35m[K^~~~~~~~~~~[m[K

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge/test
+# Install script for directory: /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jmj/pro_asp_ws/ws_px4_controls/install/cv_bridge")
+  set(CMAKE_INSTALL_PREFIX "/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/gtest/cmake_install.cmake")
+  include("/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/gtest/cmake_install.cmake")
 endif()
 

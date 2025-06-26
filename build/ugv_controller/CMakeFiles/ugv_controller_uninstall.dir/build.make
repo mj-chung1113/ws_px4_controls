@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller
 
 # Utility rule file for ugv_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ugv_controller_uninstall.dir/compiler_depend.make
 include CMakeFiles/ugv_controller_uninstall.dir/progress.make
 
 CMakeFiles/ugv_controller_uninstall:
-	/usr/bin/cmake -P /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ugv_controller_uninstall: CMakeFiles/ugv_controller_uninstall
 ugv_controller_uninstall: CMakeFiles/ugv_controller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ugv_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/ugv_controller_uninstall.dir/clean
 
 CMakeFiles/ugv_controller_uninstall.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller /home/jmj/pro_asp_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller /home/jmj/pro_asp_ws/ws_px4_controls/build/ugv_controller/CMakeFiles/ugv_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller /home/acdl1/competition_ws/ws_px4_controls/src/ugv_ws/src/ugv_controller /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller /home/acdl1/competition_ws/ws_px4_controls/build/ugv_controller/CMakeFiles/ugv_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ugv_controller_uninstall.dir/depend
 

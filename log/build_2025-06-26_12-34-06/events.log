@@ -1,0 +1,290 @@
+[0.000000] (-) TimerEvent: {}
+[0.000310] (-) JobUnselected: {'identifier': 'aruco_interfaces'}
+[0.000563] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000595] (-) JobUnselected: {'identifier': 'drone_takeoff_pub'}
+[0.000612] (-) JobUnselected: {'identifier': 'gazebo_env_setup'}
+[0.000625] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000638] (-) JobUnselected: {'identifier': 'multi_tracker'}
+[0.000650] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000669] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000693] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000854] (-) JobUnselected: {'identifier': 'ugv_controller'}
+[0.001025] (-) JobUnselected: {'identifier': 'utilities_pkg'}
+[0.001084] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.001111] (uav_controller_pkg) JobQueued: {'identifier': 'uav_controller_pkg', 'dependencies': OrderedDict([('aruco_interfaces', '/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces'), ('px4_msgs', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs')])}
+[0.001145] (uav_controller_pkg) JobStarted: {'identifier': 'uav_controller_pkg'}
+[0.016140] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'cmake'}
+[0.016839] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'build'}
+[0.017563] (uav_controller_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg', '--', '-j16', '-l16'], 'cwd': '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'acdl1'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/acdl1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1579'), ('SYSTEMD_EXEC_PID', '2001'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3614'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'acdl1'), ('JOURNAL_STREAM', '8:17763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'acdl1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/acdl1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/acdl1-Alienware-Aurora-R11:@/tmp/.ICE-unix/1817,unix/acdl1-Alienware-Aurora-R11:/tmp/.ICE-unix/1817'), ('INVOCATION_ID', '07990619266545c6b2504975c6873f93'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/competition_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/competition_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry:/home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/competition_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a4f7886c-50bc-4e57-bdcc-151e6d0738a2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/competition_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/competition_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/competition_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry:/home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/competition_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[0.066068] (uav_controller_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_controller\x1b[0m\n'}
+[0.085327] (uav_controller_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uav_controller.dir/src/uav_controller.cpp.o\x1b[0m\n'}
+[0.099888] (-) TimerEvent: {}
+[0.200159] (-) TimerEvent: {}
+[0.300400] (-) TimerEvent: {}
+[0.400713] (-) TimerEvent: {}
+[0.501004] (-) TimerEvent: {}
+[0.601358] (-) TimerEvent: {}
+[0.701726] (-) TimerEvent: {}
+[0.802168] (-) TimerEvent: {}
+[0.902650] (-) TimerEvent: {}
+[1.002976] (-) TimerEvent: {}
+[1.103333] (-) TimerEvent: {}
+[1.203952] (-) TimerEvent: {}
+[1.304511] (-) TimerEvent: {}
+[1.405007] (-) TimerEvent: {}
+[1.505515] (-) TimerEvent: {}
+[1.606046] (-) TimerEvent: {}
+[1.706715] (-) TimerEvent: {}
+[1.807093] (-) TimerEvent: {}
+[1.907421] (-) TimerEvent: {}
+[2.007828] (-) TimerEvent: {}
+[2.108136] (-) TimerEvent: {}
+[2.208430] (-) TimerEvent: {}
+[2.308702] (-) TimerEvent: {}
+[2.409037] (-) TimerEvent: {}
+[2.509362] (-) TimerEvent: {}
+[2.609658] (-) TimerEvent: {}
+[2.710356] (-) TimerEvent: {}
+[2.810846] (-) TimerEvent: {}
+[2.911197] (-) TimerEvent: {}
+[3.011503] (-) TimerEvent: {}
+[3.111844] (-) TimerEvent: {}
+[3.212167] (-) TimerEvent: {}
+[3.312554] (-) TimerEvent: {}
+[3.412883] (-) TimerEvent: {}
+[3.513205] (-) TimerEvent: {}
+[3.613474] (-) TimerEvent: {}
+[3.713770] (-) TimerEvent: {}
+[3.814108] (-) TimerEvent: {}
+[3.914459] (-) TimerEvent: {}
+[4.014883] (-) TimerEvent: {}
+[4.115240] (-) TimerEvent: {}
+[4.215700] (-) TimerEvent: {}
+[4.316203] (-) TimerEvent: {}
+[4.416689] (-) TimerEvent: {}
+[4.517280] (-) TimerEvent: {}
+[4.617764] (-) TimerEvent: {}
+[4.718295] (-) TimerEvent: {}
+[4.818750] (-) TimerEvent: {}
+[4.919924] (-) TimerEvent: {}
+[5.020633] (-) TimerEvent: {}
+[5.121244] (-) TimerEvent: {}
+[5.221815] (-) TimerEvent: {}
+[5.322370] (-) TimerEvent: {}
+[5.423180] (-) TimerEvent: {}
+[5.523631] (-) TimerEvent: {}
+[5.624612] (-) TimerEvent: {}
+[5.724948] (-) TimerEvent: {}
+[5.825463] (-) TimerEvent: {}
+[5.925786] (-) TimerEvent: {}
+[6.026419] (-) TimerEvent: {}
+[6.126697] (-) TimerEvent: {}
+[6.227012] (-) TimerEvent: {}
+[6.327286] (-) TimerEvent: {}
+[6.427571] (-) TimerEvent: {}
+[6.528035] (-) TimerEvent: {}
+[6.628545] (-) TimerEvent: {}
+[6.728847] (-) TimerEvent: {}
+[6.829186] (-) TimerEvent: {}
+[6.929616] (-) TimerEvent: {}
+[7.029867] (-) TimerEvent: {}
+[7.130193] (-) TimerEvent: {}
+[7.230489] (-) TimerEvent: {}
+[7.330802] (-) TimerEvent: {}
+[7.431156] (-) TimerEvent: {}
+[7.531470] (-) TimerEvent: {}
+[7.631748] (-) TimerEvent: {}
+[7.732174] (-) TimerEvent: {}
+[7.832575] (-) TimerEvent: {}
+[7.932881] (-) TimerEvent: {}
+[8.033188] (-) TimerEvent: {}
+[8.133542] (-) TimerEvent: {}
+[8.234164] (-) TimerEvent: {}
+[8.334755] (-) TimerEvent: {}
+[8.435034] (-) TimerEvent: {}
+[8.535353] (-) TimerEvent: {}
+[8.635771] (-) TimerEvent: {}
+[8.736356] (-) TimerEvent: {}
+[8.836965] (-) TimerEvent: {}
+[8.937540] (-) TimerEvent: {}
+[9.038083] (-) TimerEvent: {}
+[9.138495] (-) TimerEvent: {}
+[9.239209] (-) TimerEvent: {}
+[9.339677] (-) TimerEvent: {}
+[9.439955] (-) TimerEvent: {}
+[9.540280] (-) TimerEvent: {}
+[9.640575] (-) TimerEvent: {}
+[9.740985] (-) TimerEvent: {}
+[9.841267] (-) TimerEvent: {}
+[9.941685] (-) TimerEvent: {}
+[10.042123] (-) TimerEvent: {}
+[10.142432] (-) TimerEvent: {}
+[10.242754] (-) TimerEvent: {}
+[10.343256] (-) TimerEvent: {}
+[10.443583] (-) TimerEvent: {}
+[10.544012] (-) TimerEvent: {}
+[10.644312] (-) TimerEvent: {}
+[10.744572] (-) TimerEvent: {}
+[10.844890] (-) TimerEvent: {}
+[10.945176] (-) TimerEvent: {}
+[11.045598] (-) TimerEvent: {}
+[11.145900] (-) TimerEvent: {}
+[11.246199] (-) TimerEvent: {}
+[11.346495] (-) TimerEvent: {}
+[11.446768] (-) TimerEvent: {}
+[11.547056] (-) TimerEvent: {}
+[11.647366] (-) TimerEvent: {}
+[11.747631] (-) TimerEvent: {}
+[11.847916] (-) TimerEvent: {}
+[11.948476] (-) TimerEvent: {}
+[12.048999] (-) TimerEvent: {}
+[12.149479] (-) TimerEvent: {}
+[12.250037] (-) TimerEvent: {}
+[12.350563] (-) TimerEvent: {}
+[12.451278] (-) TimerEvent: {}
+[12.551718] (-) TimerEvent: {}
+[12.652272] (-) TimerEvent: {}
+[12.752727] (-) TimerEvent: {}
+[12.853205] (-) TimerEvent: {}
+[12.953551] (-) TimerEvent: {}
+[13.053862] (-) TimerEvent: {}
+[13.154143] (-) TimerEvent: {}
+[13.254465] (-) TimerEvent: {}
+[13.354772] (-) TimerEvent: {}
+[13.455132] (-) TimerEvent: {}
+[13.555463] (-) TimerEvent: {}
+[13.656276] (-) TimerEvent: {}
+[13.756695] (-) TimerEvent: {}
+[13.857248] (-) TimerEvent: {}
+[13.958011] (-) TimerEvent: {}
+[14.058479] (-) TimerEvent: {}
+[14.158873] (-) TimerEvent: {}
+[14.259205] (-) TimerEvent: {}
+[14.359475] (-) TimerEvent: {}
+[14.459739] (-) TimerEvent: {}
+[14.560043] (-) TimerEvent: {}
+[14.660321] (-) TimerEvent: {}
+[14.760597] (-) TimerEvent: {}
+[14.861128] (-) TimerEvent: {}
+[14.961519] (-) TimerEvent: {}
+[15.061794] (-) TimerEvent: {}
+[15.162098] (-) TimerEvent: {}
+[15.262441] (-) TimerEvent: {}
+[15.362777] (-) TimerEvent: {}
+[15.463069] (-) TimerEvent: {}
+[15.563391] (-) TimerEvent: {}
+[15.663878] (-) TimerEvent: {}
+[15.764158] (-) TimerEvent: {}
+[15.864442] (-) TimerEvent: {}
+[15.964770] (-) TimerEvent: {}
+[16.065119] (-) TimerEvent: {}
+[16.165693] (-) TimerEvent: {}
+[16.266203] (-) TimerEvent: {}
+[16.366675] (-) TimerEvent: {}
+[16.467202] (-) TimerEvent: {}
+[16.567704] (-) TimerEvent: {}
+[16.668007] (-) TimerEvent: {}
+[16.768295] (-) TimerEvent: {}
+[16.868569] (-) TimerEvent: {}
+[16.968873] (-) TimerEvent: {}
+[17.069240] (-) TimerEvent: {}
+[17.169760] (-) TimerEvent: {}
+[17.270403] (-) TimerEvent: {}
+[17.370732] (-) TimerEvent: {}
+[17.471057] (-) TimerEvent: {}
+[17.571368] (-) TimerEvent: {}
+[17.671976] (-) TimerEvent: {}
+[17.772402] (-) TimerEvent: {}
+[17.872709] (-) TimerEvent: {}
+[17.973023] (-) TimerEvent: {}
+[18.073593] (-) TimerEvent: {}
+[18.173895] (-) TimerEvent: {}
+[18.274203] (-) TimerEvent: {}
+[18.374507] (-) TimerEvent: {}
+[18.474788] (-) TimerEvent: {}
+[18.575100] (-) TimerEvent: {}
+[18.675689] (-) TimerEvent: {}
+[18.776000] (-) TimerEvent: {}
+[18.876436] (-) TimerEvent: {}
+[18.976906] (-) TimerEvent: {}
+[19.077284] (-) TimerEvent: {}
+[19.177675] (-) TimerEvent: {}
+[19.278114] (-) TimerEvent: {}
+[19.378413] (-) TimerEvent: {}
+[19.478710] (-) TimerEvent: {}
+[19.579031] (-) TimerEvent: {}
+[19.679334] (-) TimerEvent: {}
+[19.779661] (-) TimerEvent: {}
+[19.880216] (-) TimerEvent: {}
+[19.980792] (-) TimerEvent: {}
+[20.081186] (-) TimerEvent: {}
+[20.181538] (-) TimerEvent: {}
+[20.281891] (-) TimerEvent: {}
+[20.382243] (-) TimerEvent: {}
+[20.482571] (-) TimerEvent: {}
+[20.582883] (-) TimerEvent: {}
+[20.683249] (-) TimerEvent: {}
+[20.783804] (-) TimerEvent: {}
+[20.884349] (-) TimerEvent: {}
+[20.984910] (-) TimerEvent: {}
+[21.085443] (-) TimerEvent: {}
+[21.185943] (-) TimerEvent: {}
+[21.286874] (-) TimerEvent: {}
+[21.387186] (-) TimerEvent: {}
+[21.487501] (-) TimerEvent: {}
+[21.587811] (-) TimerEvent: {}
+[21.688696] (-) TimerEvent: {}
+[21.789017] (-) TimerEvent: {}
+[21.889311] (-) TimerEvent: {}
+[21.989700] (-) TimerEvent: {}
+[22.090010] (-) TimerEvent: {}
+[22.190396] (-) TimerEvent: {}
+[22.290852] (-) TimerEvent: {}
+[22.391220] (-) TimerEvent: {}
+[22.491533] (-) TimerEvent: {}
+[22.591824] (-) TimerEvent: {}
+[22.692127] (-) TimerEvent: {}
+[22.792456] (-) TimerEvent: {}
+[22.892762] (-) TimerEvent: {}
+[22.966411] (uav_controller_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable uav_controller\x1b[0m\n'}
+[22.992870] (-) TimerEvent: {}
+[23.093393] (-) TimerEvent: {}
+[23.193875] (-) TimerEvent: {}
+[23.294336] (-) TimerEvent: {}
+[23.394703] (-) TimerEvent: {}
+[23.495162] (-) TimerEvent: {}
+[23.595500] (-) TimerEvent: {}
+[23.696712] (-) TimerEvent: {}
+[23.797043] (-) TimerEvent: {}
+[23.897445] (-) TimerEvent: {}
+[23.997866] (-) TimerEvent: {}
+[24.098458] (-) TimerEvent: {}
+[24.198883] (-) TimerEvent: {}
+[24.299269] (-) TimerEvent: {}
+[24.399710] (-) TimerEvent: {}
+[24.439229] (uav_controller_pkg) StdoutLine: {'line': b'[100%] Built target uav_controller\n'}
+[24.450112] (uav_controller_pkg) CommandEnded: {'returncode': 0}
+[24.450781] (uav_controller_pkg) JobProgress: {'identifier': 'uav_controller_pkg', 'progress': 'install'}
+[24.460677] (uav_controller_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg'], 'cwd': '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'acdl1'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs/lib:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces/lib:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com/lib:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry/lib:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/acdl1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1579'), ('SYSTEMD_EXEC_PID', '2001'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3614'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'acdl1'), ('JOURNAL_STREAM', '8:17763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'acdl1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/acdl1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/acdl1-Alienware-Aurora-R11:@/tmp/.ICE-unix/1817,unix/acdl1-Alienware-Aurora-R11:/tmp/.ICE-unix/1817'), ('INVOCATION_ID', '07990619266545c6b2504975c6873f93'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/competition_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/competition_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry:/home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/competition_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a4f7886c-50bc-4e57-bdcc-151e6d0738a2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/acdl1/competition_ws/ws_px4_controls/build/uav_controller_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests/lib/python3.10/site-packages:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge/local/lib/python3.10/dist-packages:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/acdl1/competition_ws/ws_px4_controls/install/px4_msgs:/home/acdl1/competition_ws/ws_px4_controls/install/aruco_interfaces:/home/acdl1/competition_ws/ws_px4_controls/install/vision_opencv:/home/acdl1/competition_ws/ws_px4_controls/install/utilities_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/ugv_controller:/home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg:/home/acdl1/competition_ws/ws_px4_controls/install/px4_ros_com:/home/acdl1/competition_ws/ws_px4_controls/install/multi_tracker:/home/acdl1/competition_ws/ws_px4_controls/install/image_geometry:/home/acdl1/competition_ws/ws_px4_controls/install/gazebo_env_setup:/home/acdl1/competition_ws/ws_px4_controls/install/drone_takeoff_pub:/home/acdl1/competition_ws/ws_px4_controls/install/cv_bridge:/home/acdl1/competition_ws/ws_px4_controls/install/opencv_tests:/opt/ros/humble')]), 'shell': False}
+[24.470120] (uav_controller_pkg) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[24.470455] (uav_controller_pkg) StdoutLine: {'line': b'-- Installing: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/lib/uav_controller_pkg/uav_controller\n'}
+[24.499806] (-) TimerEvent: {}
+[24.505162] (uav_controller_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/lib/uav_controller_pkg/uav_controller" to ""\n'}
+[24.505440] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/package_run_dependencies/uav_controller_pkg\n'}
+[24.505534] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/parent_prefix_path/uav_controller_pkg\n'}
+[24.505624] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/ament_prefix_path.sh\n'}
+[24.505684] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/ament_prefix_path.dsv\n'}
+[24.505746] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/path.sh\n'}
+[24.505801] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/environment/path.dsv\n'}
+[24.505877] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.bash\n'}
+[24.505940] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.sh\n'}
+[24.506008] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.zsh\n'}
+[24.506080] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/local_setup.dsv\n'}
+[24.506134] (uav_controller_pkg) StdoutLine: {'line': b'-- Installing: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.dsv\n'}
+[24.506181] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/ament_index/resource_index/packages/uav_controller_pkg\n'}
+[24.506228] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/cmake/uav_controller_pkgConfig.cmake\n'}
+[24.506301] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/cmake/uav_controller_pkgConfig-version.cmake\n'}
+[24.506378] (uav_controller_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/acdl1/competition_ws/ws_px4_controls/install/uav_controller_pkg/share/uav_controller_pkg/package.xml\n'}
+[24.510871] (uav_controller_pkg) CommandEnded: {'returncode': 0}
+[24.528029] (uav_controller_pkg) JobEnded: {'identifier': 'uav_controller_pkg', 'rc': 0}
+[24.528958] (-) EventReactorShutdown: {}

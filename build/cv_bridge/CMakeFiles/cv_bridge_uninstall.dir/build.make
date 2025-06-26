@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge
 
 # Utility rule file for cv_bridge_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cv_bridge_uninstall.dir/compiler_depend.make
 include CMakeFiles/cv_bridge_uninstall.dir/progress.make
 
 CMakeFiles/cv_bridge_uninstall:
-	/usr/bin/cmake -P /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 cv_bridge_uninstall: CMakeFiles/cv_bridge_uninstall
 cv_bridge_uninstall: CMakeFiles/cv_bridge_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cv_bridge_uninstall.dir/clean:
 .PHONY : CMakeFiles/cv_bridge_uninstall.dir/clean
 
 CMakeFiles/cv_bridge_uninstall.dir/depend:
-	cd /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge /home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge/CMakeFiles/cv_bridge_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/cv_bridge /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge /home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge/CMakeFiles/cv_bridge_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cv_bridge_uninstall.dir/depend
 

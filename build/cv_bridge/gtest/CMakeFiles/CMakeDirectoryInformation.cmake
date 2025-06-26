@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/humble/src/gtest_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/jmj/pro_asp_ws/ws_px4_controls/build/cv_bridge")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/acdl1/competition_ws/ws_px4_controls/build/cv_bridge")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

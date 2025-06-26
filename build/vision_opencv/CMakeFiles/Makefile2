@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/vision_opencv
+CMAKE_SOURCE_DIR = /home/acdl1/competition_ws/ws_px4_controls/src/ws_aruco/src/vision_opencv/vision_opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv
+CMAKE_BINARY_DIR = /home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/vision_opencv_uninstall.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/vision_opencv_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/vision_opencv_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vision_opencv_uninstall.dir/build.make CMakeFiles/vision_opencv_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vision_opencv_uninstall.dir/build.make CMakeFiles/vision_opencv_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles --progress-num= "Built target vision_opencv_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles --progress-num= "Built target vision_opencv_uninstall"
 .PHONY : CMakeFiles/vision_opencv_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vision_opencv_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vision_opencv_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmj/pro_asp_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/acdl1/competition_ws/ws_px4_controls/build/vision_opencv/CMakeFiles 0
 .PHONY : CMakeFiles/vision_opencv_uninstall.dir/rule
 
 # Convenience name for target.
