@@ -161,17 +161,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                 tf2::Quaternion q;
                 tf_rot.getRotation(q);
                 //====
-                cv::Point2f marker_center(0, 0);
-                for (const auto &pt : corners[i])
-                {
-                    marker_center += pt;
-                }
-                marker_center /= 4.0;
 
-                RCLCPP_INFO(this->get_logger(), "2D marker center (image): x=%.2f, y=%.2f", marker_center.x, marker_center.y);
-                RCLCPP_INFO(this->get_logger(), "3D marker center (camera): x=%.3f, y=%.3f, z=%.3f",
-                            tvecs[i][0], tvecs[i][1], tvecs[i][2]);
-                //-======
                 try
                 {
                     geometry_msgs::msg::TransformStamped t_cam_to_base_stamped = tf_buffer_->lookupTransform(
@@ -186,7 +176,7 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                     tf2::Vector3 v_base_to_marker_assumed(-tvecs[i][2], tvecs[i][0], -tvecs[i][1]);
 
                     // camera offset은 0
-                    tf2::Vector3 v_camera_offset_in_base(-0.07, 0.0, -0.16);
+                    tf2::Vector3 v_camera_offset_in_base(0.05, 0.0, -0.16);
                     tf2::Vector3 v_rotated_offset = tf2::quatRotate(q_cam_to_base, v_camera_offset_in_base);
 
                     tf2::Vector3 final_pos_in_cam = v_cam_to_base + v_base_to_marker_assumed + v_rotated_offset;
@@ -230,6 +220,9 @@ void MultiTrackerNode::image_callback(const sensor_msgs::msg::Image::SharedPtr m
                     aruco_interfaces::msg::MarkerPoseId aruco_target;
                     aruco_target.header = marker_in_map.header;
                     aruco_target.pose = marker_in_map.pose;
+                    aruco_target.relativepose.x = -tvecs[i][2];
+                    aruco_target.relativepose.x = tvecs[i][0];
+                    aruco_target.relativepose.x = -tvecs[i][1];
                     aruco_target.id = ids[i];
                     _aruco_marker_pub->publish(aruco_target);
                 }

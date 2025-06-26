@@ -57,6 +57,16 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "deque": "cpp",
+        "any": "cpp",
+        "system_error": "cpp",
+        "variant": "cpp",
+        "clocale": "cpp",
+        "cstdarg": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "complex": "cpp",
+        "ratio": "cpp"
     }
 }
